@@ -18,7 +18,7 @@ Academy’s space program. He originally shared his idea with the head of the As
 :width: 500 
 :align: center  
 ``` 
-The team has successfully competed in the NASA USLI (University Student Launch Initiative) in 2022, 2023, and 2024, with their most successful year in 2024 being one of 13 teams to qualify their payload out of 50 for the final launch. Learn more about the 2024 season [here](USLI.md).
+The team has successfully competed in the NASA USLI (University Student Launch Initiative) in 2022, 2023, and 2024, with their most successful year in 2024 being one of 13 teams to qualify their payload out of 50 for the final launch. Learn more about the 2024 season [here](past_years/MAIN%202023-2024%20NASA%20USLI.md).
 
 ```{image} ./pictures/payload.jpg   
 :height: 200
@@ -31,5 +31,5 @@ The team is split into multiple sub-groups, which change from semester to semest
 
 ## Quicklinks
 ### Team Information
-- 📆 **Team Schedule**: Posted [here](schedule.md) and subject to change.
+- 📆 **Team Schedule**: Posted [here](team/MAIN%20schedule.md) and subject to change.
 
