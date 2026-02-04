@@ -1,0 +1,27 @@
+site_url: https://bluehorizon.club
+display_url: https://bluehorizon.club
+publish_mode: editorial_workflow
+show_preview_links: true
+
+backend:
+  name: github
+  repo: USAFA-Blue-Horizon/BlueHorizon-InfoPage
+  branch: main
+  base_url: https://bluehorizon.club
+  auth_endpoint: /api/auth
+  squash_merges: true
+  preview_context: "cloudflare preview deploy"
+
+media_folder: "docs/images/uploads"
+public_folder: "/images/uploads"
+
+
+collections:
+  - name: pages
+    label: Pages
+    folder: "docs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

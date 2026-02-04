@@ -1,0 +1,727 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>🌐 Website Editing How-To &#8212; BlueHorizon</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'website editing';</script>
+    <link rel="icon" href="_static/BHlogosmall.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="🤖 fusion 360 setup" href="fusion%20360%20setup.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/BHlogolarge.png" class="logo__image only-light" alt="BlueHorizon - Home"/>
+    <img src="_static/BHlogolarge.png" class="logo__image only-dark pst-js-only" alt="BlueHorizon - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    BlueHorizon Rocketry
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Team Info</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="schedule.html">📆 Team Schedule</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Subteams</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="research.html">🧰 Research Division</a></li>
+<li class="toctree-l1"><a class="reference internal" href="competition.html">🚀 Competition Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">⭐ Support Flight</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Past Years</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="USLI.html">📜 2024 Archive</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="fusion%20360%20setup.html">🤖 fusion 360 setup</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">🌐 Website Editing How-To</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/grantstec/BlueHorizon-InfoPage" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/grantstec/BlueHorizon-InfoPage/issues/new?title=Issue%20on%20page%20%2Fwebsite editing.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/website editing.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>🌐 Website Editing How-To</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-github">What is GitHub?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-github">Setting up GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-your-own-branch">Creating your own branch</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode">VSCode</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-vscode">What is VSCode?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-vscode">Setting up VSCode</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extensions">Extensions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#github-sign-in">GitHub Sign In</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-folder">Create Folder</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#terminal">Terminal</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-and-pushing">Committing and Pushing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#branch-selection">Branch Selection</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#committing">Committing</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sync-changes">Sync Changes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-main-page">Changing Main Page</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-tips">Quick Tips</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spell-checker-extension">Spell Checker Extension</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-page-viewier">Markdown Page Viewier</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#emojis">Emojis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tables">Tables</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-repositories-websites">Example Repositories/Websites</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ece-281-website">ECE 281 Website</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ece-387-website">ECE 387 Website</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="website-editing-how-to">
+<h1>🌐 Website Editing How-To<a class="headerlink" href="#website-editing-how-to" title="Link to this heading">#</a></h1>
+<section id="github">
+<h2>GitHub<a class="headerlink" href="#github" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/GitHub.png"><img alt="_images/GitHub.png" class="align-center" src="_images/GitHub.png" style="height: 200px;" /></a>
+<section id="what-is-github">
+<h3>What is GitHub?<a class="headerlink" href="#what-is-github" title="Link to this heading">#</a></h3>
+<p>GitHub is where the website source code is hosted. GitHub was developed to make using Git more intuitive. Git (Not GitHub) is an effective version control software that allows a group to work on a project whilst dispersing the workload to multiple members. <strong>To accomplish this we will have each editing user create their own branch separate from the main branch</strong>. The main branch is where the live code sits for the website. Different branches allows individual users to make a copy of this main branch and work on their own aspects of the website/code without effecting others, if one user makes an update to main before another the other user can do a “pull” request to their branch and update it so it is that same as the main branch, if they need to see that other users code to accomplish there task. Otherwise once done with the update you want to make you can commit your changes to your branch and then “push” them. Then the owner can review your update branch and decide to “pull” your code to the main branch if it is good. The “pushing” and “pulling” can all be done in our coding software which we will go over later.</p>
+</section>
+<section id="setting-up-github">
+<h3>Setting up GitHub<a class="headerlink" href="#setting-up-github" title="Link to this heading">#</a></h3>
+<p>Navigate to <a class="github reference external" href="http://github.com">github</a> and <strong>sign up using your afacademy email</strong>. This will allow you to get GitHub pro for free which provides some nice AI assisted code benefits. If you want to activate GitHub pro go into your account and sign up for it. Follow all instructions to create your account, once done send <strong>Grant Stec</strong> a teams message and he will invite you to the BlueHorizon github organization.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>To get GitHub Pro: <a class="github reference external" href="https://github.com/education/students">education/students</a></p>
+</div>
+<p>Within the BlueHorizon github you should be able to see the different repositories (folders for different projects) the one titled <strong>“BlueHorizon-InfoPage”</strong> is the website repo (repository). You should see something like this. You can also find it <a class="reference external" href="https://github.com/USAFA-Blue-Horizon/BlueHorizon-InfoPage">here</a></p>
+<a class="reference internal image-reference" href="_images/GitHubRepo.png"><img alt="_images/GitHubRepo.png" class="align-center" src="_images/GitHubRepo.png" style="height: 200px;" /></a>
+<section id="creating-your-own-branch">
+<h4>Creating your own branch<a class="headerlink" href="#creating-your-own-branch" title="Link to this heading">#</a></h4>
+<p>Going back to what we covered before, creating your own branch gives you a workspace where you can edit files and push to that branch without needing perfectly functioning code that would crash the whole website.</p>
+<p>navigate to the tab called <strong>“Branches”</strong> as seen in the picture below</p>
+<a class="reference internal image-reference" href="_images/GitHubRepoBranches.png"><img alt="_images/GitHubRepoBranches.png" class="align-center" src="_images/GitHubRepoBranches.png" style="height: 200px;" /></a>
+<p>You should now see the names of the different existing Branches on this repository. We will follow a common naming convention as you can see, simply name your branch based on <strong>your name</strong>. To make your branch hit the bright green <strong>“New Branch”</strong> button, name it, keep all the other settings that same and hit <strong>“Create New Branch”</strong>. Now you should see your branch listed on the Branches page.</p>
+</section>
+</section>
+</section>
+<section id="vscode">
+<h2>VSCode<a class="headerlink" href="#vscode" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/vs-code.jpg"><img alt="_images/vs-code.jpg" class="align-center" src="_images/vs-code.jpg" style="height: 200px;" /></a>
+<section id="what-is-vscode">
+<h3>What is VSCode?<a class="headerlink" href="#what-is-vscode" title="Link to this heading">#</a></h3>
+<p>VS Code (VSC) is a coding IDE that allows you to write in multiple coding language with a very well designed UI and good integration with Git.</p>
+<p>You can download from the microsoft app store or online <a class="reference external" href="https://code.visualstudio.com/download">here</a> Be sure to download the x64 bit Windows System Installer.</p>
+</section>
+<section id="setting-up-vscode">
+<h3>Setting up VSCode<a class="headerlink" href="#setting-up-vscode" title="Link to this heading">#</a></h3>
+<p>Accept the default options for all of the VS Code install prompts.  Click the Finish button to complete the install and launch VS Code.  Accept any defaults that are presented during your first launch of VSC.  You should see an image like the one below once complete.</p>
+<a class="reference internal image-reference" href="_images/vsc-welcome.png"><img alt="_images/vsc-welcome.png" class="align-center" src="_images/vsc-welcome.png" style="height: 200px;" /></a>
+<section id="extensions">
+<h4>Extensions<a class="headerlink" href="#extensions" title="Link to this heading">#</a></h4>
+<p>You will now install extensions to assist the development process. Click the extensions button on the side, it looks like a teri block. Search for <strong>Code Spell Checker and install the one by Street Side Software</strong> as seen in the picture below.</p>
+<a class="reference internal image-reference" href="_images/VSC_extensions.png"><img alt="_images/VSC_extensions.png" class="align-center" src="_images/VSC_extensions.png" style="height: 200px;" /></a>
+<p>If you had signed up for github and gotten github pro it would be useful now to also download the <strong>GitHub Copilot and GitHub Copilot Chat extension along with the GitHub Pull Requests</strong> extension. All of the website files are markdown based so you should also get the <strong>Markdown All in One extension by Yu Zhang</strong> and <strong>Markdown Preview Enhanced by Yiyi Wang</strong> to quickly see the markdown pages in VSC.</p>
+<p>If any extensions ask for setup or gives any setup instructions after installation don’t bother just continue.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you find any cool extensions on your own please share 🤗</p>
+</div>
+</section>
+<section id="github-sign-in">
+<h4>GitHub Sign In<a class="headerlink" href="#github-sign-in" title="Link to this heading">#</a></h4>
+<p>Now we will sign into GitHub on VScode so we can easy push pull and commit to our respective branches on GitHub. To Login click the account looking icon in the bottom</p>
+<a class="reference internal image-reference" href="_images/VSC_Account.png"><img alt="_images/VSC_Account.png" class="align-center" src="_images/VSC_Account.png" style="height: 200px;" /></a>
+<p>There should be a connect to GitHub button or something similar. Click and that and you should be re directed to your browser to connect your github account to VSCode.</p>
+</section>
+<section id="create-folder">
+<h4>Create Folder<a class="headerlink" href="#create-folder" title="Link to this heading">#</a></h4>
+<p>Now create a folder to have the Website files on your computer, this can be made anywhere, Onedrive folders etc. Now once that folder is created go back to VSCode if you have a current folder open go to file and new windows or simple click open folder on the main page and navigate to open the folder you just made.</p>
+<a class="reference internal image-reference" href="_images/Open_Folder.png"><img alt="_images/Open_Folder.png" class="align-center" src="_images/Open_Folder.png" style="height: 200px;" /></a>
+</section>
+<section id="terminal">
+<h4>Terminal<a class="headerlink" href="#terminal" title="Link to this heading">#</a></h4>
+<p>Now on the bottom of VSCode if there is not a terminal window similar to the one in the bottom of the picture then you would want to move your mouse to the bottom of the window as seen in the next picture and once your courser turns into the double vertical arrows click and drag up this will open the terminal or you can use the hotkey of Ctrl+` (Not apostrophe, button below esc usually).</p>
+<a class="reference internal image-reference" href="_images/vsc_terminal.png"><img alt="_images/vsc_terminal.png" class="align-center" src="_images/vsc_terminal.png" style="height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Terminal_Open.png"><img alt="_images/Terminal_Open.png" class="align-center" src="_images/Terminal_Open.png" style="height: 200px;" /></a>
+<p>Make sure the command line in the terminal windows looks like the folder location you have created and has the same name at the end of the printed line in terminal. Navigate back to the VSC terminal with your folder in the directory and copy this command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/grantstec/BlueHorizon-InfoPage.git</span></code> and hit enter.</p>
+<p>Once the git clone has finished you should now see your folder populated with all the same files from github. Now you can begin editing and or adding the files. Familiarize yourself with the file structure snd files like <a class="reference external" href="http://intro.md">intro.md</a>, _config.yml and _toc.yml to learn more about how this file structure works and some niche formatting as seen in <a class="reference external" href="http://intro.md">intro.md</a> you can visit <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Built with Jupyter Book</a></p>
+</section>
+</section>
+<section id="committing-and-pushing">
+<h3>Committing and Pushing<a class="headerlink" href="#committing-and-pushing" title="Link to this heading">#</a></h3>
+<section id="branch-selection">
+<h4>Branch Selection<a class="headerlink" href="#branch-selection" title="Link to this heading">#</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not select “main” branch at any time!</p>
+</div>
+<p>Once you are ready to commit and push a new change there are a few things we must make sure as to not destroy the live functioning website running from GitHub. Navigate to the source control tab on the left hand bar above the extensions and above the debugger as seen in the photo.</p>
+<a class="reference internal image-reference" href="_images/Source_Control.png"><img alt="_images/Source_Control.png" class="align-center" src="_images/Source_Control.png" style="height: 200px;" /></a>
+<p>You will want to get very familiar with this tab as this is where our version control will be based from and allows us to keep a functioning website running whilst having multiple people edit separate files. If you have made any changes you will see the <strong>Commit</strong> button in blue. We will worry about this later. Most importantly we have to go back to some things we discussed in the beginning of this page and make sure we are pushing to the branch you made. Click on this.</p>
+<a class="reference internal image-reference" href="_images/branch.png"><img alt="_images/branch.png" class="align-center" src="_images/branch.png" style="height: 200px;" /></a>
+<p>This will open up a window at the top</p>
+<a class="reference internal image-reference" href="_images/branch_selection.png"><img alt="_images/branch_selection.png" class="align-center" src="_images/branch_selection.png" style="height: 200px;" /></a>
+<p>Select your corresponding branch, do the same process of clicking on the branch icon on the bottom Source control tab and selecting you branch.</p>
+<a class="reference internal image-reference" href="_images/Source_Control_Branch.png"><img alt="_images/Source_Control_Branch.png" class="align-center" src="_images/Source_Control_Branch.png" style="height: 200px;" /></a>
+<p>Now you should be all set to begin editing the files and once you have made good progress on some edits and or are done for the day it is always a good thing to push to GitHub.</p>
+</section>
+<section id="committing">
+<h4>Committing<a class="headerlink" href="#committing" title="Link to this heading">#</a></h4>
+<p>Once you have made edits go back to the Source Control Tab (Branch looking thing), often below the magnifying glass on the left side bar. In this tab the <strong>“Commit”</strong> button should now be blue with the files you have changes listed below in the “Changes in the Message block type a simple message that relates to what you changed. For example if I added an image called rocket I could say “added rocket image”.</p>
+<a class="reference internal image-reference" href="_images/Commit.png"><img alt="_images/Commit.png" class="align-center" src="_images/Commit.png" style="height: 200px;" /></a>
+</section>
+<section id="sync-changes">
+<h4>Sync Changes<a class="headerlink" href="#sync-changes" title="Link to this heading">#</a></h4>
+<p>After you hit commit the button should now change to say <strong>“Sync Change”</strong> Click this button to sync the changes you made. This just double checks that your files are up to date with what you just pushed. If a windows shows up asking <strong>“This action will push and pull commits from and to (Your branch)”</strong>. Just hit <strong>Okay</strong>.</p>
+<a class="reference internal image-reference" href="_images/sync.png"><img alt="_images/sync.png" class="align-center" src="_images/sync.png" style="height: 200px;" /></a>
+<p>You will want to repeat this process whenever you make any changes.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check your branch has been committed by going back to the repository <a class="github reference external" href="https://github.com/USAFA-Blue-Horizon/BlueHorizon-InfoPage/branches">USAFA-Blue-Horizon/BlueHorizon-InfoPage</a>. In your branch’s row there should be a column titled “Updated” confirm the timestamp looks reasonable based on when you last committed and synced.</p>
+</div>
+</section>
+</section>
+<section id="changing-main-page">
+<h3>Changing Main Page<a class="headerlink" href="#changing-main-page" title="Link to this heading">#</a></h3>
+<p>Once you commit ahead of main branch and push to your own branch I will get a message that the branch has been changed and I can move it to main if you are ready for your page to be on home page. Message Grant Stec on Teams.</p>
+</section>
+<section id="quick-tips">
+<h3>Quick Tips<a class="headerlink" href="#quick-tips" title="Link to this heading">#</a></h3>
+<section id="spell-checker-extension">
+<h4>Spell Checker Extension<a class="headerlink" href="#spell-checker-extension" title="Link to this heading">#</a></h4>
+<p>As you may recall we installed a Spell Checker extension. Whenever you are editing a Markdown file and come across a misspelling a word it will be underlined with a blue squiggly. You can correct these in two ways. The slow way is right click on the word and then go to <strong>“Spelling Suggestions”</strong>, a tab on the top should open with suggested words. The quick way is open the terminal at the bottom and go to the tab called <strong>“SPELL CHECKER”</strong> find a word and double click and you will be directed to it and given options for suggested words and select which ever is correct. You can also add niche words like names to the dictionary so they are ignored by double clicking the word and then click the little diction on the right side of the column.</p>
+<a class="reference internal image-reference" href="_images/spellchecker.png"><img alt="_images/spellchecker.png" class="align-center" src="_images/spellchecker.png" style="height: 200px;" /></a>
+</section>
+<section id="markdown-page-viewier">
+<h4>Markdown Page Viewier<a class="headerlink" href="#markdown-page-viewier" title="Link to this heading">#</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You must have <strong>Markdown All in One</strong> Extension installed</p>
+</div>
+<p>Use “Ctrl” + “Shift” + “V” to get another tab to open in VS Code that shows a preview of the Markdown page.</p>
+</section>
+<section id="emojis">
+<h4>Emojis<a class="headerlink" href="#emojis" title="Link to this heading">#</a></h4>
+<p>You can find easy to copy emojis <a class="reference external" href="https://getemoji.com/">here</a></p>
+</section>
+<section id="tables">
+<h4>Tables<a class="headerlink" href="#tables" title="Link to this heading">#</a></h4>
+<p>Table generator <a class="reference external" href="https://www.tablesgenerator.com/markdown_tables">here</a>.</p>
+</section>
+<section id="example-repositories-websites">
+<h4>Example Repositories/Websites<a class="headerlink" href="#example-repositories-websites" title="Link to this heading">#</a></h4>
+<p>Use these examples website to find neat features you may like/want to add and then find them in the code of the repository. You can also learn more about jupyterbook websites as whole from the main documentation website: <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">https://jupyterbook.org/en/stable/intro.html</a>.</p>
+<section id="ece-281-website">
+<h5>ECE 281 Website<a class="headerlink" href="#ece-281-website" title="Link to this heading">#</a></h5>
+<p>Website: <a class="reference external" href="https://usafa-ece.github.io/ece281-book/intro.html">https://usafa-ece.github.io/ece281-book/intro.html</a>
+GitHub: <a class="github reference external" href="https://github.com/usafa-ece/ece281-book">usafa-ece/ece281-book</a></p>
+</section>
+<section id="ece-387-website">
+<h5>ECE 387 Website<a class="headerlink" href="#ece-387-website" title="Link to this heading">#</a></h5>
+<p>Website: <a class="reference external" href="https://stanbaek.github.io/ece387/intro.html">https://stanbaek.github.io/ece387/intro.html</a>
+GitHub: <a class="github reference external" href="https://github.com/stanbaek/ece387">stanbaek/ece387</a></p>
+</section>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="fusion%20360%20setup.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">🤖 fusion 360 setup</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-github">What is GitHub?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-github">Setting up GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-your-own-branch">Creating your own branch</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode">VSCode</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-vscode">What is VSCode?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-vscode">Setting up VSCode</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extensions">Extensions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#github-sign-in">GitHub Sign In</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-folder">Create Folder</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#terminal">Terminal</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-and-pushing">Committing and Pushing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#branch-selection">Branch Selection</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#committing">Committing</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sync-changes">Sync Changes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-main-page">Changing Main Page</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-tips">Quick Tips</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spell-checker-extension">Spell Checker Extension</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-page-viewier">Markdown Page Viewier</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#emojis">Emojis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tables">Tables</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-repositories-websites">Example Repositories/Websites</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ece-281-website">ECE 281 Website</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ece-387-website">ECE 387 Website</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By BlueHorizon Web Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
