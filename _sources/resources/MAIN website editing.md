@@ -13,13 +13,13 @@ GitHub is where the website source code is hosted. GitHub was developed to make 
 
 ### Setting up GitHub
 
-Navigate to http://github.com and **sign up using your afacademy email**. This will allow you to get GitHub pro for free which provides some nice AI assisted code benefits. If you want to activate GitHub pro go into your account and sign up for it. Follow all instructions to create your account, once done send **Grant Stec** a teams message and he will invite you to the BlueHorizon github organization. 
+Navigate to http://github.com and **sign up using your afacademy email**. This will allow you to get GitHub pro for free which provides some nice AI assisted code benefits. If you want to activate GitHub pro go into your account and sign up for it. Follow all instructions to create your account, once done send **Grant Stec** a teams message and he will invite you to the github repo so you can edit. 
 
 ```{hint} 
 To get GitHub Pro: https://github.com/education/students
 ```
 
-Within the BlueHorizon github you should be able to see the different repositories (folders for different projects) the one titled **"BlueHorizon-InfoPage"** is the website repo (repository). You should see something like this. You can also find it [here](https://github.com/USAFA-Blue-Horizon/BlueHorizon-InfoPage)
+Within the github you should be able to see the repo titled **"BlueHorizon-Website"** is the website repo (repository). You should see something like this. You can also find it [here](https://github.com/grantstec/BlueHorizon-Website)
 
 ```{image} ./pictures/GitHubRepo.png   
 :height: 200
@@ -106,7 +106,7 @@ Now on the bottom of VSCode if there is not a terminal window similar to the one
 :align: center  
 ```
 
-Make sure the command line in the terminal windows looks like the folder location you have created and has the same name at the end of the printed line in terminal. Navigate back to the VSC terminal with your folder in the directory and copy this command `git clone https://github.com/grantstec/BlueHorizon-InfoPage.git` and hit enter. 
+Make sure the command line in the terminal windows looks like the folder location you have created and has the same name at the end of the printed line in terminal. Navigate back to the VSC terminal with your folder in the directory and copy this command `git clone https://github.com/grantstec/BlueHorizon-Website.git` and hit enter. 
 
 
 Once the git clone has finished you should now see your folder populated with all the same files from github. Now you can begin editing and or adding the files. Familiarize yourself with the file structure snd files like intro.md, _config.yml and _toc.yml to learn more about how this file structure works and some niche formatting as seen in intro.md you can visit [Built with Jupyter Book](https://jupyterbook.org/en/stable/intro.html)
@@ -168,7 +168,7 @@ You will want to repeat this process whenever you make any changes.
  
 
 ```{note} 
-Check your branch has been committed by going back to the repository https://github.com/USAFA-Blue-Horizon/BlueHorizon-InfoPage/branches. In your branch's row there should be a column titled "Updated" confirm the timestamp looks reasonable based on when you last committed and synced.
+Check your branch has been committed by going back to the repository https://github.com/grantstec/BlueHorizon-Website/branches. In your branch's row there should be a column titled "Updated" confirm the timestamp looks reasonable based on when you last committed and synced.
 
 ```
 
