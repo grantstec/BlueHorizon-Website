@@ -161,7 +161,7 @@ Once you have made edits go back to the Source Control Tab (Branch looking thing
 After you hit commit the button should now change to say **"Sync Change"** Click this button to sync the changes you made. This just double checks that your files are up to date with what you just pushed. If a windows shows up asking **"This action will push and pull commits from and to (Your branch)"**. Just hit **Okay**.
 
 ```{image} ./pictures/sync.png  
-:height: 300
+:height: 200
 :align: center  
 ```
 You will want to repeat this process whenever you make any changes.
