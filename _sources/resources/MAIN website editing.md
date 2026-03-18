@@ -13,7 +13,7 @@ GitHub is where the website source code is hosted. GitHub was developed to make 
 
 ### Setting up GitHub
 
-Navigate to http://github.com and **sign up using your afacademy email**. This will allow you to get GitHub pro for free which provides some nice AI assisted code benefits. If you want to activate GitHub pro go into your account and sign up for it. Follow all instructions to create your account, once done send **Grant Stec** a teams message and he will invite you to the github repo so you can edit. 
+Navigate to http://github.com and **sign up using your afacademy email**. This will allow you to get GitHub pro for free which provides some nice AI assisted code benefits. If you want to activate GitHub pro go into your account and sign up for it. Follow all instructions to create your account, once done send **Grant Stec** a teams message with your github username and he will invite you to the github repo so you can edit. 
 
 ```{hint} 
 To get GitHub Pro: https://github.com/education/students
