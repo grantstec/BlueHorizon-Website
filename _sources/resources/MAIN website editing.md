@@ -3,7 +3,7 @@
 ## GitHub
 
 ```{image} ./pictures/GitHub.png   
-:height: 200
+:height: 300
 :align: center  
 ``` 
 
@@ -22,7 +22,7 @@ To get GitHub Pro: https://github.com/education/students
 Within the github you should be able to see the repo titled **"BlueHorizon-Website"** is the website repo (repository). You should see something like this. You can also find it [here](https://github.com/grantstec/BlueHorizon-Website)
 
 ```{image} ./pictures/GitHubRepo.png   
-:height: 200
+:height: 300
 :align: center  
 ``` 
 #### Creating your own branch 
@@ -30,7 +30,7 @@ Going back to what we covered before, creating your own branch gives you a works
 
 navigate to the tab called **"Branches"** as seen in the picture below
 ```{image} ./pictures/GitHubRepoBranches.png   
-:height: 200
+:height: 300
 :align: center  
 ``` 
 You should now see the names of the different existing Branches on this repository. We will follow a common naming convention as you can see, simply name your branch based on **your name**. To make your branch hit the bright green **"New Branch"** button, name it, keep all the other settings that same and hit **"Create New Branch"**. Now you should see your branch listed on the Branches page. 
@@ -39,7 +39,7 @@ You should now see the names of the different existing Branches on this reposito
 ## VSCode
 
 ```{image} ./pictures/vs-code.jpg   
-:height: 200
+:height: 300
 :align: center  
 ``` 
 
@@ -54,7 +54,7 @@ You can download from the microsoft app store or online [here](https://code.visu
 Accept the default options for all of the VS Code install prompts.  Click the Finish button to complete the install and launch VS Code.  Accept any defaults that are presented during your first launch of VSC.  You should see an image like the one below once complete.
 
 ```{image} ./pictures/vsc-welcome.png   
-:height: 200
+:height: 300
 :align: center  
 ``` 
 #### Extensions
@@ -62,7 +62,7 @@ Accept the default options for all of the VS Code install prompts.  Click the Fi
 You will now install extensions to assist the development process. Click the extensions button on the side, it looks like a teri block. Search for **Code Spell Checker and install the one by Street Side Software** as seen in the picture below. 
 
 ```{image} ./pictures/VSC_extensions.png  
-:height: 200
+:height: 300
 :align: center  
 ``` 
 
@@ -79,7 +79,7 @@ If you find any cool extensions on your own please share 🤗
 Now we will sign into GitHub on VScode so we can easy push pull and commit to our respective branches on GitHub. To Login click the account looking icon in the bottom 
 
 ```{image} ./pictures/VSC_Account.png  
-:height: 200
+:height: 300
 :align: center  
 ```
 There should be a connect to GitHub button or something similar. Click and that and you should be re directed to your browser to connect your github account to VSCode. 
@@ -89,7 +89,7 @@ There should be a connect to GitHub button or something similar. Click and that 
 Now create a folder to have the Website files on your computer, this can be made anywhere, Onedrive folders etc. Now once that folder is created go back to VSCode if you have a current folder open go to file and new windows or simple click open folder on the main page and navigate to open the folder you just made. 
 
 ```{image} ./pictures/Open_Folder.png  
-:height: 200
+:height: 300
 :align: center  
 ```
 #### Terminal
@@ -97,12 +97,12 @@ Now create a folder to have the Website files on your computer, this can be made
 Now on the bottom of VSCode if there is not a terminal window similar to the one in the bottom of the picture then you would want to move your mouse to the bottom of the window as seen in the next picture and once your courser turns into the double vertical arrows click and drag up this will open the terminal or you can use the hotkey of Ctrl+` (Not apostrophe, button below esc usually).
 
 ```{image} ./pictures/vsc_terminal.png  
-:height: 200
+:height: 300
 :align: center  
 ```
 
 ```{image} ./pictures/Terminal_Open.png  
-:height: 200
+:height: 300
 :align: center  
 ```
 
@@ -122,28 +122,28 @@ Do not select "main" branch at any time!
 Once you are ready to commit and push a new change there are a few things we must make sure as to not destroy the live functioning website running from GitHub. Navigate to the source control tab on the left hand bar above the extensions and above the debugger as seen in the photo. 
 
 ```{image} ./pictures/Source_Control.png  
-:height: 200
+:height: 300
 :align: center  
 ```
 
 You will want to get very familiar with this tab as this is where our version control will be based from and allows us to keep a functioning website running whilst having multiple people edit separate files. If you have made any changes you will see the **Commit** button in blue. We will worry about this later. Most importantly we have to go back to some things we discussed in the beginning of this page and make sure we are pushing to the branch you made. Click on this. 
 
 ```{image} ./pictures/branch.png  
-:height: 200
+:height: 300
 :align: center  
 ```
 
 This will open up a window at the top 
 
 ```{image} ./pictures/branch_selection.png  
-:height: 200
+:height: 300
 :align: center  
 ```
 
 Select your corresponding branch, do the same process of clicking on the branch icon on the bottom Source control tab and selecting you branch.
 
 ```{image} ./pictures/Source_Control_Branch.png  
-:height: 200
+:height: 300
 :align: center  
 ```
 Now you should be all set to begin editing the files and once you have made good progress on some edits and or are done for the day it is always a good thing to push to GitHub. 
@@ -153,7 +153,7 @@ Now you should be all set to begin editing the files and once you have made good
 Once you have made edits go back to the Source Control Tab (Branch looking thing), often below the magnifying glass on the left side bar. In this tab the **"Commit"** button should now be blue with the files you have changes listed below in the "Changes in the Message block type a simple message that relates to what you changed. For example if I added an image called rocket I could say "added rocket image". 
 
 ```{image} ./pictures/Commit.png  
-:height: 200
+:height: 300
 :align: center  
 ```
 #### Sync Changes
@@ -161,7 +161,7 @@ Once you have made edits go back to the Source Control Tab (Branch looking thing
 After you hit commit the button should now change to say **"Sync Change"** Click this button to sync the changes you made. This just double checks that your files are up to date with what you just pushed. If a windows shows up asking **"This action will push and pull commits from and to (Your branch)"**. Just hit **Okay**.
 
 ```{image} ./pictures/sync.png  
-:height: 200
+:height: 300
 :align: center  
 ```
 You will want to repeat this process whenever you make any changes.
@@ -183,7 +183,7 @@ Once you commit ahead of main branch and push to your own branch I will get a me
 As you may recall we installed a Spell Checker extension. Whenever you are editing a Markdown file and come across a misspelling a word it will be underlined with a blue squiggly. You can correct these in two ways. The slow way is right click on the word and then go to **"Spelling Suggestions"**, a tab on the top should open with suggested words. The quick way is open the terminal at the bottom and go to the tab called **"SPELL CHECKER"** find a word and double click and you will be directed to it and given options for suggested words and select which ever is correct. You can also add niche words like names to the dictionary so they are ignored by double clicking the word and then click the little diction on the right side of the column. 
 
 ```{image} ./pictures/spellchecker.png  
-:height: 200
+:height: 300
 :align: center  
 ```
 
@@ -213,6 +213,7 @@ GitHub: https://github.com/usafa-ece/ece281-book
 
 Website: https://stanbaek.github.io/ece387/intro.html
 GitHub: https://github.com/stanbaek/ece387
+
 
 
 

@@ -16,37 +16,40 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -64,6 +67,7 @@
     <link rel="prev" title="2023-2024 NASA USLI" href="../past_years/MAIN%202023-2024%20NASA%20USLI.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -79,19 +83,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -99,7 +92,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -107,8 +99,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -124,7 +116,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -154,21 +147,17 @@
     
     
     <img src="../_static/BHlogolarge.png" class="logo__image only-light" alt="BlueHorizon - Home"/>
-    <script>document.write(`<img src="../_static/BHlogolarge.png" class="logo__image only-dark" alt="BlueHorizon - Home"/>`);</script>
+    <img src="../_static/BHlogolarge.png" class="logo__image only-dark pst-js-only" alt="BlueHorizon - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -231,9 +220,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -363,7 +357,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -377,25 +371,17 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -471,7 +457,7 @@ document.write(`
 <h1>🌐 Website Editing How-To<a class="headerlink" href="#website-editing-how-to" title="Link to this heading">#</a></h1>
 <section id="github">
 <h2>GitHub<a class="headerlink" href="#github" title="Link to this heading">#</a></h2>
-<a class="reference internal image-reference" href="../_images/GitHub.png"><img alt="../_images/GitHub.png" class="align-center" src="../_images/GitHub.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/GitHub.png"><img alt="../_images/GitHub.png" class="align-center" src="../_images/GitHub.png" style="height: 300px;" />
 </a>
 <section id="what-is-github">
 <h3>What is GitHub?<a class="headerlink" href="#what-is-github" title="Link to this heading">#</a></h3>
@@ -485,13 +471,13 @@ document.write(`
 <p>To get GitHub Pro: <a class="github reference external" href="https://github.com/education/students">education/students</a></p>
 </div>
 <p>Within the github you should be able to see the repo titled <strong>“BlueHorizon-Website”</strong> is the website repo (repository). You should see something like this. You can also find it <a class="reference external" href="https://github.com/grantstec/BlueHorizon-Website">here</a></p>
-<a class="reference internal image-reference" href="../_images/GitHubRepo.png"><img alt="../_images/GitHubRepo.png" class="align-center" src="../_images/GitHubRepo.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/GitHubRepo.png"><img alt="../_images/GitHubRepo.png" class="align-center" src="../_images/GitHubRepo.png" style="height: 300px;" />
 </a>
 <section id="creating-your-own-branch">
 <h4>Creating your own branch<a class="headerlink" href="#creating-your-own-branch" title="Link to this heading">#</a></h4>
 <p>Going back to what we covered before, creating your own branch gives you a workspace where you can edit files and push to that branch without needing perfectly functioning code that would crash the whole website.</p>
 <p>navigate to the tab called <strong>“Branches”</strong> as seen in the picture below</p>
-<a class="reference internal image-reference" href="../_images/GitHubRepoBranches.png"><img alt="../_images/GitHubRepoBranches.png" class="align-center" src="../_images/GitHubRepoBranches.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/GitHubRepoBranches.png"><img alt="../_images/GitHubRepoBranches.png" class="align-center" src="../_images/GitHubRepoBranches.png" style="height: 300px;" />
 </a>
 <p>You should now see the names of the different existing Branches on this repository. We will follow a common naming convention as you can see, simply name your branch based on <strong>your name</strong>. To make your branch hit the bright green <strong>“New Branch”</strong> button, name it, keep all the other settings that same and hit <strong>“Create New Branch”</strong>. Now you should see your branch listed on the Branches page.</p>
 </section>
@@ -499,7 +485,7 @@ document.write(`
 </section>
 <section id="vscode">
 <h2>VSCode<a class="headerlink" href="#vscode" title="Link to this heading">#</a></h2>
-<a class="reference internal image-reference" href="../_images/vs-code.jpg"><img alt="../_images/vs-code.jpg" class="align-center" src="../_images/vs-code.jpg" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/vs-code.jpg"><img alt="../_images/vs-code.jpg" class="align-center" src="../_images/vs-code.jpg" style="height: 300px;" />
 </a>
 <section id="what-is-vscode">
 <h3>What is VSCode?<a class="headerlink" href="#what-is-vscode" title="Link to this heading">#</a></h3>
@@ -509,12 +495,12 @@ document.write(`
 <section id="setting-up-vscode">
 <h3>Setting up VSCode<a class="headerlink" href="#setting-up-vscode" title="Link to this heading">#</a></h3>
 <p>Accept the default options for all of the VS Code install prompts.  Click the Finish button to complete the install and launch VS Code.  Accept any defaults that are presented during your first launch of VSC.  You should see an image like the one below once complete.</p>
-<a class="reference internal image-reference" href="../_images/vsc-welcome.png"><img alt="../_images/vsc-welcome.png" class="align-center" src="../_images/vsc-welcome.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/vsc-welcome.png"><img alt="../_images/vsc-welcome.png" class="align-center" src="../_images/vsc-welcome.png" style="height: 300px;" />
 </a>
 <section id="extensions">
 <h4>Extensions<a class="headerlink" href="#extensions" title="Link to this heading">#</a></h4>
 <p>You will now install extensions to assist the development process. Click the extensions button on the side, it looks like a teri block. Search for <strong>Code Spell Checker and install the one by Street Side Software</strong> as seen in the picture below.</p>
-<a class="reference internal image-reference" href="../_images/VSC_extensions.png"><img alt="../_images/VSC_extensions.png" class="align-center" src="../_images/VSC_extensions.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/VSC_extensions.png"><img alt="../_images/VSC_extensions.png" class="align-center" src="../_images/VSC_extensions.png" style="height: 300px;" />
 </a>
 <p>If you had signed up for github and gotten github pro it would be useful now to also download the <strong>GitHub Copilot and GitHub Copilot Chat extension along with the GitHub Pull Requests</strong> extension. All of the website files are markdown based so you should also get the <strong>Markdown All in One extension by Yu Zhang</strong> and <strong>Markdown Preview Enhanced by Yiyi Wang</strong> to quickly see the markdown pages in VSC.</p>
 <p>If any extensions ask for setup or gives any setup instructions after installation don’t bother just continue.</p>
@@ -526,22 +512,22 @@ document.write(`
 <section id="github-sign-in">
 <h4>GitHub Sign In<a class="headerlink" href="#github-sign-in" title="Link to this heading">#</a></h4>
 <p>Now we will sign into GitHub on VScode so we can easy push pull and commit to our respective branches on GitHub. To Login click the account looking icon in the bottom</p>
-<a class="reference internal image-reference" href="../_images/VSC_Account.png"><img alt="../_images/VSC_Account.png" class="align-center" src="../_images/VSC_Account.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/VSC_Account.png"><img alt="../_images/VSC_Account.png" class="align-center" src="../_images/VSC_Account.png" style="height: 300px;" />
 </a>
 <p>There should be a connect to GitHub button or something similar. Click and that and you should be re directed to your browser to connect your github account to VSCode.</p>
 </section>
 <section id="create-folder">
 <h4>Create Folder<a class="headerlink" href="#create-folder" title="Link to this heading">#</a></h4>
 <p>Now create a folder to have the Website files on your computer, this can be made anywhere, Onedrive folders etc. Now once that folder is created go back to VSCode if you have a current folder open go to file and new windows or simple click open folder on the main page and navigate to open the folder you just made.</p>
-<a class="reference internal image-reference" href="../_images/Open_Folder.png"><img alt="../_images/Open_Folder.png" class="align-center" src="../_images/Open_Folder.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/Open_Folder.png"><img alt="../_images/Open_Folder.png" class="align-center" src="../_images/Open_Folder.png" style="height: 300px;" />
 </a>
 </section>
 <section id="terminal">
 <h4>Terminal<a class="headerlink" href="#terminal" title="Link to this heading">#</a></h4>
 <p>Now on the bottom of VSCode if there is not a terminal window similar to the one in the bottom of the picture then you would want to move your mouse to the bottom of the window as seen in the next picture and once your courser turns into the double vertical arrows click and drag up this will open the terminal or you can use the hotkey of Ctrl+` (Not apostrophe, button below esc usually).</p>
-<a class="reference internal image-reference" href="../_images/vsc_terminal.png"><img alt="../_images/vsc_terminal.png" class="align-center" src="../_images/vsc_terminal.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/vsc_terminal.png"><img alt="../_images/vsc_terminal.png" class="align-center" src="../_images/vsc_terminal.png" style="height: 300px;" />
 </a>
-<a class="reference internal image-reference" href="../_images/Terminal_Open.png"><img alt="../_images/Terminal_Open.png" class="align-center" src="../_images/Terminal_Open.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/Terminal_Open.png"><img alt="../_images/Terminal_Open.png" class="align-center" src="../_images/Terminal_Open.png" style="height: 300px;" />
 </a>
 <p>Make sure the command line in the terminal windows looks like the folder location you have created and has the same name at the end of the printed line in terminal. Navigate back to the VSC terminal with your folder in the directory and copy this command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/grantstec/BlueHorizon-Website.git</span></code> and hit enter.</p>
 <p>Once the git clone has finished you should now see your folder populated with all the same files from github. Now you can begin editing and or adding the files. Familiarize yourself with the file structure snd files like <a class="reference external" href="http://intro.md">intro.md</a>, _config.yml and _toc.yml to learn more about how this file structure works and some niche formatting as seen in <a class="reference external" href="http://intro.md">intro.md</a> you can visit <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Built with Jupyter Book</a></p>
@@ -556,29 +542,29 @@ document.write(`
 <p>Do not select “main” branch at any time!</p>
 </div>
 <p>Once you are ready to commit and push a new change there are a few things we must make sure as to not destroy the live functioning website running from GitHub. Navigate to the source control tab on the left hand bar above the extensions and above the debugger as seen in the photo.</p>
-<a class="reference internal image-reference" href="../_images/Source_Control.png"><img alt="../_images/Source_Control.png" class="align-center" src="../_images/Source_Control.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/Source_Control.png"><img alt="../_images/Source_Control.png" class="align-center" src="../_images/Source_Control.png" style="height: 300px;" />
 </a>
 <p>You will want to get very familiar with this tab as this is where our version control will be based from and allows us to keep a functioning website running whilst having multiple people edit separate files. If you have made any changes you will see the <strong>Commit</strong> button in blue. We will worry about this later. Most importantly we have to go back to some things we discussed in the beginning of this page and make sure we are pushing to the branch you made. Click on this.</p>
-<a class="reference internal image-reference" href="../_images/branch.png"><img alt="../_images/branch.png" class="align-center" src="../_images/branch.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/branch.png"><img alt="../_images/branch.png" class="align-center" src="../_images/branch.png" style="height: 300px;" />
 </a>
 <p>This will open up a window at the top</p>
-<a class="reference internal image-reference" href="../_images/branch_selection.png"><img alt="../_images/branch_selection.png" class="align-center" src="../_images/branch_selection.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/branch_selection.png"><img alt="../_images/branch_selection.png" class="align-center" src="../_images/branch_selection.png" style="height: 300px;" />
 </a>
 <p>Select your corresponding branch, do the same process of clicking on the branch icon on the bottom Source control tab and selecting you branch.</p>
-<a class="reference internal image-reference" href="../_images/Source_Control_Branch.png"><img alt="../_images/Source_Control_Branch.png" class="align-center" src="../_images/Source_Control_Branch.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/Source_Control_Branch.png"><img alt="../_images/Source_Control_Branch.png" class="align-center" src="../_images/Source_Control_Branch.png" style="height: 300px;" />
 </a>
 <p>Now you should be all set to begin editing the files and once you have made good progress on some edits and or are done for the day it is always a good thing to push to GitHub.</p>
 </section>
 <section id="committing">
 <h4>Committing<a class="headerlink" href="#committing" title="Link to this heading">#</a></h4>
 <p>Once you have made edits go back to the Source Control Tab (Branch looking thing), often below the magnifying glass on the left side bar. In this tab the <strong>“Commit”</strong> button should now be blue with the files you have changes listed below in the “Changes in the Message block type a simple message that relates to what you changed. For example if I added an image called rocket I could say “added rocket image”.</p>
-<a class="reference internal image-reference" href="../_images/Commit.png"><img alt="../_images/Commit.png" class="align-center" src="../_images/Commit.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/Commit.png"><img alt="../_images/Commit.png" class="align-center" src="../_images/Commit.png" style="height: 300px;" />
 </a>
 </section>
 <section id="sync-changes">
 <h4>Sync Changes<a class="headerlink" href="#sync-changes" title="Link to this heading">#</a></h4>
 <p>After you hit commit the button should now change to say <strong>“Sync Change”</strong> Click this button to sync the changes you made. This just double checks that your files are up to date with what you just pushed. If a windows shows up asking <strong>“This action will push and pull commits from and to (Your branch)”</strong>. Just hit <strong>Okay</strong>.</p>
-<a class="reference internal image-reference" href="../_images/sync.png"><img alt="../_images/sync.png" class="align-center" src="../_images/sync.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/sync.png"><img alt="../_images/sync.png" class="align-center" src="../_images/sync.png" style="height: 300px;" />
 </a>
 <p>You will want to repeat this process whenever you make any changes.</p>
 <div class="admonition note">
@@ -596,7 +582,7 @@ document.write(`
 <section id="spell-checker-extension">
 <h4>Spell Checker Extension<a class="headerlink" href="#spell-checker-extension" title="Link to this heading">#</a></h4>
 <p>As you may recall we installed a Spell Checker extension. Whenever you are editing a Markdown file and come across a misspelling a word it will be underlined with a blue squiggly. You can correct these in two ways. The slow way is right click on the word and then go to <strong>“Spelling Suggestions”</strong>, a tab on the top should open with suggested words. The quick way is open the terminal at the bottom and go to the tab called <strong>“SPELL CHECKER”</strong> find a word and double click and you will be directed to it and given options for suggested words and select which ever is correct. You can also add niche words like names to the dictionary so they are ignored by double clicking the word and then click the little diction on the right side of the column.</p>
-<a class="reference internal image-reference" href="../_images/spellchecker.png"><img alt="../_images/spellchecker.png" class="align-center" src="../_images/spellchecker.png" style="height: 200px;" />
+<a class="reference internal image-reference" href="../_images/spellchecker.png"><img alt="../_images/spellchecker.png" class="align-center" src="../_images/spellchecker.png" style="height: 300px;" />
 </a>
 </section>
 <section id="markdown-page-viewier">
@@ -679,14 +665,16 @@ GitHub: <a class="github reference external" href="https://github.com/stanbaek/e
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">GitHub</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-github">What is GitHub?</a></li>
@@ -774,8 +762,8 @@ By BlueHorizon Web Team
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
