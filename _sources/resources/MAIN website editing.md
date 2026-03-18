@@ -3,7 +3,7 @@
 ## GitHub
 
 ```{image} ./pictures/GitHub.png   
-:height: 300
+:height: 200
 :align: center  
 ``` 
 
