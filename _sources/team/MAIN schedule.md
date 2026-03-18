@@ -11,3 +11,6 @@ This timeline outlines our key milestones and events to keep us on track for the
 | **Mar 15th**          | FAR Update 3 Due: 100% complete rocket + integration complete. |
 | **Apr 5th-8th**       | Tentative Test Fire. 🔥                                        |
 | **May 29th-June 2nd** | FAR Final Launch Period. 🚀                                    |
+| today                 | say hi to lucan (test3)                                        |
+
+![](pictures/astley.png)
