@@ -20,18 +20,6 @@
               "icon": "lucide-file",
               "title": "MAIN Engine"
             }
-          },
-          {
-            "id": "6e05e060a7218dee",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "docs/subteams/engine/pictures/Capybara.png"
-              },
-              "icon": "lucide-image",
-              "title": "Capybara"
-            }
           }
         ]
       }
@@ -198,6 +186,7 @@
   "active": "199a35fa2c9814bb",
   "lastOpenFiles": [
     "docs/subteams/engine/pictures/Capybara.png",
+    "docs/subteams/structures/Landing Legs.md",
     "docs/subteams/engine/MAIN Engine.md",
     "docs/subteams/engine/pictures",
     "docs/resources/MAIN website editing.md",
