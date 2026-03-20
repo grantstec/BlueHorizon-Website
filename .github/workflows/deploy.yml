@@ -26,6 +26,7 @@ jobs:
         run: node .github/scripts/update-toc.js
 
       - name: Commit TOC changes
+        if: github.actor != 'github-actions[bot]'
         run: |
           if git diff --quiet -- docs/_toc.yml; then
             echo "No TOC changes to commit."
@@ -33,7 +34,7 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add docs/_toc.yml
-            git commit -m "chore: auto-update docs toc [skip ci]"
+            git commit -m "chore: auto-update docs toc"
             git push
           fi
 
