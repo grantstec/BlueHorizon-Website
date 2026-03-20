@@ -1,0 +1,64 @@
+name: deploy-branch-preview
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: preview-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install TOC script dependencies
+        run: npm install js-yaml
+
+      - name: Update TOC from docs tree (preview only)
+        run: node .github/scripts/update-toc.js
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install -r ./docs/requirements.txt
+
+      - name: Build the book
+        run: jupyter-book build ./docs
+
+      - name: Create safe branch slug
+        id: branch
+        shell: bash
+        run: |
+          slug="${GITHUB_REF_NAME}"
+          slug="${slug//\//-}"
+          slug="${slug// /-}"
+          echo "slug=${slug}" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy branch preview to gh-pages/previews/<branch>
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./docs/_build/html
+          destination_dir: previews/${{ steps.branch.outputs.slug }}
+          keep_files: true
+
+      - name: Print preview URL
+        run: |
+          echo "Preview URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/previews/${{ steps.branch.outputs.slug }}/"
