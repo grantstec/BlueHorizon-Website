@@ -2,83 +2,235 @@ const fs = require('fs');
 const yaml = require('js-yaml');
 const path = require('path');
 
-// Read environment variables from GitHub Actions
-const commitMessage = process.env.COMMIT_MESSAGE;  // e.g., "Team Info"
-const newFile = process.env.NEW_FILE;              // e.g., "docs/md/test.md"
+const DOCS_DIR = path.resolve('docs');
+const TOC_PATH = path.join(DOCS_DIR, '_toc.yml');
 
-if (!commitMessage || !newFile) {
-  console.error("❌ ERROR: Missing COMMIT_MESSAGE or NEW_FILE environment variables.");
-  process.exit(1);
+const PART_CAPTION_OVERRIDES = {
+  team: 'Team Information',
+  subteams: 'Subteams',
+  past_years: 'Past Years',
+  resources: 'Resources'
+};
+
+const TOP_LEVEL_ORDER = ['team', 'subteams', 'past_years', 'resources'];
+
+function toPosixPath(p) {
+  return p.split(path.sep).join('/');
 }
 
-// Extract filename without extension, ensuring it uses the "md/" prefix
-const fileBase = "md/" + path.basename(newFile, '.md');
-console.log(`🔍 File base to add: ${fileBase}`);
-console.log(`🔍 Commit message: ${commitMessage}`);
+function stripMdExtension(relPath) {
+  return relPath.replace(/\.md$/i, '');
+}
 
-const tocPath = 'docs/_toc.yml';
+function isMarkdownFile(name) {
+  return name.toLowerCase().endsWith('.md');
+}
+
+function isMainName(fileStem) {
+  return /^main(\s|$)/i.test(fileStem);
+}
+
+function compareNames(a, b) {
+  const aMain = isMainName(a);
+  const bMain = isMainName(b);
+  if (aMain !== bMain) {
+    return aMain ? -1 : 1;
+  }
+  return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+}
+
+function toCaption(dirName) {
+  if (PART_CAPTION_OVERRIDES[dirName]) {
+    return PART_CAPTION_OVERRIDES[dirName];
+  }
+
+  return dirName
+    .split(/[_\-\s]+/)
+    .filter(Boolean)
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
+function shouldSkipDir(name) {
+  const lower = name.toLowerCase();
+  return lower.startsWith('.') || lower === '_build';
+}
+
+function scanFolder(absDir, relDir = '') {
+  const entries = fs.readdirSync(absDir, { withFileTypes: true });
+  const files = [];
+  const children = [];
+
+  for (const entry of entries) {
+    const absPath = path.join(absDir, entry.name);
+    const relPath = relDir ? path.join(relDir, entry.name) : entry.name;
+
+    if (entry.isDirectory()) {
+      if (shouldSkipDir(entry.name)) {
+        continue;
+      }
+
+      const child = scanFolder(absPath, relPath);
+      if (child.hasContent) {
+        children.push(child);
+      }
+      continue;
+    }
+
+    if (!entry.isFile()) {
+      continue;
+    }
+
+    if (!isMarkdownFile(entry.name)) {
+      continue;
+    }
+
+    if (entry.name.startsWith('_')) {
+      continue;
+    }
+
+    const relNoExt = stripMdExtension(toPosixPath(relPath));
+    const stem = path.basename(entry.name, '.md');
+    files.push({ stem, relNoExt });
+  }
+
+  files.sort((a, b) => compareNames(a.stem, b.stem));
+  children.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+
+  return {
+    name: path.basename(absDir),
+    relDir: toPosixPath(relDir),
+    files,
+    children,
+    hasContent: files.length > 0 || children.length > 0
+  };
+}
+
+function getFolderMain(node) {
+  const mainCandidates = node.files.filter(file => isMainName(file.stem));
+  if (mainCandidates.length !== 1) {
+    return null;
+  }
+  return mainCandidates[0];
+}
+
+function buildEntriesForNode(node, excludedFiles = new Set()) {
+  const entries = [];
+
+  for (const file of node.files) {
+    if (excludedFiles.has(file.relNoExt)) {
+      continue;
+    }
+    entries.push({ file: file.relNoExt });
+  }
+
+  for (const child of node.children) {
+    const childMainEntry = buildMainEntry(child);
+    if (childMainEntry) {
+      entries.push(childMainEntry);
+      continue;
+    }
+    entries.push(...buildEntriesForNode(child));
+  }
+
+  return entries;
+}
+
+function buildMainEntry(node) {
+  const mainFile = getFolderMain(node);
+  if (!mainFile) {
+    return null;
+  }
+
+  const excluded = new Set([mainFile.relNoExt]);
+  const sections = buildEntriesForNode(node, excluded);
+  const entry = { file: mainFile.relNoExt };
+
+  if (sections.length > 0) {
+    entry.sections = sections;
+  }
+
+  return entry;
+}
+
+function buildPartChapters(topFolderNode) {
+  const mainEntry = buildMainEntry(topFolderNode);
+  if (mainEntry) {
+    return [mainEntry];
+  }
+  return buildEntriesForNode(topFolderNode);
+}
+
+function topFolderSort(a, b) {
+  const aIdx = TOP_LEVEL_ORDER.indexOf(a.name);
+  const bIdx = TOP_LEVEL_ORDER.indexOf(b.name);
+
+  if (aIdx !== -1 && bIdx !== -1) {
+    return aIdx - bIdx;
+  }
+  if (aIdx !== -1) {
+    return -1;
+  }
+  if (bIdx !== -1) {
+    return 1;
+  }
+  return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
+}
+
+function buildToc() {
+  const rootNode = scanFolder(DOCS_DIR, '');
+  const introFile = rootNode.files.find(file => file.relNoExt === 'intro');
+
+  const root = introFile ? 'intro' : (rootNode.files[0] ? rootNode.files[0].relNoExt : 'intro');
+
+  const parts = [];
+
+  const topFolders = [...rootNode.children].sort(topFolderSort);
+  for (const folderNode of topFolders) {
+    const chapters = buildPartChapters(folderNode);
+    if (chapters.length === 0) {
+      continue;
+    }
+
+    parts.push({
+      caption: toCaption(folderNode.name),
+      chapters
+    });
+  }
+
+  const topLevelLooseFiles = rootNode.files
+    .filter(file => file.relNoExt !== root)
+    .map(file => ({ file: file.relNoExt }));
+
+  if (topLevelLooseFiles.length > 0) {
+    parts.push({
+      caption: 'Pages',
+      chapters: topLevelLooseFiles
+    });
+  }
+
+  return {
+    format: 'jb-book',
+    root,
+    parts
+  };
+}
 
 try {
-  const tocContent = fs.readFileSync(tocPath, 'utf8');
-  const toc = yaml.load(tocContent);
-
-  // Ensure that toc.parts exists
-  if (!toc.parts) {
-    toc.parts = [];
+  if (!fs.existsSync(DOCS_DIR)) {
+    throw new Error(`Missing docs directory: ${DOCS_DIR}`);
   }
 
-  // Remove file from any existing section
-  function removeFileFromOldSection(tocParts, fileBase) {
-    let removedSection = null;
-    for (let i = tocParts.length - 1; i >= 0; i--) {
-      const part = tocParts[i];
-      const newChapters = part.chapters.filter(ch => ch.file !== fileBase);
-      if (newChapters.length !== part.chapters.length) {
-        console.log(`❌ Removing ${fileBase} from section: ${part.caption}`);
-        part.chapters = newChapters;
-        if (part.chapters.length === 0) {
-          removedSection = part.caption; // Mark the section for removal
-        }
-      }
-    }
+  const toc = buildToc();
+  const tocYaml = yaml.dump(toc, {
+    lineWidth: -1,
+    noCompatMode: true,
+    sortKeys: false
+  });
 
-    // Remove empty sections
-    if (removedSection) {
-      toc.parts = toc.parts.filter(p => p.caption !== removedSection);
-      console.log(`🗑️ Removed empty section: ${removedSection}`);
-    }
-  }
-
-  // Function to add fileBase under a new caption
-  function addFileToCaption(tocParts, caption, fileBase) {
-    let part = tocParts.find(p => p.caption.toLowerCase() === caption.toLowerCase());
-    if (!part) {
-      console.log(`🆕 Creating new section: ${caption}`);
-      part = { caption: caption, chapters: [] };
-      tocParts.push(part);
-    }
-
-    // Check if fileBase already exists in this part's chapters.
-    const exists = part.chapters.some(ch => ch.file === fileBase);
-    if (!exists) {
-      console.log(`✅ Adding ${fileBase} to section: ${caption}`);
-      part.chapters.push({ file: fileBase });
-    } else {
-      console.log(`ℹ️ ${fileBase} already exists in section: ${caption}`);
-    }
-  }
-
-  // Remove the file from any old section
-  removeFileFromOldSection(toc.parts, fileBase);
-
-  // Add it to the new section
-  addFileToCaption(toc.parts, commitMessage, fileBase);
-
-  // Write the updated TOC back to the file
-  const newTocContent = yaml.dump(toc);
-  fs.writeFileSync(tocPath, newTocContent, 'utf8');
-  console.log(`✅ Updated TOC with ${fileBase} under "${commitMessage}"`);
+  fs.writeFileSync(TOC_PATH, tocYaml, 'utf8');
+  console.log(`✅ Rebuilt ${toPosixPath(path.relative(process.cwd(), TOC_PATH))} from docs folder structure.`);
 } catch (err) {
-  console.error("❌ ERROR updating TOC:", err);
+  console.error('❌ ERROR updating TOC:', err.message || err);
   process.exit(1);
 }
