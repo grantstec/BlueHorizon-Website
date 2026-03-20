@@ -35,6 +35,7 @@ navigate to the tab called **"Branches"** as seen in the picture below
 ``` 
 You should now see the names of the different existing Branches on this repository. We will follow a common naming convention as you can see, simply name your branch based on **your name**. To make your branch hit the bright green **"New Branch"** button, name it, keep all the other settings that same and hit **"Create New Branch"**. Now you should see your branch listed on the Branches page. 
 
+![](pictures/Pastedimage20260319195313.png)
 
 ## VSCode
 
