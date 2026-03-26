@@ -1,4 +1,4 @@
-# 🌐 Website Editing How-To OLD DO NOT USE
+# 🌐 Website Editing How-To
 
 ## GitHub
 
@@ -7,83 +7,49 @@
 :align: center  
 ``` 
 
-### What is GitHub?
-
-GitHub is where the website source code is hosted. GitHub was developed to make using Git more intuitive. Git (Not GitHub) is an effective version control software that allows a group to work on a project whilst dispersing the workload to multiple members. **To accomplish this we will have each editing user create their own branch separate from the main branch**. The main branch is where the live code sits for the website. Different branches allows individual users to make a copy of this main branch and work on their own aspects of the website/code without effecting others, if one user makes an update to main before another the other user can do a "pull" request to their branch and update it so it is that same as the main branch, if they need to see that other users code to accomplish there task. Otherwise once done with the update you want to make you can commit your changes to your branch and then "push" them. Then the owner can review your update branch and decide to "pull" your code to the main branch if it is good. The "pushing" and "pulling" can all be done in our coding software which we will go over later. 
-
 ### Setting up GitHub
 
-Navigate to http://github.com and **sign up using your afacademy email**. This will allow you to get GitHub pro for free which provides some nice AI assisted code benefits. If you want to activate GitHub pro go into your account and sign up for it. Follow all instructions to create your account, once done send **Grant Stec** a teams message and he will invite you to the github repo so you can edit. 
+Navigate to http://github.com and **sign up using your afacademy email**. 
 
-```{hint} 
-To get GitHub Pro: https://github.com/education/students
-```
+Once you created an account message **Grant Stec** a teams message and he will invite you to the github repo so you can edit. 
 
-Within the github you should be able to see the repo titled **"BlueHorizon-Website"** is the website repo (repository). You should see something like this. You can also find it [here](https://github.com/grantstec/BlueHorizon-Website)
+On github you can now access the repository called **"BlueHorizon-Website"** found [here](https://github.com/grantstec/BlueHorizon-Website)
 
 ```{image} ./pictures/GitHubRepo.png   
 :height: 300
 :align: center  
 ``` 
 #### Creating your own branch 
-Going back to what we covered before, creating your own branch gives you a workspace where you can edit files and push to that branch without needing perfectly functioning code that would crash the whole website. 
+
+Creating your own branch gives you a workspace where you can edit files and push to that branch without crashing the whole website. 
 
 navigate to the tab called **"Branches"** as seen in the picture below
 ```{image} ./pictures/GitHubRepoBranches.png   
 :height: 300
 :align: center  
 ``` 
-You should now see the names of the different existing Branches on this repository. We will follow a common naming convention as you can see, simply name your branch based on **your name**. To make your branch hit the bright green **"New Branch"** button, name it, keep all the other settings that same and hit **"Create New Branch"**. Now you should see your branch listed on the Branches page. 
+You should now see the names of the different existing Branches on this repository. 
+
+Name your branch based on **your name**. To make your branch hit the bright green **"New Branch"** button, name it, keep all the other settings that same and hit **"Create New Branch"**. Now you should see your branch listed on the Branches page. 
+
+#### Downloading GitHub Desktop
+
+Download from this link: [Download GitHub Desktop | GitHub Desktop](https://desktop.github.com/download/) 
+
+Go through the installation setup and then sign in, once complete you should see a screen like this 
+
+
+
 
 ![](pictures/Pastedimage20260319195313.png)
 
-## VSCode
+## Obsidian
 
-```{image} ./pictures/vs-code.jpg   
-:height: 300
-:align: center  
-``` 
+![323](pictures/ObsidianLogo.png)
 
-### What is VSCode?
+### Setting up Obsidian
 
-VS Code (VSC) is a coding IDE that allows you to write in multiple coding language with a very well designed UI and good integration with Git. 
 
-You can download from the microsoft app store or online [here](https://code.visualstudio.com/download) Be sure to download the x64 bit Windows System Installer. 
-
-### Setting up VSCode Connor Was Here
-
-Accept the default options for all of the VS Code install prompts.  Click the Finish button to complete the install and launch VS Code.  Accept any defaults that are presented during your first launch of VSC.  You should see an image like the one below once complete.
-
-```{image} ./pictures/vsc-welcome.png   
-:height: 300
-:align: center  
-``` 
-#### Extensions
-
-You will now install extensions to assist the development process. Click the extensions button on the side, it looks like a teri block. Search for **Code Spell Checker and install the one by Street Side Software** as seen in the picture below. 
-
-```{image} ./pictures/VSC_extensions.png  
-:height: 300
-:align: center  
-``` 
-
-If you had signed up for github and gotten github pro it would be useful now to also download the **GitHub Copilot and GitHub Copilot Chat extension along with the GitHub Pull Requests** extension. All of the website files are markdown based so you should also get the **Markdown All in One extension by Yu Zhang** and **Markdown Preview Enhanced by Yiyi Wang** to quickly see the markdown pages in VSC. 
-
-If any extensions ask for setup or gives any setup instructions after installation don't bother just continue. 
-
-```{note} 
-If you find any cool extensions on your own please share 🤗
-```
-
-#### GitHub Sign In
-
-Now we will sign into GitHub on VScode so we can easy push pull and commit to our respective branches on GitHub. To Login click the account looking icon in the bottom 
-
-```{image} ./pictures/VSC_Account.png  
-:height: 300
-:align: center  
-```
-There should be a connect to GitHub button or something similar. Click and that and you should be re directed to your browser to connect your github account to VSCode. 
 
 #### Create Folder
 
