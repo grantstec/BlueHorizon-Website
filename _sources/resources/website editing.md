@@ -65,7 +65,7 @@ Now you should see a screen like this
 
 Ensure to select your branch from the current branch dropdown 
 
-==**"main" should not be selected ==**
+**"main" should not be selected**
 
 ![](pictures/BranchSelection.png)
 #### Committing and Pushing Changes
