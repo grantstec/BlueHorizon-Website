@@ -44,23 +44,23 @@ It will automatically open the app and then sign in through GitHub.com
 
 Use default setup/do not configure manually, just hit finish
 
-![435](pictures/ConfigureGit.png)
+![](pictures/ConfigureGit.png)
 
 Clone the repository from the internet
 
-![436](pictures/CloneRepoFromInternet.png)
+![](pictures/CloneRepoFromInternet.png)
 
 Search for **"website"** and chose the **BlueHoirzon-Website**. 
 
-![435](pictures/WebsiteSearch.png)
+![](pictures/WebsiteSearch.png)
 
 If you get a message saying "This folder contains file. Git can only clone to empty folder." You need to choose a folder location locally on your computer, I often just select my **Desktop** or **Documents** 
 
-![433](pictures/RepoChooseFolder.png)
+![](pictures/RepoChooseFolder.png)
 
 Now you should see a screen like this 
 
-![431](pictures/GitHubDesktopHomepage.png)
+![](pictures/GitHubDesktopHomepage.png)
 
 ##### GitHub Desktop Branch Selection Setup
 
@@ -68,7 +68,7 @@ Ensure to select your branch from the current branch dropdown
 
 ==**"main" should not be selected ==**
 
-![431](pictures/BranchSelection.png)
+![](pictures/BranchSelection.png)
 
 #### Committing and Pushing Changes
 
@@ -76,13 +76,13 @@ Once you have made edits to the webpage files through [Obsidian](#Obsidian) you 
 
 You should see a screen like this in the GitHub Desktop showing the edits and additions you have made 
 
-![430](pictures/GitHubEdits.png)
+![](pictures/GitHubEdits.png)
 
 ##### Commit Message
 
 To commit, you must provide a summary in the box highlighted below, you can make it however long or short you like but a quick synopsis like **"added new engine design information"** would work well. There is no need to fill out the description box.
 
-![433](pictures/Commitmessage.png)
+![](pictures/Commitmessage.png)
 
 Once something is typed in you will see the **"Commit _ files to main"** button glow up. Click it. 
 
@@ -106,7 +106,7 @@ To access it simply adjust the below link to have your branches name in place of
 
 ## Obsidian
 
-![323](pictures/ObsidianLogo.png)
+![](pictures/ObsidianLogo.png)
 
 ### Setting up Obsidian
 
