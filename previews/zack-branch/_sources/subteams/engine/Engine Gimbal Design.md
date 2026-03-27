@@ -1,1 +1,0 @@
-# Engine Gimbal Design 1

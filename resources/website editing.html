@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>🌐 Website Editing How-To OLD DO NOT USE &#8212; BlueHorizon</title>
+    <title>🌐 Website Editing How-To &#8212; BlueHorizon</title>
   
   
   
@@ -53,7 +53,7 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -215,7 +215,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">🌐 Website Editing How-To OLD DO NOT USE</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">🌐 Website Editing How-To</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Past Years</span></p>
 <ul class="nav bd-sidenav">
@@ -403,7 +403,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>🌐 Website Editing How-To OLD DO NOT USE</h1>
+    <h1>🌐 Website Editing How-To</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -414,18 +414,15 @@
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">GitHub</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-github">What is GitHub?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-github">Setting up GitHub</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-your-own-branch">Creating your own branch</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#downloading-github-desktop">Downloading GitHub Desktop</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode">VSCode</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-vscode">What is VSCode?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-vscode-connor-was-here">Setting up VSCode Connor Was Here</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extensions">Extensions</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#github-sign-in">GitHub Sign In</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obsidian">Obsidian</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-obsidian">Setting up Obsidian</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-folder">Create Folder</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#terminal">Terminal</a></li>
 </ul>
@@ -462,70 +459,41 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="website-editing-how-to-old-do-not-use">
-<h1>🌐 Website Editing How-To OLD DO NOT USE<a class="headerlink" href="#website-editing-how-to-old-do-not-use" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="website-editing-how-to">
+<h1>🌐 Website Editing How-To<a class="headerlink" href="#website-editing-how-to" title="Link to this heading">#</a></h1>
 <section id="github">
 <h2>GitHub<a class="headerlink" href="#github" title="Link to this heading">#</a></h2>
 <a class="reference internal image-reference" href="../_images/GitHub.png"><img alt="../_images/GitHub.png" class="align-center" src="../_images/GitHub.png" style="height: 200px;" />
 </a>
-<section id="what-is-github">
-<h3>What is GitHub?<a class="headerlink" href="#what-is-github" title="Link to this heading">#</a></h3>
-<p>GitHub is where the website source code is hosted. GitHub was developed to make using Git more intuitive. Git (Not GitHub) is an effective version control software that allows a group to work on a project whilst dispersing the workload to multiple members. <strong>To accomplish this we will have each editing user create their own branch separate from the main branch</strong>. The main branch is where the live code sits for the website. Different branches allows individual users to make a copy of this main branch and work on their own aspects of the website/code without effecting others, if one user makes an update to main before another the other user can do a “pull” request to their branch and update it so it is that same as the main branch, if they need to see that other users code to accomplish there task. Otherwise once done with the update you want to make you can commit your changes to your branch and then “push” them. Then the owner can review your update branch and decide to “pull” your code to the main branch if it is good. The “pushing” and “pulling” can all be done in our coding software which we will go over later.</p>
-</section>
 <section id="setting-up-github">
 <h3>Setting up GitHub<a class="headerlink" href="#setting-up-github" title="Link to this heading">#</a></h3>
-<p>Navigate to <a class="github reference external" href="http://github.com">github</a> and <strong>sign up using your afacademy email</strong>. This will allow you to get GitHub pro for free which provides some nice AI assisted code benefits. If you want to activate GitHub pro go into your account and sign up for it. Follow all instructions to create your account, once done send <strong>Grant Stec</strong> a teams message and he will invite you to the github repo so you can edit.</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>To get GitHub Pro: <a class="github reference external" href="https://github.com/education/students">education/students</a></p>
-</div>
-<p>Within the github you should be able to see the repo titled <strong>“BlueHorizon-Website”</strong> is the website repo (repository). You should see something like this. You can also find it <a class="reference external" href="https://github.com/grantstec/BlueHorizon-Website">here</a></p>
+<p>Navigate to <a class="github reference external" href="http://github.com">github</a> and <strong>sign up using your afacademy email</strong>.</p>
+<p>Once you created an account message <strong>Grant Stec</strong> a teams message and he will invite you to the github repo so you can edit.</p>
+<p>On github you can now access the repository called <strong>“BlueHorizon-Website”</strong> found <a class="reference external" href="https://github.com/grantstec/BlueHorizon-Website">here</a></p>
 <a class="reference internal image-reference" href="../_images/GitHubRepo.png"><img alt="../_images/GitHubRepo.png" class="align-center" src="../_images/GitHubRepo.png" style="height: 300px;" />
 </a>
 <section id="creating-your-own-branch">
 <h4>Creating your own branch<a class="headerlink" href="#creating-your-own-branch" title="Link to this heading">#</a></h4>
-<p>Going back to what we covered before, creating your own branch gives you a workspace where you can edit files and push to that branch without needing perfectly functioning code that would crash the whole website.</p>
+<p>Creating your own branch gives you a workspace where you can edit files and push to that branch without crashing the whole website.</p>
 <p>navigate to the tab called <strong>“Branches”</strong> as seen in the picture below</p>
 <a class="reference internal image-reference" href="../_images/GitHubRepoBranches.png"><img alt="../_images/GitHubRepoBranches.png" class="align-center" src="../_images/GitHubRepoBranches.png" style="height: 300px;" />
 </a>
-<p>You should now see the names of the different existing Branches on this repository. We will follow a common naming convention as you can see, simply name your branch based on <strong>your name</strong>. To make your branch hit the bright green <strong>“New Branch”</strong> button, name it, keep all the other settings that same and hit <strong>“Create New Branch”</strong>. Now you should see your branch listed on the Branches page.</p>
+<p>You should now see the names of the different existing Branches on this repository.</p>
+<p>Name your branch based on <strong>your name</strong>. To make your branch hit the bright green <strong>“New Branch”</strong> button, name it, keep all the other settings that same and hit <strong>“Create New Branch”</strong>. Now you should see your branch listed on the Branches page.</p>
+</section>
+<section id="downloading-github-desktop">
+<h4>Downloading GitHub Desktop<a class="headerlink" href="#downloading-github-desktop" title="Link to this heading">#</a></h4>
+<p>Download from this link: <a class="reference external" href="https://desktop.github.com/download/">Download GitHub Desktop | GitHub Desktop</a></p>
+<p>Go through the installation setup and then sign in, once complete you should see a screen like this</p>
 <p><img alt="" src="../_images/Pastedimage20260319195313.png" /></p>
 </section>
 </section>
 </section>
-<section id="vscode">
-<h2>VSCode<a class="headerlink" href="#vscode" title="Link to this heading">#</a></h2>
-<a class="reference internal image-reference" href="../_images/vs-code.jpg"><img alt="../_images/vs-code.jpg" class="align-center" src="../_images/vs-code.jpg" style="height: 300px;" />
-</a>
-<section id="what-is-vscode">
-<h3>What is VSCode?<a class="headerlink" href="#what-is-vscode" title="Link to this heading">#</a></h3>
-<p>VS Code (VSC) is a coding IDE that allows you to write in multiple coding language with a very well designed UI and good integration with Git.</p>
-<p>You can download from the microsoft app store or online <a class="reference external" href="https://code.visualstudio.com/download">here</a> Be sure to download the x64 bit Windows System Installer.</p>
-</section>
-<section id="setting-up-vscode-connor-was-here">
-<h3>Setting up VSCode Connor Was Here<a class="headerlink" href="#setting-up-vscode-connor-was-here" title="Link to this heading">#</a></h3>
-<p>Accept the default options for all of the VS Code install prompts.  Click the Finish button to complete the install and launch VS Code.  Accept any defaults that are presented during your first launch of VSC.  You should see an image like the one below once complete.</p>
-<a class="reference internal image-reference" href="../_images/vsc-welcome.png"><img alt="../_images/vsc-welcome.png" class="align-center" src="../_images/vsc-welcome.png" style="height: 300px;" />
-</a>
-<section id="extensions">
-<h4>Extensions<a class="headerlink" href="#extensions" title="Link to this heading">#</a></h4>
-<p>You will now install extensions to assist the development process. Click the extensions button on the side, it looks like a teri block. Search for <strong>Code Spell Checker and install the one by Street Side Software</strong> as seen in the picture below.</p>
-<a class="reference internal image-reference" href="../_images/VSC_extensions.png"><img alt="../_images/VSC_extensions.png" class="align-center" src="../_images/VSC_extensions.png" style="height: 300px;" />
-</a>
-<p>If you had signed up for github and gotten github pro it would be useful now to also download the <strong>GitHub Copilot and GitHub Copilot Chat extension along with the GitHub Pull Requests</strong> extension. All of the website files are markdown based so you should also get the <strong>Markdown All in One extension by Yu Zhang</strong> and <strong>Markdown Preview Enhanced by Yiyi Wang</strong> to quickly see the markdown pages in VSC.</p>
-<p>If any extensions ask for setup or gives any setup instructions after installation don’t bother just continue.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you find any cool extensions on your own please share 🤗</p>
-</div>
-</section>
-<section id="github-sign-in">
-<h4>GitHub Sign In<a class="headerlink" href="#github-sign-in" title="Link to this heading">#</a></h4>
-<p>Now we will sign into GitHub on VScode so we can easy push pull and commit to our respective branches on GitHub. To Login click the account looking icon in the bottom</p>
-<a class="reference internal image-reference" href="../_images/VSC_Account.png"><img alt="../_images/VSC_Account.png" class="align-center" src="../_images/VSC_Account.png" style="height: 300px;" />
-</a>
-<p>There should be a connect to GitHub button or something similar. Click and that and you should be re directed to your browser to connect your github account to VSCode.</p>
-</section>
+<section id="obsidian">
+<h2>Obsidian<a class="headerlink" href="#obsidian" title="Link to this heading">#</a></h2>
+<p><img alt="323" src="resources/pictures/ObsidianLogo.png" /></p>
+<section id="setting-up-obsidian">
+<h3>Setting up Obsidian<a class="headerlink" href="#setting-up-obsidian" title="Link to this heading">#</a></h3>
 <section id="create-folder">
 <h4>Create Folder<a class="headerlink" href="#create-folder" title="Link to this heading">#</a></h4>
 <p>Now create a folder to have the Website files on your computer, this can be made anywhere, Onedrive folders etc. Now once that folder is created go back to VSCode if you have a current folder open go to file and new windows or simple click open folder on the main page and navigate to open the folder you just made.</p>
@@ -696,18 +664,15 @@ GitHub: <a class="github reference external" href="https://github.com/stanbaek/e
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">GitHub</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-github">What is GitHub?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-github">Setting up GitHub</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-your-own-branch">Creating your own branch</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#downloading-github-desktop">Downloading GitHub Desktop</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode">VSCode</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-vscode">What is VSCode?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-vscode-connor-was-here">Setting up VSCode Connor Was Here</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extensions">Extensions</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#github-sign-in">GitHub Sign In</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obsidian">Obsidian</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-obsidian">Setting up Obsidian</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-folder">Create Folder</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#terminal">Terminal</a></li>
 </ul>
