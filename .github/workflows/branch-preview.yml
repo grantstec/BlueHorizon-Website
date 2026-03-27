@@ -18,13 +18,18 @@ on:
         required: false
         type: boolean
         default: false
+      target_branch:
+        description: "Branch to build preview for when manually/dispatched from main sync"
+        required: false
+        type: string
+        default: ""
 
 permissions:
   contents: write
   actions: write
 
 concurrency:
-  group: preview-${{ github.ref_name || github.run_id }}
+  group: preview-${{ inputs.target_branch != '' && inputs.target_branch || github.ref_name || github.run_id }}
   cancel-in-progress: true
 
 jobs:
@@ -39,6 +44,7 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
             const workflowId = 'branch-preview.yml';
+            const defaultBranch = context.payload.repository.default_branch;
 
             const branches = await github.paginate(github.rest.repos.listBranches, {
               owner,
@@ -48,7 +54,7 @@ jobs:
 
             const targets = branches
               .map((branch) => branch.name)
-              .filter((name) => name !== 'main' && name !== 'gh-pages');
+              .filter((name) => name !== defaultBranch && name !== 'gh-pages');
 
             core.info(`Triggering ${targets.length} branch preview rebuild(s).`);
 
@@ -57,9 +63,10 @@ jobs:
                 owner,
                 repo,
                 workflow_id: workflowId,
-                ref: branch,
+                ref: defaultBranch,
                 inputs: {
                   triggered_by_main_sync: 'true',
+                  target_branch: branch,
                 },
               });
               core.info(`Dispatched preview rebuild for ${branch}`);
@@ -71,6 +78,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.target_branch != '' && inputs.target_branch || github.ref_name }}
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -98,9 +107,11 @@ jobs:
         id: branch
         shell: bash
         run: |
-          slug="${GITHUB_REF_NAME}"
+          branch_name="${{ inputs.target_branch != '' && inputs.target_branch || github.ref_name }}"
+          slug="${branch_name}"
           slug="${slug//\//-}"
           slug="${slug// /-}"
+          echo "branch_name=${branch_name}" >> "$GITHUB_OUTPUT"
           echo "slug=${slug}" >> "$GITHUB_OUTPUT"
 
       - name: Deploy branch preview to gh-pages/previews/<branch>
@@ -114,7 +125,7 @@ jobs:
 
       - name: Print preview URL
         run: |
-          echo "Preview URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/previews/${{ steps.branch.outputs.slug }}/"
+          echo "Preview URL (${{ steps.branch.outputs.branch_name }}): https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/previews/${{ steps.branch.outputs.slug }}/"
 
       - name: Update README preview quick links on default branch
         uses: actions/github-script@v7
