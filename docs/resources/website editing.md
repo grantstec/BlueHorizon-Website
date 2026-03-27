@@ -48,7 +48,7 @@ Use default setup/do not configure manually, just hit finish
 
 Clone the repository from the internet
 
-![](pictures/CloneRepoFromInternet.png)
+![](pictures/CloneRepo.png)
 
 Search for **"website"** and chose the **BlueHoirzon-Website**. 
 
@@ -56,12 +56,11 @@ Search for **"website"** and chose the **BlueHoirzon-Website**.
 
 If you get a message saying "This folder contains file. Git can only clone to empty folder." You need to choose a folder location locally on your computer, I often just select my **Desktop** or **Documents** 
 
-![](pictures/RepoChooseFolder.png)
+![](pictures/ChooseFolder.png)
 
 Now you should see a screen like this 
 
-![](pictures/GitHubDesktopHomepage.png)
-
+![](pictures/GithubdesktopHomepage.png)
 ##### GitHub Desktop Branch Selection Setup
 
 Ensure to select your branch from the current branch dropdown 
@@ -69,15 +68,13 @@ Ensure to select your branch from the current branch dropdown
 ==**"main" should not be selected ==**
 
 ![](pictures/BranchSelection.png)
-
 #### Committing and Pushing Changes
 
 Once you have made edits to the webpage files through [Obsidian](#Obsidian) you need to commit and push your changes to your GitHub Branch
 
 You should see a screen like this in the GitHub Desktop showing the edits and additions you have made 
 
-![](pictures/GitHubEdits.png)
-
+![](pictures/Githubedits.png)
 ##### Commit Message
 
 To commit, you must provide a summary in the box highlighted below, you can make it however long or short you like but a quick synopsis like **"added new engine design information"** would work well. There is no need to fill out the description box.
@@ -85,7 +82,6 @@ To commit, you must provide a summary in the box highlighted below, you can make
 ![](pictures/Commitmessage.png)
 
 Once something is typed in you will see the **"Commit _ files to main"** button glow up. Click it. 
-
 ##### Pushing
 
 If you made a mistake or want to edit the summary message you can undo the commit by hitting the undo button on the bottom left. 
@@ -93,7 +89,6 @@ If you made a mistake or want to edit the summary message you can undo the commi
 If all looks good you can push the changes to the actual online repo by hitting **"Push Origin"**
 
 ![](pictures/UndoandPush.png)
-
 #### Accessing Your Branch Specific Website
 
 To ensure your edits have been pushed correctly and rendered successfully you can go to your branch specific website. This website will display exactly what is in your branch, it will not be the main website. 
