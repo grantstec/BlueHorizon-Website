@@ -4,16 +4,69 @@ on:
   push:
     branches-ignore:
       - main
+  workflow_run:
+    workflows:
+      - deploy-book
+    types:
+      - completed
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      triggered_by_main_sync:
+        description: "True when triggered from a main branch sync"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
-  group: preview-${{ github.ref_name }}
+  group: preview-${{ github.ref_name || github.run_id }}
   cancel-in-progress: true
 
 jobs:
+  sync-previews-from-main:
+    if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger preview rebuild on every non-main branch
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const workflowId = 'branch-preview.yml';
+
+            const branches = await github.paginate(github.rest.repos.listBranches, {
+              owner,
+              repo,
+              per_page: 100,
+            });
+
+            const targets = branches
+              .map((branch) => branch.name)
+              .filter((name) => name !== 'main' && name !== 'gh-pages');
+
+            core.info(`Triggering ${targets.length} branch preview rebuild(s).`);
+
+            for (const branch of targets) {
+              await github.rest.actions.createWorkflowDispatch({
+                owner,
+                repo,
+                workflow_id: workflowId,
+                ref: branch,
+                inputs: {
+                  triggered_by_main_sync: 'true',
+                },
+              });
+              core.info(`Dispatched preview rebuild for ${branch}`);
+            }
+
   deploy-preview:
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
 
     steps:
