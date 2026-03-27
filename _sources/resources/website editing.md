@@ -86,8 +86,19 @@ To commit, you must provide a summary in the box highlighted below, you can make
 
 Once something is typed in you will see the **"Commit _ files to main"** button glow up. Click it. 
 
+##### Pushing
 
+If you made a mistake or want to edit the summary message you can undo the commit by hitting the undo button on the bottom left. 
 
+If all looks good you can push the changes to the actual online repo by hitting **"Push Origin"**
+
+![](pictures/UndoandPush.png)
+
+#### Accessing Your Branch Specific Website
+
+To ensure your edits have been pushed correctly and rendered successfully you can go to your branch specific website. This website will display exactly what is in your branch, it will not be the main website. 
+
+To access it simply adjust the below link to have your branches name in place of the
 
 
 
