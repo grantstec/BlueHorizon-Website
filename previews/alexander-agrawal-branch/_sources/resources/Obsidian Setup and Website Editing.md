@@ -176,7 +176,7 @@ Now you will see the excel render in obsidian and the website
 </iframe>
 
 
-![](pictures/excel%20rendered.png)
+![](pictures/excelrendered.png)
 
 ### Onshape Buttons
 
