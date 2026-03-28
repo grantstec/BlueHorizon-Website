@@ -77,6 +77,15 @@ function safeBaseSite(base) {
   return String(base).replace(/\/+$/, '');
 }
 
+function encodePathSegments(pathLike) {
+  return String(pathLike || '')
+    .replace(/^\/+/, '')
+    .split('/')
+    .filter(Boolean)
+    .map(segment => encodeURIComponent(segment))
+    .join('/');
+}
+
 function makePublicUrl(base, relPath) {
   if (!relPath) {
     return null;
@@ -88,6 +97,27 @@ function makePublicUrl(base, relPath) {
 
   const normalized = String(relPath).replace(/^\/+/, '');
   return `${safeBaseSite(base)}/${normalized}`;
+}
+
+function makeImageUrl(image, env, siteBaseUrl) {
+  const rawPath = image?.path || image?.url;
+  if (!rawPath) {
+    return null;
+  }
+
+  if (/^https?:/i.test(rawPath)) {
+    return rawPath;
+  }
+
+  const encodedPath = encodePathSegments(rawPath);
+
+  // Prefer raw GitHub docs path because Jupyter Book may relocate built image assets.
+  const imageBaseUrl = env.IMAGE_BASE_URL || 'https://raw.githubusercontent.com/grantstec/BlueHorizon-Website/main/docs';
+  if (imageBaseUrl) {
+    return `${safeBaseSite(imageBaseUrl)}/${encodedPath}`;
+  }
+
+  return makePublicUrl(siteBaseUrl, encodedPath);
 }
 
 async function loadIndex(env) {
@@ -162,7 +192,7 @@ async function askModel(env, question, context) {
   return response.response || response.result?.response || 'No model response was returned.';
 }
 
-function buildCitationsAndImages(chunks, siteBaseUrl) {
+function buildCitationsAndImages(chunks, siteBaseUrl, env) {
   const citations = uniqueBy(
     chunks.map(chunk => {
       const anchor = chunk.anchor ? `#${chunk.anchor}` : '';
@@ -179,7 +209,7 @@ function buildCitationsAndImages(chunks, siteBaseUrl) {
     chunks.flatMap(chunk =>
       (chunk.images || []).map(image => ({
         alt: image.alt || `${chunk.title} image`,
-        url: makePublicUrl(siteBaseUrl, image.url || image.path)
+        url: makeImageUrl(image, env, siteBaseUrl)
       }))
     ),
     item => item.url
@@ -238,7 +268,7 @@ export default {
       const context = buildContext(chunks);
       const answer = await askModel(env, question, context);
       const siteBaseUrl = env.SITE_BASE_URL || 'https://grantstec.github.io/BlueHorizon-Website';
-      const { citations, images } = buildCitationsAndImages(chunks, siteBaseUrl);
+      const { citations, images } = buildCitationsAndImages(chunks, siteBaseUrl, env);
 
       return jsonResponse({ answer, citations, images }, 200, allowOrigin);
     } catch (err) {

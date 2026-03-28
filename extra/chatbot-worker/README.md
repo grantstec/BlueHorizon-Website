@@ -44,6 +44,7 @@ The included `wrangler.toml` already sets these defaults:
 - `SITE_BASE_URL`: base URL used for source and screenshot links
 - `ALLOW_ORIGIN`: CORS origin control
 - `WORKERS_AI_MODEL`: free Workers AI model name
+- `IMAGE_BASE_URL`: raw GitHub docs base for screenshot links (prevents Jupyter Book image-path 404s)
 
 ## 5) Notes
 
