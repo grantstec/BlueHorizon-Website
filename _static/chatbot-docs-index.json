@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T21:14:34.553Z",
+  "generatedAt": "2026-03-28T21:25:22.279Z",
   "version": 1,
   "sourceCount": 30,
   "chunkCount": 61,
@@ -595,8 +595,8 @@
         },
         {
           "alt": "Reference image",
-          "path": "resources/pictures/excel%20rendered.png",
-          "url": "resources/pictures/excel%2520rendered.png"
+          "path": "resources/pictures/excelrendered.png",
+          "url": "resources/pictures/excelrendered.png"
         }
       ]
     },
