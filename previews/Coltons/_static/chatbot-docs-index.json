@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-28T20:59:09.678Z",
+  "generatedAt": "2026-03-28T21:53:56.280Z",
   "version": 1,
   "sourceCount": 30,
-  "chunkCount": 63,
+  "chunkCount": 61,
   "chunks": [
     {
       "id": "intro.md::0",
@@ -269,8 +269,8 @@
       "images": [
         {
           "alt": "Reference image",
-          "path": "resources/pictures/GitHubEdits.png",
-          "url": "resources/pictures/GitHubEdits.png"
+          "path": "resources/pictures/githubeditshow.png",
+          "url": "resources/pictures/githubeditshow.png"
         }
       ]
     },
@@ -595,13 +595,24 @@
         },
         {
           "alt": "Reference image",
-          "path": "resources/pictures/excel%20rendered.png",
-          "url": "resources/pictures/excel%2520rendered.png"
+          "path": "resources/pictures/excelrendered.png",
+          "url": "resources/pictures/excelrendered.png"
         }
       ]
     },
     {
       "id": "resources/Obsidian Setup and Website Editing.md::8",
+      "title": "Obsidian Setup and Website Editing",
+      "heading": "Onshape Buttons",
+      "anchor": "onshape-buttons",
+      "text": "html\n<div style=\"margin: 16px 0;\">\n<a\nhref=\"https://cad.onshape.com/documents/YOUR_DOC_ID/w/YOUR_WORKSPACE_ID/e/YOUR_ELEMENT_ID\"\ntarget=\"_blank\"\nrel=\"noopener noreferrer\"\nstyle=\"display: inline-block; background: #0e4c99; color: #ffffff; text-decoration: none; padding: 12px 18px; border-radius: 8px; font-weight: 700;\"\n>\nOpen CAD in Onshape\n</a>\n</div>\nExample\nhtml\n<div style=\"margin: 16px 0;\">\n<a\nhref=\"https://cad.onshape.com/documents/c4100d7a65ab7b8325e57b4f/w/92c48d0b5771f42df048d320/e/f0e06c418079f98a451274e3?renderMode=0&uiState=69c84055c7513bb8d825e559\"\ntarget=\"_blank\"\nrel=\"noopener noreferrer\"\nstyle=\"display: inline-block; background: #0e4c99; color: #ffffff; text-decoration: none; padding: 12px 18px; border-radius: 8px; font-weight: 700;\"\n>\nOpen Engine CAD in Onshape\n</a>\n</div>\nQuick markdown-only option:\nmarkdown\n[Open CAD in Onshape](https://cad.onshape.com/documents/YOUR_DOC_ID/w/YOUR_WORKSPACE_ID/e/YOUR_ELEMENT_ID)",
+      "sourceFile": "resources/Obsidian Setup and Website Editing.md",
+      "pageUrl": "resources/Obsidian%20Setup%20and%20Website%20Editing.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/Obsidian Setup and Website Editing.md::9",
       "title": "Obsidian Setup and Website Editing",
       "heading": "Emojis",
       "anchor": "emojis",
@@ -612,7 +623,7 @@
       "images": []
     },
     {
-      "id": "resources/Obsidian Setup and Website Editing.md::9",
+      "id": "resources/Obsidian Setup and Website Editing.md::10",
       "title": "Obsidian Setup and Website Editing",
       "heading": "Tables",
       "anchor": "tables",
@@ -638,40 +649,7 @@
       "title": "Engine Design",
       "heading": "Engine Design",
       "anchor": "engine-design",
-      "text": "This page includes a live Onshape view for the current engine CAD.",
-      "sourceFile": "subteams/engine/Engine Design.md",
-      "pageUrl": "subteams/engine/Engine%20Design.html",
-      "resourcePriority": false,
-      "images": []
-    },
-    {
-      "id": "subteams/engine/Engine Design.md::1",
-      "title": "Engine Design",
-      "heading": "Live Engine CAD Preview",
-      "anchor": "live-engine-cad-preview",
-      "text": "Use the embedded view below to rotate, zoom, and inspect the design.\n<iframe\nsrc=\"https://cad.onshape.com/documents/004f4efe7293f877eb78818f\"\nstyle=\"width: 100%; height: 720px; border: 1px solid #d8dee9; border-radius: 8px;\"\nloading=\"lazy\"\nallowfullscreen\n></iframe>\nIf the embed does not load in your browser, open it directly in Onshape:\n[Open Engine CAD in Onshape](https://cad.onshape.com/documents/004f4efe7293f877eb78818f)",
-      "sourceFile": "subteams/engine/Engine Design.md",
-      "pageUrl": "subteams/engine/Engine%20Design.html",
-      "resourcePriority": false,
-      "images": []
-    },
-    {
-      "id": "subteams/engine/Engine Design.md::2",
-      "title": "Engine Design",
-      "heading": "Reuse For Other Designs",
-      "anchor": "reuse-for-other-designs",
-      "text": "To add another live CAD view on any page, copy this block and replace the URL.\nhtml\n<iframe\nsrc=\"https://cad.onshape.com/documents/YOUR_DOCUMENT_ID\"\nstyle=\"width: 100%; height: 720px; border: 1px solid #d8dee9; border-radius: 8px;\"\nloading=\"lazy\"\nallowfullscreen\n></iframe>",
-      "sourceFile": "subteams/engine/Engine Design.md",
-      "pageUrl": "subteams/engine/Engine%20Design.html",
-      "resourcePriority": false,
-      "images": []
-    },
-    {
-      "id": "subteams/engine/Engine Design.md::3",
-      "title": "Engine Design",
-      "heading": "Access/Permissions Note",
-      "anchor": "accesspermissions-note",
-      "text": "The document must be shared with your team or made public in Onshape, or users will see a permissions/login page.",
+      "text": "Use the button below to open the full interactive Onshape UI for the current engine design.\n<div style=\"margin: 16px 0;\">\n<a\nhref=\"https://cad.onshape.com/documents/c4100d7a65ab7b8325e57b4f/w/92c48d0b5771f42df048d320/e/f0e06c418079f98a451274e3?renderMode=0&uiState=69c84055c7513bb8d825e559\"\ntarget=\"_blank\"\nrel=\"noopener noreferrer\"\nstyle=\"display: inline-block; background: #0e4c99; color: #ffffff; text-decoration: none; padding: 12px 18px; border-radius: 8px; font-weight: 700;\"\n>\nOpen Engine CAD in Onshape\n</a>\n</div>",
       "sourceFile": "subteams/engine/Engine Design.md",
       "pageUrl": "subteams/engine/Engine%20Design.html",
       "resourcePriority": false,
