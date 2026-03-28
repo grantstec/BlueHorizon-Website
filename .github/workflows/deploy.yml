@@ -25,6 +25,9 @@ jobs:
       - name: Update TOC from docs tree
         run: node .github/scripts/update-toc.js
 
+      - name: Build chatbot docs index
+        run: node .github/scripts/build-docs-chat-index.js
+
       - name: Commit TOC changes
         if: github.actor != 'github-actions[bot]'
         run: |

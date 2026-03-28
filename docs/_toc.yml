@@ -35,6 +35,7 @@ parts:
           - file: subteams/structures/Structures Testing
   - caption: Resources
     chapters:
+      - file: resources/AI Website Editing Assistant
       - file: resources/GitHub Setup and Resources
       - file: resources/Obsidian Setup and Website Editing
   - caption: Past Years

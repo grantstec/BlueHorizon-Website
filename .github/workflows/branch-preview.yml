@@ -92,6 +92,9 @@ jobs:
       - name: Update TOC from docs tree (preview only)
         run: node .github/scripts/update-toc.js
 
+      - name: Build chatbot docs index (preview)
+        run: node .github/scripts/build-docs-chat-index.js
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:

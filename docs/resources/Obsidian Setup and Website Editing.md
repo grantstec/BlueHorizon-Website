@@ -78,7 +78,7 @@ To ensure effective and efficient copy pasting of images you need to change sett
 
 Navigate to the setting by clicking this gear in bottom left
 
-![](pictures/Obsidian%20Settings.png)
+![](pictures/ObsidianSettings.png)
 
 From there adjust your files and links settings so image pasting is correct and efficient
 
@@ -100,7 +100,7 @@ This is a useful plugin to help automatically rename images when you paste them 
 
 Navigate to the settings 
 
-![](pictures/Obsidian%20Settings.png)
+![](pictures/ObsidianSettings.png)
 
 Select Community Plugins
 
