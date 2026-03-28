@@ -35,7 +35,8 @@ parts:
           - file: subteams/structures/Structures Testing
   - caption: Resources
     chapters:
-      - file: resources/website editing
+      - file: resources/GitHub Setup and Resources
+      - file: resources/Obsidian Setup and Website Editing
   - caption: Past Years
     chapters:
       - file: Past Years/MAIN 2023-2024 NASA USLI
