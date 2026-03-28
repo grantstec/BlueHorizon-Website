@@ -111,6 +111,13 @@ You can also access from the quick links below or the auto updating README page 
 
 #### Pulling Updates from Main
 
+First make sure you have committed and pushed all of your changes so your github desktop looks blank like this
+
+![](pictures/GithubdesktopHomepage.png)
+
+Check that your are on your branch not main
+
+![](pictures/BranchSelection.png)
 
 
 #### Changing Main Page
