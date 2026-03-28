@@ -1,0 +1,896 @@
+{
+  "generatedAt": "2026-03-28T21:21:02.361Z",
+  "version": 1,
+  "sourceCount": 30,
+  "chunkCount": 61,
+  "chunks": [
+    {
+      "id": "intro.md::0",
+      "title": "BlueHorizon Rocketry",
+      "heading": "BlueHorizon Rocketry",
+      "anchor": "bluehorizon-rocketry",
+      "text": "{image} ./pictures/BlueHorizonteampic.jpg\n:width: 5760\n:align: center\n<br>",
+      "sourceFile": "intro.md",
+      "pageUrl": "intro.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "intro.md::1",
+      "title": "BlueHorizon Rocketry",
+      "heading": "About Us",
+      "anchor": "about-us",
+      "text": "BlueHorizon is USAFA's collegiate rocketry club that competes in national collegiate rocketry competitions. The club also is a breeding ground for engineering creativity with a research division that helps connect cadets with faculty and work on a variety of engineering-based research topics.",
+      "sourceFile": "intro.md",
+      "pageUrl": "intro.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "intro.md::2",
+      "title": "BlueHorizon Rocketry",
+      "heading": "History",
+      "anchor": "history",
+      "text": "The club was envisioned by a cadet in 2019 when the Academy was at the height of the FalconSat program. The cadet saw a need to develop the rocket engineering and research side of the\nAcademy’s space program. He originally shared his idea with the head of the Astronautics Department. Today, the team has developed an accredited history and continues to prosper with more than 50 cadet participants.\n{image} ./pictures/BlueHorizons_ClubAccomplishments_Image.jpg\n:width: 500\n:align: center\nThe team has successfully competed in the NASA USLI (University Student Launch Initiative) in 2022, 2023, and 2024, with their most successful year in 2024 being one of 13 teams to qualify their payload out of 50 for the final launch. Learn more about the 2024 season [here](past_years/MAIN%202023-2024%20NASA%20USLI.md).\n{image} ./pictures/payload.jpg\n:height: 300\n:align: center\nCurrently in 2025 the team is competing in the [FAR-OUT liquid rocketry competition](https://www.faroutlaunch.org/teams) with the goal of successfully launching a bi-propellant liquid rocket.",
+      "sourceFile": "intro.md",
+      "pageUrl": "intro.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "intro.md::3",
+      "title": "BlueHorizon Rocketry",
+      "heading": "Team Structure",
+      "anchor": "team-structure",
+      "text": "The team is split into multiple sub-groups, which change from semester to semester. Currently the team is split into three divisions, [research](research.md), [support](support.md), and [competition](competition.md).",
+      "sourceFile": "intro.md",
+      "pageUrl": "intro.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "intro.md::4",
+      "title": "BlueHorizon Rocketry",
+      "heading": "Team Information",
+      "anchor": "team-information",
+      "text": "- 📆 **Team Schedule**: Posted [here](team/MAIN%20schedule.md) and subject to change.",
+      "sourceFile": "intro.md",
+      "pageUrl": "intro.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "resources/AI Website Editing Assistant.md::0",
+      "title": "AI Website Editing Assistant",
+      "heading": "AI Website Editing Assistant",
+      "anchor": "ai-website-editing-assistant",
+      "text": "Use this assistant for quick answers about editing this website with Obsidian and GitHub Desktop.\nIt is grounded in this documentation set and returns:\n- Step-by-step guidance\n- Source page links\n- Relevant screenshots from the docs",
+      "sourceFile": "resources/AI Website Editing Assistant.md",
+      "pageUrl": "resources/AI%20Website%20Editing%20Assistant.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/AI Website Editing Assistant.md::1",
+      "title": "AI Website Editing Assistant",
+      "heading": "Ask The Assistant",
+      "anchor": "ask-the-assistant",
+      "text": "<link rel=\"stylesheet\" href=\"../_static/chatbot.css\">\n<div\nid=\"bh-editing-chatbot\"\ndata-endpoint=\"https://bluehorizon-docs-chatbot.stecgrant89.workers.dev/chat\"\n></div>\n<script type=\"module\" src=\"../_static/chatbot.js\"></script>",
+      "sourceFile": "resources/AI Website Editing Assistant.md",
+      "pageUrl": "resources/AI%20Website%20Editing%20Assistant.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/AI Website Editing Assistant.md::2",
+      "title": "AI Website Editing Assistant",
+      "heading": "Setup Notes For Maintainers",
+      "anchor": "setup-notes-for-maintainers",
+      "text": "1. Deploy the Cloudflare Worker using the repo file at extra/chatbot-worker/README.md.\n2. Replace data-endpoint above with your real worker URL.\n3. Keep docs pages and screenshots up to date. The index is rebuilt automatically during CI deploys.",
+      "sourceFile": "resources/AI Website Editing Assistant.md",
+      "pageUrl": "resources/AI%20Website%20Editing%20Assistant.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/AI Website Editing Assistant.md::3",
+      "title": "AI Website Editing Assistant",
+      "heading": "What It Can Answer Well",
+      "anchor": "what-it-can-answer-well",
+      "text": "- New page creation in Obsidian\n- New section and MAIN page setup\n- Image/screenshot setup and naming\n- GitHub Desktop commit/push flow\n- Branch previews and pull requests",
+      "sourceFile": "resources/AI Website Editing Assistant.md",
+      "pageUrl": "resources/AI%20Website%20Editing%20Assistant.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/AI Website Editing Assistant.md::4",
+      "title": "AI Website Editing Assistant",
+      "heading": "Fallback",
+      "anchor": "fallback",
+      "text": "If the chatbot is unavailable, use these guides directly:\n- [Obsidian Setup and Website Editing](Obsidian%20Setup%20and%20Website%20Editing.md)\n- [GitHub Setup and Resources](GitHub%20Setup%20and%20Resources.md)",
+      "sourceFile": "resources/AI Website Editing Assistant.md",
+      "pageUrl": "resources/AI%20Website%20Editing%20Assistant.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/Branch Update and PR Tools.md::0",
+      "title": "Branch Update and PR Tools",
+      "heading": "Branch Update and PR Tools",
+      "anchor": "branch-update-and-pr-tools",
+      "text": "Use this page for quick GitHub actions while reviewing your preview website.",
+      "sourceFile": "resources/Branch Update and PR Tools.md",
+      "pageUrl": "resources/Branch%20Update%20and%20PR%20Tools.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/Branch Update and PR Tools.md::1",
+      "title": "Branch Update and PR Tools",
+      "heading": "Current Branch Helper",
+      "anchor": "current-branch-helper",
+      "text": "<div style=\"border:1px solid #d8dee9; border-radius:10px; padding:14px; background:#f8fbff;\">\n<p><strong>Detected/Selected branch:</strong> <span id=\"bh-branch-value\">loading...</span></p>\n<p id=\"bh-tool-note\">Detecting preview branch...</p>\n<div style=\"display:flex; gap:8px; flex-wrap:wrap; margin:8px 0 12px;\">\n<input id=\"bh-branch-input\" type=\"text\" placeholder=\"your-branch-name\" style=\"padding:8px; min-width:260px; border:1px solid #b9c6df; border-radius:6px;\">\n<button id=\"bh-set-branch\" type=\"button\" style=\"padding:8px 12px; border:1px solid #95a7ca; border-radius:6px; background:#fff; cursor:pointer;\">Use branch</button>\n<button id=\"bh-copy-branch\" type=\"button\" style=\"padding:8px 12px; border:1px solid #95a7ca; border-radius:6px; background:#fff; cursor:pointer;\">Copy branch</button>\n</div>\n<div style=\"display:flex; gap:10px; flex-wrap:wrap;\">\n<a id=\"bh-pr-link\" href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#0e4c99; color:#fff;\">Open PR to main</a>\n<a id=\"bh-run-single-link\" href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#ffffff; color:#1f2d45; border:1px solid #95a7ca;\">Run update for one branch</a>\n<a id=\"bh-run-all-link\" href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#ffffff; color:#1f2d45; border:1px solid #95a7ca;\">Run update for all branches</a>\n</div>\n</div>\n<script type=\"module\" src=\"../_static/branch-tools.js\"></script>",
+      "sourceFile": "resources/Branch Update and PR Tools.md",
+      "pageUrl": "resources/Branch%20Update%20and%20PR%20Tools.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/Branch Update and PR Tools.md::2",
+      "title": "Branch Update and PR Tools",
+      "heading": "How The Buttons Work",
+      "anchor": "how-the-buttons-work",
+      "text": "- Open PR to main: Opens GitHub compare page with your branch prefilled.\n- Run update for one branch: Opens GitHub Actions workflow to merge main into a target branch.\n- Run update for all branches: Opens GitHub Actions workflow that attempts to merge main into every non-main branch.",
+      "sourceFile": "resources/Branch Update and PR Tools.md",
+      "pageUrl": "resources/Branch%20Update%20and%20PR%20Tools.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/Branch Update and PR Tools.md::3",
+      "title": "Branch Update and PR Tools",
+      "heading": "Important Notes",
+      "anchor": "important-notes",
+      "text": "- GitHub login is required for these write actions.\n- Merge conflicts cannot be auto-resolved and will be reported in workflow summary.\n- This page is safe for preview users because it does not store tokens in the website.",
+      "sourceFile": "resources/Branch Update and PR Tools.md",
+      "pageUrl": "resources/Branch%20Update%20and%20PR%20Tools.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/GitHub Setup and Resources.md::0",
+      "title": "GitHub Setup and Resources",
+      "heading": "GitHub Account Creation",
+      "anchor": "github-account-creation",
+      "text": "Navigate to http://github.com and **sign up using your afacademy email**.\nOnce you created an account message **Grant Stec** a teams message and he will invite you to the github repo so you can edit.\nOn github you can now access the repository called **\"BlueHorizon-Website\"** found [here](https://github.com/grantstec/BlueHorizon-Website)",
+      "sourceFile": "resources/GitHub Setup and Resources.md",
+      "pageUrl": "resources/GitHub%20Setup%20and%20Resources.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/gitrepoimage.png",
+          "url": "resources/pictures/gitrepoimage.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/GitHub Setup and Resources.md::1",
+      "title": "GitHub Setup and Resources",
+      "heading": "Creating your own branch",
+      "anchor": "creating-your-own-branch",
+      "text": "Creating your own branch gives you a workspace where you can edit files and push to that branch without crashing the whole website.\nnavigate to the tab called **\"Branches\"** as seen in the picture below\nYou should now see the names of the different existing Branches on this repository.\nName your branch based on **your name**. To make your branch hit the bright green **\"New Branch\"** button, name it, keep all the other settings that same and hit **\"Create New Branch\"**. Now you should see your branch listed on the Branches page.",
+      "sourceFile": "resources/GitHub Setup and Resources.md",
+      "pageUrl": "resources/GitHub%20Setup%20and%20Resources.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/gitrepobranchhighlight.png",
+          "url": "resources/pictures/gitrepobranchhighlight.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/GitHub Setup and Resources.md::2",
+      "title": "GitHub Setup and Resources",
+      "heading": "Downloading GitHub Desktop",
+      "anchor": "downloading-github-desktop",
+      "text": "Download from this link: [Download GitHub Desktop | GitHub Desktop](https://desktop.github.com/download/)\nOpen the downloaded exe file and go through the installation setup\nIt will automatically open the app and then sign in through GitHub.com",
+      "sourceFile": "resources/GitHub Setup and Resources.md",
+      "pageUrl": "resources/GitHub%20Setup%20and%20Resources.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/GitHub Setup and Resources.md::3",
+      "title": "GitHub Setup and Resources",
+      "heading": "GitHub Desktop Setup",
+      "anchor": "github-desktop-setup",
+      "text": "Use default setup/do not configure manually, just hit finish\nClone the repository from the internet\nSearch for **\"website\"** and chose the **BlueHoirzon-Website**.\nIf you get a message saying \"This folder contains file. Git can only clone to empty folder.\" You need to choose a folder location locally on your computer, I often just select my **Desktop** or **Documents**\nNow you should see a screen like this",
+      "sourceFile": "resources/GitHub Setup and Resources.md",
+      "pageUrl": "resources/GitHub%20Setup%20and%20Resources.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/ConfigureGit.png",
+          "url": "resources/pictures/ConfigureGit.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/CloneRepo.png",
+          "url": "resources/pictures/CloneRepo.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/WebsiteSearch.png",
+          "url": "resources/pictures/WebsiteSearch.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/ChooseFolder.png",
+          "url": "resources/pictures/ChooseFolder.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/GithubdesktopHomepage.png",
+          "url": "resources/pictures/GithubdesktopHomepage.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/GitHub Setup and Resources.md::4",
+      "title": "GitHub Setup and Resources",
+      "heading": "GitHub Desktop Branch Selection Setup",
+      "anchor": "github-desktop-branch-selection-setup",
+      "text": "Ensure to select your branch from the current branch dropdown\n**\"main\" should not be selected**",
+      "sourceFile": "resources/GitHub Setup and Resources.md",
+      "pageUrl": "resources/GitHub%20Setup%20and%20Resources.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/githubbranchselection.png",
+          "url": "resources/pictures/githubbranchselection.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/GitHub Setup and Resources.md::5",
+      "title": "GitHub Setup and Resources",
+      "heading": "Committing and Pushing Changes",
+      "anchor": "committing-and-pushing-changes",
+      "text": "Once you have made edits to the webpage files through [Obsidian Setup and Website Editing](Obsidian%20Setup%20and%20Website%20Editing.md) you need to commit and push your changes to your GitHub Branch\nYou should see a screen like this in the GitHub Desktop showing the edits and additions you have made",
+      "sourceFile": "resources/GitHub Setup and Resources.md",
+      "pageUrl": "resources/GitHub%20Setup%20and%20Resources.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/GitHubEdits.png",
+          "url": "resources/pictures/GitHubEdits.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/GitHub Setup and Resources.md::6",
+      "title": "GitHub Setup and Resources",
+      "heading": "Commit Message",
+      "anchor": "commit-message",
+      "text": "To commit, you must provide a summary in the box highlighted below, you can make it however long or short you like but a quick synopsis like **\"added new engine design information\"** would work well. There is no need to fill out the description box.\nOnce something is typed in you will see the **\"Commit _ files to main\"** button glow up. Click it.",
+      "sourceFile": "resources/GitHub Setup and Resources.md",
+      "pageUrl": "resources/GitHub%20Setup%20and%20Resources.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/Commitmessage.png",
+          "url": "resources/pictures/Commitmessage.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/GitHub Setup and Resources.md::7",
+      "title": "GitHub Setup and Resources",
+      "heading": "Pushing",
+      "anchor": "pushing",
+      "text": "If you made a mistake or want to edit the summary message you can undo the commit by hitting the undo button on the bottom left.\nIf all looks good you can push the changes to the actual online repo by hitting **\"Push Origin\"**",
+      "sourceFile": "resources/GitHub Setup and Resources.md",
+      "pageUrl": "resources/GitHub%20Setup%20and%20Resources.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/UndoandPush.png",
+          "url": "resources/pictures/UndoandPush.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/GitHub Setup and Resources.md::8",
+      "title": "GitHub Setup and Resources",
+      "heading": "Accessing Your Branch Specific Website",
+      "anchor": "accessing-your-branch-specific-website",
+      "text": "To ensure your edits have been pushed correctly and rendered successfully you can go to your branch specific website. This website will display exactly what is in your branch, it will not be the main website.\nTo access it simply adjust the below link to have your branches name in place of the blank space\nhttps://grantstec.github.io/BlueHorizon-Website/previews/_____/intro.html\nYou can also access from the quick links below or the auto updating README page on the GitHub repo home page [here](https://github.com/grantstec/BlueHorizon-Website?tab=readme-ov-file)",
+      "sourceFile": "resources/GitHub Setup and Resources.md",
+      "pageUrl": "resources/GitHub%20Setup%20and%20Resources.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/GitHub Setup and Resources.md::9",
+      "title": "GitHub Setup and Resources",
+      "heading": "Branch Preview Quick Links",
+      "anchor": "branch-preview-quick-links",
+      "text": "- [alexander-agrawal-branch](https://grantstec.github.io/BlueHorizon-Website/previews/alexander-agrawal-branch/) - branch: alexander-agrawal-branch\n- [Bender](https://grantstec.github.io/BlueHorizon-Website/previews/Bender/) - branch: Bender\n- [Coltons](https://grantstec.github.io/BlueHorizon-Website/previews/Coltons/) - branch: Coltons\n- [ConnorBeardsley](https://grantstec.github.io/BlueHorizon-Website/previews/ConnorBeardsley/) - branch: ConnorBeardsley\n- [ethan-branch](https://grantstec.github.io/BlueHorizon-Website/previews/ethan-branch/) - branch: ethan-branch\n- [GavinEhrich](https://grantstec.github.io/BlueHorizon-Website/previews/GavinEhrich/) - branch: GavinEhrich\n- [JeremyS](https://grantstec.github.io/BlueHorizon-Website/previews/JeremyS/) - branch: JeremyS\n- [lucan-keyser-branch](https://grantstec.github.io/BlueHorizon-Website/previews/lucan-keyser-branch/) - branch: lucan-keyser-branch\n- [lucan-test-2](https://grantstec.github.io/BlueHorizon-Website/previews/lucan-test-2/) - branch: lucan-test-2\n- [Nathan-Branch](https://grantstec.github.io/BlueHorizon-Website/previews/Nathan-Branch/) - branch: Nathan-Branch\n- [origin/brookestec](https://grantstec.github.io/BlueHorizon-Website/previews/origin-brookestec/) - branch: origin%2Fbrookestec\n- [RWISE](https://grantstec.github.io/BlueHorizon-Website/previews/RWISE/) - branch: RWISE\n- [zack-branch](https://grantstec.github.io/BlueHorizon-Website/previews/zack-branch/) - branch: zack-branch",
+      "sourceFile": "resources/GitHub Setup and Resources.md",
+      "pageUrl": "resources/GitHub%20Setup%20and%20Resources.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/GitHub Setup and Resources.md::10",
+      "title": "GitHub Setup and Resources",
+      "heading": "Pulling Updates from Main",
+      "anchor": "pulling-updates-from-main",
+      "text": "First make sure you have committed and pushed all of your changes so your github desktop looks blank like this\nThen hover over the **Branch** button on upper left and select **Update from main**\nThis will keep any changes you have made while also updating all other documents from main. If you happen to make changes to documents also changed in the main, you will get a merge conflict and will need to sort that out by selecting which information you want to keep and which you want to remove, or add both.",
+      "sourceFile": "resources/GitHub Setup and Resources.md",
+      "pageUrl": "resources/GitHub%20Setup%20and%20Resources.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/GithubdesktopHomepage.png",
+          "url": "resources/pictures/GithubdesktopHomepage.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/updatefrommain.png",
+          "url": "resources/pictures/updatefrommain.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/GitHub Setup and Resources.md::11",
+      "title": "GitHub Setup and Resources",
+      "heading": "Updating Main Page",
+      "anchor": "updating-main-page",
+      "text": "Once you commit ahead of main branch and push to your own branch and check that everything looks good then submit a pull request to main and then message Grant Stec on teams.",
+      "sourceFile": "resources/GitHub Setup and Resources.md",
+      "pageUrl": "resources/GitHub%20Setup%20and%20Resources.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/GitHub Setup and Resources.md::12",
+      "title": "GitHub Setup and Resources",
+      "heading": "Submitting A Pull Request",
+      "anchor": "submitting-a-pull-request",
+      "text": "Hover over the **Branch** button on upper left and select **Create Pull Request**\nThis will navigate you to the web to finalize creating the pull request\nEnsure the base is main and you are comparing with your branch, this should be auto filled in.\nAdd a title and then scroll down and click **\"Create Pull Request\"**",
+      "sourceFile": "resources/GitHub Setup and Resources.md",
+      "pageUrl": "resources/GitHub%20Setup%20and%20Resources.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/Pullrequestonline.png",
+          "url": "resources/pictures/Pullrequestonline.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/Obsidian Setup and Website Editing.md::0",
+      "title": "Obsidian Setup and Website Editing",
+      "heading": "Downloading Obsidian",
+      "anchor": "downloading-obsidian",
+      "text": "Download Obsidian from this link [Download - Obsidian](https://obsidian.md/download)\nOpen the downloaded exe and go through the installation setup\nUtilize all default options, you should just be clicking **next** or **continue** or **install**",
+      "sourceFile": "resources/Obsidian Setup and Website Editing.md",
+      "pageUrl": "resources/Obsidian%20Setup%20and%20Website%20Editing.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/Obsidian Setup and Website Editing.md::1",
+      "title": "Obsidian Setup and Website Editing",
+      "heading": "Setting up Obsidian",
+      "anchor": "setting-up-obsidian",
+      "text": "Once downloaded select the option to open existing folder\nSelect the GitHub repo folder you location you had chosen previously in the GitHub setup step [GitHub Setup and Resources — BlueHorizon](https://grantstec.github.io/BlueHorizon-Website/resources/GitHub%20Setup%20and%20Resources.html#github-desktop-setup)\nSelect and open the **\"BlueHorizon-Website\"** folder\nSelect **Trust author and enable plugins**",
+      "sourceFile": "resources/Obsidian Setup and Website Editing.md",
+      "pageUrl": "resources/Obsidian%20Setup%20and%20Website%20Editing.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/obsidianopenfolder.png",
+          "url": "resources/pictures/obsidianopenfolder.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/trustauthorsobsidianopening.png",
+          "url": "resources/pictures/trustauthorsobsidianopening.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/Obsidian Setup and Website Editing.md::2",
+      "title": "Obsidian Setup and Website Editing",
+      "heading": "New Section/Folder",
+      "anchor": "new-sectionfolder",
+      "text": "If you would like to make a new section simply hit the create a folder button in upper left\nThis will create an **\"Untitled\"** folder outside everything\nSimple now click and drag this new folder into the location you would like either under the **\"docs\"** folder for a whole new section like **\"subteams\"** or **\"resources\"** or you can place this within a section like **\"subteams\"** or **\"resources\"** and it will become a subsection\nEvery new subsection should have a **\"MAIN\"** page that will display when you click on that sections label on the website, for example if you create a new section like engine you now must make a **\"MAIN Engine\"** file within it, you must include **\"MAIN\"** or else the auto setup will not detect it, you can have any name after MAIN in the title. Follow the [New Page](#New%20Page) setup to accurately make the new **\"MAIN\"** page.",
+      "sourceFile": "resources/Obsidian Setup and Website Editing.md",
+      "pageUrl": "resources/Obsidian%20Setup%20and%20Website%20Editing.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/newfolder.png",
+          "url": "resources/pictures/newfolder.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/newfolderuntitled.png",
+          "url": "resources/pictures/newfolderuntitled.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/foldersubsection.png",
+          "url": "resources/pictures/foldersubsection.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/MAINfilesetup.png",
+          "url": "resources/pictures/MAINfilesetup.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/Obsidian Setup and Website Editing.md::3",
+      "title": "Obsidian Setup and Website Editing",
+      "heading": "New Page",
+      "anchor": "new-page",
+      "text": "From here you can now simply navigate the folders and files on the left side of the screen\nThe files exist as actual pages, you can simply create a new file by hitting the button with a little pencil in the upper left\nOnce created you will be prompted to give it a name, this is the actual file name, it is not what it will be labeled on website.\nThe label or title that will appear on website will be following this document title with a new line and then one # and a space then the name. For markdown the common header structure is # for a large header then progressively down to subheading with #####",
+      "sourceFile": "resources/Obsidian Setup and Website Editing.md",
+      "pageUrl": "resources/Obsidian%20Setup%20and%20Website%20Editing.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/Fileandfoldernavigation.png",
+          "url": "resources/pictures/Fileandfoldernavigation.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/Addnewpage.png",
+          "url": "resources/pictures/Addnewpage.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/newfilename.png",
+          "url": "resources/pictures/newfilename.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/samplepagesetup.png",
+          "url": "resources/pictures/samplepagesetup.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/Obsidian Setup and Website Editing.md::4",
+      "title": "Obsidian Setup and Website Editing",
+      "heading": "Adding Images",
+      "anchor": "adding-images",
+      "text": "Once of the easiest ways to add images is using the windows inherit snipping tool for screenshots with then get automatically saved to your clipboard so you can just copy paste instead of needing to upload photos and all. I find it so effective I will open regular downloaded images in the windows photo viewer and then just a take a screenshot of that image so I can quickly paste it in a rename name it without need to upload the image in the correct folder and then rename and add the link in the notebook, this can all be done automatically with pasting.\nTo activate the snipping tool use **\"Win + shift + s\"** or search snipping tool in the windows desktop search bar (keyboard shortcut - \"Win + s\") then select it and I even then right click and add to taskbar so I can simply open it from my taskbar easily.",
+      "sourceFile": "resources/Obsidian Setup and Website Editing.md",
+      "pageUrl": "resources/Obsidian%20Setup%20and%20Website%20Editing.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/snippingtool.png",
+          "url": "resources/pictures/snippingtool.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/Obsidian Setup and Website Editing.md::5",
+      "title": "Obsidian Setup and Website Editing",
+      "heading": "Photo Setup",
+      "anchor": "photo-setup",
+      "text": "To ensure effective and efficient copy pasting of images you need to change settings in the obsidian app.\nNavigate to the setting by clicking this gear in bottom left\nFrom there adjust your files and links settings so image pasting is correct and efficient\n1. Change \"Default location for new attachments\" to \"In subfolder under current folder\"\n2. Subfolder name become \"pictures\"\n3. New link format should be set to \"Path from current file\"\n4. Ensure \"automatically update internal links\" is checked\n5. Uncheck \"use wikilinks\"\nNow whenever you paste an image into some notebook file it will auto add in a \"pictures\" folder if it doesn't exist or add the image to the existing pictures folder now you cannot resize the image or else it will not render on the website so unfortunately we are stuck with big images.\nNow you must rename the photo name to remove all spaces or (\"%20) to do this it is best to setup the follow plugin [Paste Image Rename Plugin](#Paste%20Image%20Rename%20Plugin)",
+      "sourceFile": "resources/Obsidian Setup and Website Editing.md",
+      "pageUrl": "resources/Obsidian%20Setup%20and%20Website%20Editing.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/ObsidianSettings.png",
+          "url": "resources/pictures/ObsidianSettings.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/Pastedimage20260319195313.png",
+          "url": "resources/pictures/Pastedimage20260319195313.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/Obsidian Setup and Website Editing.md::6",
+      "title": "Obsidian Setup and Website Editing",
+      "heading": "Paste Image Rename Plugin",
+      "anchor": "paste-image-rename-plugin",
+      "text": "This is a useful plugin to help automatically rename images when you paste them in to prevent any naming errors with spaces in names\nNavigate to the settings\nSelect Community Plugins\nSearch for paste image rename\nInstall it and ensure to click **Enable**\nNow whenever you paste a screenshot you will be prompted to rename it instantly upon paste\nTo quickly clear the name box that gets auto filled just hit **\"Ctrl + A\"** and then begin typing your new name\nEnsure the name does not include any spaces you can use underscores __ to act as spaces",
+      "sourceFile": "resources/Obsidian Setup and Website Editing.md",
+      "pageUrl": "resources/Obsidian%20Setup%20and%20Website%20Editing.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/ObsidianSettings.png",
+          "url": "resources/pictures/ObsidianSettings.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/PluginInstall.png",
+          "url": "resources/pictures/PluginInstall.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/pasteimagerenamesearch.png",
+          "url": "resources/pictures/pasteimagerenamesearch.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/PasteImageRenameenable.png",
+          "url": "resources/pictures/PasteImageRenameenable.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/imagerenamepopup.png",
+          "url": "resources/pictures/imagerenamepopup.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/Obsidian Setup and Website Editing.md::7",
+      "title": "Obsidian Setup and Website Editing",
+      "heading": "Importing Excels",
+      "anchor": "importing-excels",
+      "text": "If you want to import an active excel for people to view data or tables it is fairly easy\nThey will not be able to edit but can view.\nEnsure to open the excel online on the web browser, the native excel desktop app will not work.\nClick the green **\"Share\"** button in the upper right and then share again\nThen select the settings\nSelect **Anyone**,  **Can View** and then **Apply**\nThen select **\"Copy Link\"**\nnow adjust the below line to replace the link with your link\nhtml\n<iframe\nstyle=\"width: 100%; height: 500px; border: none;\"\nscrolling=\"no\"\nsrc=\"\nhttps://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQD4oKJoUTrcSKvE5nttolIEAVqexKzp3BhkNm7SGdjnUys?e=kiGKpO\n&action=embedview&wdAllowInteractivity=True&wdHideHeaders=True&wdDownloadButton=True\">\n</iframe>\nBefore starting Project 1, ensure that:\nYou can remove the spaces so the final lines look like this\nNow you will see the excel render in obsidian and the website\n<iframe\nstyle=\"width: 100%; height: 500px; border: none;\"\nscrolling=\"no\"\nsrc=\"https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQD4oKJoUTrcSKvE5nttolIEAVqexKzp3BhkNm7SGdjnUys?e=kiGKpO&action=embedview&wdAllowInteractivity=True&wdHideHeaders=True&wdDownloadButton=True\">\n</iframe>",
+      "sourceFile": "resources/Obsidian Setup and Website Editing.md",
+      "pageUrl": "resources/Obsidian%20Setup%20and%20Website%20Editing.html",
+      "resourcePriority": true,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/shareshareexcel.png",
+          "url": "resources/pictures/shareshareexcel.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/excelsharesettings.png",
+          "url": "resources/pictures/excelsharesettings.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/excelsharinganyonecanview.png",
+          "url": "resources/pictures/excelsharinganyonecanview.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/excelsharingcopylink.png",
+          "url": "resources/pictures/excelsharingcopylink.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/excelsharinglinkadjustment.png",
+          "url": "resources/pictures/excelsharinglinkadjustment.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/excelfinalcodelines.png",
+          "url": "resources/pictures/excelfinalcodelines.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "resources/pictures/excel%20rendered.png",
+          "url": "resources/pictures/excel%2520rendered.png"
+        }
+      ]
+    },
+    {
+      "id": "resources/Obsidian Setup and Website Editing.md::8",
+      "title": "Obsidian Setup and Website Editing",
+      "heading": "Onshape Buttons",
+      "anchor": "onshape-buttons",
+      "text": "html\n<div style=\"margin: 16px 0;\">\n<a\nhref=\"https://cad.onshape.com/documents/YOUR_DOC_ID/w/YOUR_WORKSPACE_ID/e/YOUR_ELEMENT_ID\"\ntarget=\"_blank\"\nrel=\"noopener noreferrer\"\nstyle=\"display: inline-block; background: #0e4c99; color: #ffffff; text-decoration: none; padding: 12px 18px; border-radius: 8px; font-weight: 700;\"\n>\nOpen CAD in Onshape\n</a>\n</div>\nExample\nhtml\n<div style=\"margin: 16px 0;\">\n<a\nhref=\"https://cad.onshape.com/documents/c4100d7a65ab7b8325e57b4f/w/92c48d0b5771f42df048d320/e/f0e06c418079f98a451274e3?renderMode=0&uiState=69c84055c7513bb8d825e559\"\ntarget=\"_blank\"\nrel=\"noopener noreferrer\"\nstyle=\"display: inline-block; background: #0e4c99; color: #ffffff; text-decoration: none; padding: 12px 18px; border-radius: 8px; font-weight: 700;\"\n>\nOpen Engine CAD in Onshape\n</a>\n</div>\nQuick markdown-only option:\nmarkdown\n[Open CAD in Onshape](https://cad.onshape.com/documents/YOUR_DOC_ID/w/YOUR_WORKSPACE_ID/e/YOUR_ELEMENT_ID)",
+      "sourceFile": "resources/Obsidian Setup and Website Editing.md",
+      "pageUrl": "resources/Obsidian%20Setup%20and%20Website%20Editing.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/Obsidian Setup and Website Editing.md::9",
+      "title": "Obsidian Setup and Website Editing",
+      "heading": "Emojis",
+      "anchor": "emojis",
+      "text": "You can find easy to copy emojis [here](https://getemoji.com/)",
+      "sourceFile": "resources/Obsidian Setup and Website Editing.md",
+      "pageUrl": "resources/Obsidian%20Setup%20and%20Website%20Editing.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/Obsidian Setup and Website Editing.md::10",
+      "title": "Obsidian Setup and Website Editing",
+      "heading": "Tables",
+      "anchor": "tables",
+      "text": "Table generator [here](https://www.tablesgenerator.com/markdown_tables).",
+      "sourceFile": "resources/Obsidian Setup and Website Editing.md",
+      "pageUrl": "resources/Obsidian%20Setup%20and%20Website%20Editing.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "subteams/Solids/MAIN Solids.md::0",
+      "title": "Solids",
+      "heading": "Solids",
+      "anchor": "solids",
+      "text": "Details about the solids subteam.",
+      "sourceFile": "subteams/Solids/MAIN Solids.md",
+      "pageUrl": "subteams/Solids/MAIN%20Solids.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/engine/Engine Design.md::0",
+      "title": "Engine Design",
+      "heading": "Engine Design",
+      "anchor": "engine-design",
+      "text": "Use the button below to open the full interactive Onshape UI for the current engine design.\n<div style=\"margin: 16px 0;\">\n<a\nhref=\"https://cad.onshape.com/documents/c4100d7a65ab7b8325e57b4f/w/92c48d0b5771f42df048d320/e/f0e06c418079f98a451274e3?renderMode=0&uiState=69c84055c7513bb8d825e559\"\ntarget=\"_blank\"\nrel=\"noopener noreferrer\"\nstyle=\"display: inline-block; background: #0e4c99; color: #ffffff; text-decoration: none; padding: 12px 18px; border-radius: 8px; font-weight: 700;\"\n>\nOpen Engine CAD in Onshape\n</a>\n</div>",
+      "sourceFile": "subteams/engine/Engine Design.md",
+      "pageUrl": "subteams/engine/Engine%20Design.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/engine/Engine Gimbal Design.md::0",
+      "title": "Engine Gimbal Design 1",
+      "heading": "Engine Gimbal Design 1",
+      "anchor": "engine-gimbal-design-1",
+      "text": "connor makes some edits for sample pull request",
+      "sourceFile": "subteams/engine/Engine Gimbal Design.md",
+      "pageUrl": "subteams/engine/Engine%20Gimbal%20Design.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/engine/Engine Testing.md::0",
+      "title": "Engine Testing",
+      "heading": "Engine Testing",
+      "anchor": "engine-testing",
+      "text": "Details about the Engine Testing.",
+      "sourceFile": "subteams/engine/Engine Testing.md",
+      "pageUrl": "subteams/engine/Engine%20Testing.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/engine/MAIN Engine.md::0",
+      "title": "Engine",
+      "heading": "Engine",
+      "anchor": "engine",
+      "text": "Details about the Engine subteam.\n$$F=\\dot mv_2+(P_3-P_2)A_2$$\n$\\sigma$ 2094q8ytqpowu;rsghpoi;dhfba]",
+      "sourceFile": "subteams/engine/MAIN Engine.md",
+      "pageUrl": "subteams/engine/MAIN%20Engine.html",
+      "resourcePriority": false,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "subteams/engine/pictures/Capybara.png",
+          "url": "subteams/engine/pictures/Capybara.png"
+        }
+      ]
+    },
+    {
+      "id": "subteams/flight_computer/Flight Computer PCB Design.md::0",
+      "title": "Flight Computer PCB Design",
+      "heading": "Flight Computer PCB Design",
+      "anchor": "flight-computer-pcb-design",
+      "text": "Details about the Flight Computer PCB Design.",
+      "sourceFile": "subteams/flight_computer/Flight Computer PCB Design.md",
+      "pageUrl": "subteams/flight_computer/Flight%20Computer%20PCB%20Design.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/flight_computer/Flight Computer Schematic Design.md::0",
+      "title": "Flight Computer Schematic Design",
+      "heading": "Flight Computer Schematic Design",
+      "anchor": "flight-computer-schematic-design",
+      "text": "Details about the Flight Computer Schematic Design.",
+      "sourceFile": "subteams/flight_computer/Flight Computer Schematic Design.md",
+      "pageUrl": "subteams/flight_computer/Flight%20Computer%20Schematic%20Design.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/flight_computer/Flight Computer Software.md::0",
+      "title": "Flight Computer Software",
+      "heading": "Flight Computer Software",
+      "anchor": "flight-computer-software",
+      "text": "Details about the Flight Computer Software.",
+      "sourceFile": "subteams/flight_computer/Flight Computer Software.md",
+      "pageUrl": "subteams/flight_computer/Flight%20Computer%20Software.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/flight_computer/Flight Computer Testing.md::0",
+      "title": "Flight Computer Testing",
+      "heading": "Flight Computer Testing",
+      "anchor": "flight-computer-testing",
+      "text": "Details about the Flight Computer Testing.",
+      "sourceFile": "subteams/flight_computer/Flight Computer Testing.md",
+      "pageUrl": "subteams/flight_computer/Flight%20Computer%20Testing.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/flight_computer/MAIN Flight Computer.md::0",
+      "title": "Flight Computer",
+      "heading": "Flight Computer",
+      "anchor": "flight-computer",
+      "text": "Details about the Flight Computer.",
+      "sourceFile": "subteams/flight_computer/MAIN Flight Computer.md",
+      "pageUrl": "subteams/flight_computer/MAIN%20Flight%20Computer.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/Communications System.md::0",
+      "title": "Communications System",
+      "heading": "Communications System",
+      "anchor": "communications-system",
+      "text": "Details about the Communications System.",
+      "sourceFile": "subteams/gse/Communications System.md",
+      "pageUrl": "subteams/gse/Communications%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/Custom Steel Test Stand.md::0",
+      "title": "Custom Steel Test Stand",
+      "heading": "Custom Steel Test Stand",
+      "anchor": "custom-steel-test-stand",
+      "text": "Details about the Custom Steel Test Stand.",
+      "sourceFile": "subteams/gse/Custom Steel Test Stand.md",
+      "pageUrl": "subteams/gse/Custom%20Steel%20Test%20Stand.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::0",
+      "title": "DAQ System",
+      "heading": "DAQ System",
+      "anchor": "daq-system",
+      "text": "Details about the Data Acquisition (DAQ) System.",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/MAIN GSE.md::0",
+      "title": "GSE",
+      "heading": "GSE",
+      "anchor": "gse",
+      "text": "Details about the Ground Support Equipment (GSE).",
+      "sourceFile": "subteams/gse/MAIN GSE.md",
+      "pageUrl": "subteams/gse/MAIN%20GSE.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/Trailer Test Stand.md::0",
+      "title": "Trailer Test Stand",
+      "heading": "Trailer Test Stand",
+      "anchor": "trailer-test-stand",
+      "text": "Details about the Trailer Test Stand.",
+      "sourceFile": "subteams/gse/Trailer Test Stand.md",
+      "pageUrl": "subteams/gse/Trailer%20Test%20Stand.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/sim_controls/Control Algorithm.md::0",
+      "title": "Control Algorithm",
+      "heading": "Control Algorithm",
+      "anchor": "control-algorithm",
+      "text": "Details about the Control Algorithm.",
+      "sourceFile": "subteams/sim_controls/Control Algorithm.md",
+      "pageUrl": "subteams/sim_controls/Control%20Algorithm.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/sim_controls/MAIN Simulation and Controls.md::0",
+      "title": "Simulation and Controls",
+      "heading": "Simulation and Controls",
+      "anchor": "simulation-and-controls",
+      "text": "Details about Simulation and Controls.",
+      "sourceFile": "subteams/sim_controls/MAIN Simulation and Controls.md",
+      "pageUrl": "subteams/sim_controls/MAIN%20Simulation%20and%20Controls.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/sim_controls/SIMULINK Simulation.md::0",
+      "title": "SIMULINK Simulation",
+      "heading": "SIMULINK Simulation",
+      "anchor": "simulink-simulation",
+      "text": "Details about the SIMULINK Simulation.",
+      "sourceFile": "subteams/sim_controls/SIMULINK Simulation.md",
+      "pageUrl": "subteams/sim_controls/SIMULINK%20Simulation.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/structures/Landing Legs.md::0",
+      "title": "Fall 25, Spring 26 Semester: The Mk1 build",
+      "heading": "Fall 25, Spring 26 Semester: The Mk1 build",
+      "anchor": "fall-25-spring-26-semester-the-mk1-build",
+      "text": "Skipping from a small, solid motor rocket that only goes up to a full build liquid that needs to land poses many challenges. Landing legs are needed to ensure the rocket \"lands\" and doesn't crash. The legs must hold the rocket upright on landing, whether the rocket is drifting or not, and absorb as much energy is possible to reduce the chance of damage.",
+      "sourceFile": "subteams/structures/Landing Legs.md",
+      "pageUrl": "subteams/structures/Landing%20Legs.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/structures/MAIN Structures.md::0",
+      "title": "Structures",
+      "heading": "Structures",
+      "anchor": "structures",
+      "text": "Details about the Structures subteam.",
+      "sourceFile": "subteams/structures/MAIN Structures.md",
+      "pageUrl": "subteams/structures/MAIN%20Structures.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/structures/Structures Design.md::0",
+      "title": "Structures Design",
+      "heading": "Structures Design",
+      "anchor": "structures-design",
+      "text": "Details about the Structures Design.",
+      "sourceFile": "subteams/structures/Structures Design.md",
+      "pageUrl": "subteams/structures/Structures%20Design.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/structures/Structures Testing.md::0",
+      "title": "Structures Testing",
+      "heading": "Structures Testing",
+      "anchor": "structures-testing",
+      "text": "Details about the Structures Testing.",
+      "sourceFile": "subteams/structures/Structures Testing.md",
+      "pageUrl": "subteams/structures/Structures%20Testing.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/MAIN schedule.md::0",
+      "title": "📆 Team Schedule",
+      "heading": "📆 Team Schedule",
+      "anchor": "team-schedule",
+      "text": "This timeline outlines our key milestones and events to keep us on track for the FAR-OUT competition. 🚀\n| Date                  | 📝 Event/Task Description                                      |\n| --------------------- | -------------------------------------------------------------- |\n| ~~**Jan 20th**~~      | ~~All parts have been dry-fitted~~                             |\n| ~~**Jan 20th**~~      | ~~List of questions for half-cat rocketry~~                    |\n| **Jan 24th-26th**     | Liquid Rocket Symposium. ✈️                                    |\n| **Feb 24th**          | FAR Update 2 Due: 90% complete rocket.                         |\n| **Mar 15th**          | FAR Update 3 Due: 100% complete rocket + integration complete. |\n| **Apr 5th-8th**       | Tentative Test Fire. 🔥                                        |",
+      "sourceFile": "team/MAIN schedule.md",
+      "pageUrl": "team/MAIN%20schedule.html",
+      "resourcePriority": false,
+      "images": []
+    }
+  ]
+}
