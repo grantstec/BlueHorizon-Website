@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-28T20:47:06.982Z",
+  "generatedAt": "2026-03-28T20:53:22.168Z",
   "version": 1,
   "sourceCount": 30,
-  "chunkCount": 60,
+  "chunkCount": 63,
   "chunks": [
     {
       "id": "intro.md::0",
@@ -638,7 +638,40 @@
       "title": "Engine Design",
       "heading": "Engine Design",
       "anchor": "engine-design",
-      "text": "Details about the Engine Design.",
+      "text": "This page includes a live Onshape view for the current engine CAD.",
+      "sourceFile": "subteams/engine/Engine Design.md",
+      "pageUrl": "subteams/engine/Engine%20Design.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/engine/Engine Design.md::1",
+      "title": "Engine Design",
+      "heading": "Live Engine CAD Preview",
+      "anchor": "live-engine-cad-preview",
+      "text": "Use the embedded view below to rotate, zoom, and inspect the design.\n<iframe\nsrc=\"https://cad.onshape.com/documents/004f4efe7293f877eb78818f\"\nstyle=\"width: 100%; height: 720px; border: 1px solid #d8dee9; border-radius: 8px;\"\nloading=\"lazy\"\nallowfullscreen\n></iframe>\nIf the embed does not load in your browser, open it directly in Onshape:\n[Open Engine CAD in Onshape](https://cad.onshape.com/documents/004f4efe7293f877eb78818f)",
+      "sourceFile": "subteams/engine/Engine Design.md",
+      "pageUrl": "subteams/engine/Engine%20Design.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/engine/Engine Design.md::2",
+      "title": "Engine Design",
+      "heading": "Reuse For Other Designs",
+      "anchor": "reuse-for-other-designs",
+      "text": "To add another live CAD view on any page, copy this block and replace the URL.\nhtml\n<iframe\nsrc=\"https://cad.onshape.com/documents/YOUR_DOCUMENT_ID\"\nstyle=\"width: 100%; height: 720px; border: 1px solid #d8dee9; border-radius: 8px;\"\nloading=\"lazy\"\nallowfullscreen\n></iframe>",
+      "sourceFile": "subteams/engine/Engine Design.md",
+      "pageUrl": "subteams/engine/Engine%20Design.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/engine/Engine Design.md::3",
+      "title": "Engine Design",
+      "heading": "Access/Permissions Note",
+      "anchor": "accesspermissions-note",
+      "text": "The document must be shared with your team or made public in Onshape, or users will see a permissions/login page.",
       "sourceFile": "subteams/engine/Engine Design.md",
       "pageUrl": "subteams/engine/Engine%20Design.html",
       "resourcePriority": false,
