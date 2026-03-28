@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-28T20:36:30.878Z",
+  "generatedAt": "2026-03-28T20:47:06.982Z",
   "version": 1,
-  "sourceCount": 29,
-  "chunkCount": 56,
+  "sourceCount": 30,
+  "chunkCount": 60,
   "chunks": [
     {
       "id": "intro.md::0",
@@ -111,6 +111,50 @@
       "text": "If the chatbot is unavailable, use these guides directly:\n- [Obsidian Setup and Website Editing](Obsidian%20Setup%20and%20Website%20Editing.md)\n- [GitHub Setup and Resources](GitHub%20Setup%20and%20Resources.md)",
       "sourceFile": "resources/AI Website Editing Assistant.md",
       "pageUrl": "resources/AI%20Website%20Editing%20Assistant.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/Branch Update and PR Tools.md::0",
+      "title": "Branch Update and PR Tools",
+      "heading": "Branch Update and PR Tools",
+      "anchor": "branch-update-and-pr-tools",
+      "text": "Use this page for quick GitHub actions while reviewing your preview website.",
+      "sourceFile": "resources/Branch Update and PR Tools.md",
+      "pageUrl": "resources/Branch%20Update%20and%20PR%20Tools.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/Branch Update and PR Tools.md::1",
+      "title": "Branch Update and PR Tools",
+      "heading": "Current Branch Helper",
+      "anchor": "current-branch-helper",
+      "text": "<div style=\"border:1px solid #d8dee9; border-radius:10px; padding:14px; background:#f8fbff;\">\n<p><strong>Detected/Selected branch:</strong> <span id=\"bh-branch-value\">loading...</span></p>\n<p id=\"bh-tool-note\">Detecting preview branch...</p>\n<div style=\"display:flex; gap:8px; flex-wrap:wrap; margin:8px 0 12px;\">\n<input id=\"bh-branch-input\" type=\"text\" placeholder=\"your-branch-name\" style=\"padding:8px; min-width:260px; border:1px solid #b9c6df; border-radius:6px;\">\n<button id=\"bh-set-branch\" type=\"button\" style=\"padding:8px 12px; border:1px solid #95a7ca; border-radius:6px; background:#fff; cursor:pointer;\">Use branch</button>\n<button id=\"bh-copy-branch\" type=\"button\" style=\"padding:8px 12px; border:1px solid #95a7ca; border-radius:6px; background:#fff; cursor:pointer;\">Copy branch</button>\n</div>\n<div style=\"display:flex; gap:10px; flex-wrap:wrap;\">\n<a id=\"bh-pr-link\" href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#0e4c99; color:#fff;\">Open PR to main</a>\n<a id=\"bh-run-single-link\" href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#ffffff; color:#1f2d45; border:1px solid #95a7ca;\">Run update for one branch</a>\n<a id=\"bh-run-all-link\" href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#ffffff; color:#1f2d45; border:1px solid #95a7ca;\">Run update for all branches</a>\n</div>\n</div>\n<script type=\"module\" src=\"../_static/branch-tools.js\"></script>",
+      "sourceFile": "resources/Branch Update and PR Tools.md",
+      "pageUrl": "resources/Branch%20Update%20and%20PR%20Tools.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/Branch Update and PR Tools.md::2",
+      "title": "Branch Update and PR Tools",
+      "heading": "How The Buttons Work",
+      "anchor": "how-the-buttons-work",
+      "text": "- Open PR to main: Opens GitHub compare page with your branch prefilled.\n- Run update for one branch: Opens GitHub Actions workflow to merge main into a target branch.\n- Run update for all branches: Opens GitHub Actions workflow that attempts to merge main into every non-main branch.",
+      "sourceFile": "resources/Branch Update and PR Tools.md",
+      "pageUrl": "resources/Branch%20Update%20and%20PR%20Tools.html",
+      "resourcePriority": true,
+      "images": []
+    },
+    {
+      "id": "resources/Branch Update and PR Tools.md::3",
+      "title": "Branch Update and PR Tools",
+      "heading": "Important Notes",
+      "anchor": "important-notes",
+      "text": "- GitHub login is required for these write actions.\n- Merge conflicts cannot be auto-resolved and will be reported in workflow summary.\n- This page is safe for preview users because it does not store tokens in the website.",
+      "sourceFile": "resources/Branch Update and PR Tools.md",
+      "pageUrl": "resources/Branch%20Update%20and%20PR%20Tools.html",
       "resourcePriority": true,
       "images": []
     },
