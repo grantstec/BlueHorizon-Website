@@ -60,7 +60,7 @@ Ensure to select your branch from the current branch dropdown
 
 **"main" should not be selected**
 
-![](pictures/BranchSelection.png)
+![](pictures/githubbranchselection.png)
 #### Committing and Pushing Changes
 
 Once you have made edits to the webpage files through [Obsidian](#Obsidian) you need to commit and push your changes to your GitHub Branch
@@ -115,14 +115,17 @@ First make sure you have committed and pushed all of your changes so your github
 
 ![](pictures/GithubdesktopHomepage.png)
 
-Check that your are on your branch not main
+Then hover over the Branch button on upper left and select update from main
 
-![](pictures/BranchSelection.png)
+![](pictures/updatefrommain.png)
 
+This will keep any changes you have made while also updating all other documents from main. If you happen to make changes to documents also changed in the main, you will get a merge conflict and will need to sort that out by selecting which information you want to keep and which you want to remove, or add both.
 
 #### Changing Main Page
 
 Once you commit ahead of main branch and push to your own branch and check that everything looks good then submit a pull request to main and then message Grant Stec on teams. 
+
+
 
 
 
