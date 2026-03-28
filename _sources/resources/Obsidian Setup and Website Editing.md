@@ -149,11 +149,15 @@ Then select **"Copy Link"**
 
 now adjust the below line to replace the link with your link
 
-`<iframe` 
-  `style="width: 100%; height: 500px; border: none;"` 
-  `scrolling="no"` 
-  `src="``https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQD4oKJoUTrcSKvE5nttolIEAVqexKzp3BhkNm7SGdjnUys?e=kiGKpO``&action=embedview&wdAllowInteractivity=True&wdHideHeaders=True&wdDownloadButton=True">`
-`</iframe>`
+```html
+<iframe 
+  style="width: 100%; height: 500px; border: none;" 
+  scrolling="no" 
+  src="https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQD4oKJoUTrcSKvE5nttolIEAVqexKzp3BhkNm7SGdjnUys?e=kiGKpO&action=embedview&wdAllowInteractivity=True&wdHideHeaders=True&wdDownloadButton=True">
+</iframe>
+```
+
+Before starting Project 1, ensure that:
 
 ![](pictures/excelsharinglinkadjustment.png)
 
@@ -168,6 +172,7 @@ Now you will see the excel render in obsidian and the website
   scrolling="no" 
   src="https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQD4oKJoUTrcSKvE5nttolIEAVqexKzp3BhkNm7SGdjnUys?e=kiGKpO&action=embedview&wdAllowInteractivity=True&wdHideHeaders=True&wdDownloadButton=True">
 </iframe>
+
 
 ![](pictures/excel%20rendered.png)
 
