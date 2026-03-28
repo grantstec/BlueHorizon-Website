@@ -7,7 +7,7 @@ This page includes a live Onshape view for the current engine CAD.
 Use the embedded view below to rotate, zoom, and inspect the design.
 
 <iframe
-	src="https://cad.onshape.com/documents/c4100d7a65ab7b8325e57b4f/w/92c48d0b5771f42df048d320/e/f0e06c418079f98a451274e3?renderMode=0&uiState=69c84055c7513bb8d825e559"
+	src="https://cad.onshape.com/documents/c4100d7a65ab7b8325e57b4f/w/92c48d0b5771f42df048d320/e/f0e06c418079f98a451274e3"
 	style="width: 100%; height: 720px; border: 1px solid #d8dee9; border-radius: 8px;"
 	loading="lazy"
 	allowfullscreen
