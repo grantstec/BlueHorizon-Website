@@ -1,0 +1,104 @@
+name: force-main-overwrite-all-branches
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_phrase:
+        description: "Type OVERWRITE_ALL_BRANCHES to confirm destructive force sync"
+        required: true
+        type: string
+      keep_branches:
+        description: "Comma-separated branches to skip (optional)"
+        required: false
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  force-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate destructive confirmation
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ inputs.confirm_phrase }}" != "OVERWRITE_ALL_BRANCHES" ]; then
+            echo "Confirmation phrase mismatch. Aborting."
+            exit 1
+          fi
+
+      - name: Configure git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Force main onto every non-main branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --all --prune
+
+          skip_raw="${{ inputs.keep_branches }}"
+          skip_raw="${skip_raw// /}"
+          IFS=',' read -r -a skip_list <<< "$skip_raw"
+
+          should_skip() {
+            local b="$1"
+            for s in "${skip_list[@]}"; do
+              if [ -n "$s" ] && [ "$b" = "$s" ]; then
+                return 0
+              fi
+            done
+            return 1
+          }
+
+          mapfile -t branches < <(git ls-remote --heads origin | awk '{print $2}' | sed 's#^refs/heads/##' | grep -v '^main$' | grep -v '^gh-pages$' | sort -u)
+
+          if [ ${#branches[@]} -eq 0 ]; then
+            echo "No non-main branches found." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          overwritten=()
+          skipped=()
+          failed=()
+
+          for branch in "${branches[@]}"; do
+            if should_skip "$branch"; then
+              skipped+=("$branch (user skip)")
+              continue
+            fi
+
+            echo "--- Force syncing $branch to origin/main ---"
+            git checkout -B "__force_sync_work" "origin/main"
+
+            if git push --force-with-lease origin HEAD:"$branch"; then
+              overwritten+=("$branch")
+            else
+              failed+=("$branch")
+            fi
+          done
+
+          {
+            echo "## Force Main Overwrite All Branches"
+            echo
+            echo "Overwritten branches (${#overwritten[@]}):"
+            for b in "${overwritten[@]}"; do echo "- $b"; done
+            echo
+            echo "Skipped branches (${#skipped[@]}):"
+            for b in "${skipped[@]}"; do echo "- $b"; done
+            echo
+            echo "Failed branches (${#failed[@]}):"
+            for b in "${failed[@]}"; do echo "- $b"; done
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ ${#failed[@]} -gt 0 ]; then
+            exit 1
+          fi
