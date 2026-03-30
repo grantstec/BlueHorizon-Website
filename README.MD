@@ -14,6 +14,7 @@ Hi
 - [Coltons](https://grantstec.github.io/BlueHorizon-Website/previews/Coltons/) - branch: Coltons
 - [ConnorBeardsley](https://grantstec.github.io/BlueHorizon-Website/previews/ConnorBeardsley/) - branch: ConnorBeardsley
 - [Duffy-Branch](https://grantstec.github.io/BlueHorizon-Website/previews/Duffy-Branch/) - branch: Duffy-Branch
+- [EliTai](https://grantstec.github.io/BlueHorizon-Website/previews/EliTai/) - branch: EliTai
 - [ethan-branch](https://grantstec.github.io/BlueHorizon-Website/previews/ethan-branch/) - branch: ethan-branch
 - [GavinEhrich](https://grantstec.github.io/BlueHorizon-Website/previews/GavinEhrich/) - branch: GavinEhrich
 - [Jack-Cook-branch](https://grantstec.github.io/BlueHorizon-Website/previews/Jack-Cook-branch/) - branch: Jack-Cook-branch
