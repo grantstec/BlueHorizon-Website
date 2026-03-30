@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-30T22:13:14.320Z",
+  "generatedAt": "2026-03-30T22:15:29.434Z",
   "version": 1,
-  "sourceCount": 30,
-  "chunkCount": 61,
+  "sourceCount": 31,
+  "chunkCount": 62,
   "chunks": [
     {
       "id": "intro.md::0",
@@ -834,6 +834,17 @@
       "text": "Details about the SIMULINK Simulation.",
       "sourceFile": "subteams/sim_controls/SIMULINK Simulation.md",
       "pageUrl": "subteams/sim_controls/SIMULINK%20Simulation.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/sim_controls/Solid Rocket TVC/MAIN.md::0",
+      "title": "MAIN",
+      "heading": "MAIN",
+      "anchor": "main",
+      "text": "This is the chudproject that will never work.",
+      "sourceFile": "subteams/sim_controls/Solid Rocket TVC/MAIN.md",
+      "pageUrl": "subteams/sim_controls/Solid%20Rocket%20TVC/MAIN.html",
       "resourcePriority": false,
       "images": []
     },
