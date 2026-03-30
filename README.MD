@@ -20,6 +20,7 @@ Hi
 - [lucan-test-2](https://grantstec.github.io/BlueHorizon-Website/previews/lucan-test-2/) - branch: lucan-test-2
 - [Nathan-Branch](https://grantstec.github.io/BlueHorizon-Website/previews/Nathan-Branch/) - branch: Nathan-Branch
 - [origin/brookestec](https://grantstec.github.io/BlueHorizon-Website/previews/origin-brookestec/) - branch: origin%2Fbrookestec
+- [peay-branch](https://grantstec.github.io/BlueHorizon-Website/previews/peay-branch/) - branch: peay-branch
 - [RWISE](https://grantstec.github.io/BlueHorizon-Website/previews/RWISE/) - branch: RWISE
 - [zack-branch](https://grantstec.github.io/BlueHorizon-Website/previews/zack-branch/) - branch: zack-branch
 <!-- PREVIEW_LINKS_END -->
