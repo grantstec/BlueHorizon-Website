@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-28T21:36:10.985Z",
+  "generatedAt": "2026-03-30T21:55:42.622Z",
   "version": 1,
-  "sourceCount": 30,
-  "chunkCount": 61,
+  "sourceCount": 31,
+  "chunkCount": 62,
   "chunks": [
     {
       "id": "intro.md::0",
@@ -269,8 +269,8 @@
       "images": [
         {
           "alt": "Reference image",
-          "path": "resources/pictures/GitHubEdits.png",
-          "url": "resources/pictures/GitHubEdits.png"
+          "path": "resources/pictures/githubeditshow.png",
+          "url": "resources/pictures/githubeditshow.png"
         }
       ]
     },
@@ -805,6 +805,17 @@
       "images": []
     },
     {
+      "id": "subteams/sim_controls/00 MAIN Simulation and Controls.md::0",
+      "title": "Simulation and Controls",
+      "heading": "Simulation and Controls",
+      "anchor": "simulation-and-controls",
+      "text": "Details about Simulation and Controls.",
+      "sourceFile": "subteams/sim_controls/00 MAIN Simulation and Controls.md",
+      "pageUrl": "subteams/sim_controls/00%20MAIN%20Simulation%20and%20Controls.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
       "id": "subteams/sim_controls/Control Algorithm.md::0",
       "title": "Control Algorithm",
       "heading": "Control Algorithm",
@@ -816,13 +827,13 @@
       "images": []
     },
     {
-      "id": "subteams/sim_controls/MAIN Simulation and Controls.md::0",
-      "title": "Simulation and Controls",
-      "heading": "Simulation and Controls",
-      "anchor": "simulation-and-controls",
-      "text": "Details about Simulation and Controls.",
-      "sourceFile": "subteams/sim_controls/MAIN Simulation and Controls.md",
-      "pageUrl": "subteams/sim_controls/MAIN%20Simulation%20and%20Controls.html",
+      "id": "subteams/sim_controls/Lucan's Random Stuff.md::0",
+      "title": "Lucan's Random Stuff",
+      "heading": "Lucan's Random Stuff",
+      "anchor": "lucans-random-stuff",
+      "text": "*yo what up*\n<iframe width=\"515\" height=\"330\" src=\"https://www.youtube.com/embed/N9w1lCZfaWI?autoplay=true\" allowfullscreen> </iframe>",
+      "sourceFile": "subteams/sim_controls/Lucan's Random Stuff.md",
+      "pageUrl": "subteams/sim_controls/Lucan's%20Random%20Stuff.html",
       "resourcePriority": false,
       "images": []
     },
