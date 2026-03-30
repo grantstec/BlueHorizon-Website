@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-30T22:04:36.661Z",
+  "generatedAt": "2026-03-30T22:06:24.266Z",
   "version": 1,
-  "sourceCount": 30,
-  "chunkCount": 61,
+  "sourceCount": 31,
+  "chunkCount": 62,
   "chunks": [
     {
       "id": "intro.md::0",
@@ -878,6 +878,17 @@
       "text": "Details about the Structures Testing.",
       "sourceFile": "subteams/structures/Structures Testing.md",
       "pageUrl": "subteams/structures/Structures%20Testing.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/test page/MAIN test page.md::0",
+      "title": "TO BE OR NOT TO BE",
+      "heading": "TO BE OR NOT TO BE",
+      "anchor": "to-be-or-not-to-be",
+      "text": "To be or not to be, that is the question. Whether it is nobler in the mind to suffer the slings and arrows of outrageous fortune or to take arms against a sea of troubles and by opposing end them!",
+      "sourceFile": "subteams/test page/MAIN test page.md",
+      "pageUrl": "subteams/test%20page/MAIN%20test%20page.html",
       "resourcePriority": false,
       "images": []
     },
