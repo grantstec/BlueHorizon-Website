@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-30T22:29:59.599Z",
+  "generatedAt": "2026-03-30T22:38:20.769Z",
   "version": 1,
   "sourceCount": 31,
-  "chunkCount": 61,
+  "chunkCount": 62,
   "chunks": [
     {
       "id": "intro.md::0",
@@ -643,6 +643,23 @@
       "pageUrl": "subteams/Solids/MAIN%20Solids.html",
       "resourcePriority": false,
       "images": []
+    },
+    {
+      "id": "subteams/engine/Augmented Spark Igniter.md::0",
+      "title": "Augmented Spark Igniter",
+      "heading": "ASI 2.0",
+      "anchor": "asi-20",
+      "text": "<div style=\"margin: 16px 0;\">\n<a\nhref=\"https://cad.onshape.com/documents/7298f32f67934e4e7e943c2f/w/ae889b5a9f56ce3dd2c48cae/e/85ca6ca435d51844cc7a9229?renderMode=0&uiState=69cafa15e2ebff0254c106ba\"\ntarget=\"_blank\"\nrel=\"noopener noreferrer\"\nstyle=\"display: inline-block; background: #0e4c99; color: #ffffff; text-decoration: none; padding: 12px 18px; border-radius: 8px; font-weight: 700;\"\n>\nOpen CAD in Onshape\n</a>\n</div>",
+      "sourceFile": "subteams/engine/Augmented Spark Igniter.md",
+      "pageUrl": "subteams/engine/Augmented%20Spark%20Igniter.html",
+      "resourcePriority": false,
+      "images": [
+        {
+          "alt": "518",
+          "path": "subteams/engine/pictures/ASI_2.0.png",
+          "url": "subteams/engine/pictures/ASI_2.0.png"
+        }
+      ]
     },
     {
       "id": "subteams/engine/Engine Design.md::0",
