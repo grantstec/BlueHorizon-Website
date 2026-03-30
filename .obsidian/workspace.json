@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/subteams/test page/MAIN test page.md",
+                "file": "test page/MAIN test page.md",
                 "mode": "source",
                 "source": false
               },
@@ -183,11 +183,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "172e0f74510c3aac",
+  "active": "26394a188e5e0a01",
   "lastOpenFiles": [
     "docs/subteams/engine/MAIN Engine.md",
     "docs/resources/Obsidian Setup and Website Editing.md",
-    "docs/subteams/test page/MAIN test page.md",
+    "test page/MAIN test page.md",
     "docs/subteams/flight_computer/Flight Computer PCB Design.md",
     "extra/chatbot-worker/wrangler.toml",
     "extra/chatbot-worker/worker.js",
