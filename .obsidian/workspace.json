@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/subteams/test branch.md",
+                "file": "docs/subteams/engine/test page/test branch.md",
                 "mode": "source",
                 "source": false
               },
@@ -185,6 +185,8 @@
   },
   "active": "26394a188e5e0a01",
   "lastOpenFiles": [
+    "docs/subteams/flight_computer/Flight Computer PCB Design.md",
+    "docs/subteams/engine/test page/test branch.md",
     "extra/chatbot-worker/wrangler.toml",
     "extra/chatbot-worker/worker.js",
     "extra/chatbot-worker/README.md",
@@ -215,8 +217,6 @@
     "docs/Past Years/MAIN 2023-2024 NASA USLI.md",
     "docs/Past Years/MAIN 2024-2025 Mojave Sphinx.md",
     "docs/Past Years",
-    "docs/resources/MAIN website editing.md",
-    "docs/subteams/test branch.md",
-    "test page"
+    "docs/resources/MAIN website editing.md"
   ]
 }
