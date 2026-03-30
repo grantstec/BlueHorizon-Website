@@ -1,0 +1,88 @@
+name: merge-main-into-all-branches
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  merge-main-into-all:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge main into every non-main branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --all --prune
+
+          # Pull branch names from real remote heads only.
+          mapfile -t branches < <(git ls-remote --heads origin | awk '{print $2}' | sed 's#^refs/heads/##' | grep -v '^main$' | grep -v '^gh-pages$' | sort -u)
+
+          if [ ${#branches[@]} -eq 0 ]; then
+            echo "No non-main branches found." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          success=()
+          conflicted=()
+          failed=()
+          skipped=()
+
+          for branch in "${branches[@]}"; do
+            echo "--- Updating $branch ---"
+
+            if ! git rev-parse --verify --quiet "refs/remotes/origin/$branch" >/dev/null; then
+              skipped+=("$branch (remote ref missing)")
+              continue
+            fi
+
+            git reset --hard
+            git clean -fd
+
+            if ! git checkout -B "__merge_work" "origin/$branch"; then
+              skipped+=("$branch (checkout failed)")
+              continue
+            fi
+
+            if git merge --no-ff --no-edit origin/main; then
+              if git push origin HEAD:"$branch"; then
+                success+=("$branch")
+              else
+                failed+=("$branch (push failed)")
+              fi
+            else
+              git merge --abort || true
+              conflicted+=("$branch")
+            fi
+          done
+
+          {
+            echo "## Merge Main Into All Branches"
+            echo
+            echo "Successful branches (${#success[@]}):"
+            for b in "${success[@]}"; do echo "- $b"; done
+            echo
+            echo "Branches with conflicts (${#conflicted[@]}):"
+            for b in "${conflicted[@]}"; do echo "- $b"; done
+            echo
+            echo "Branches with push/runtime failures (${#failed[@]}):"
+            for b in "${failed[@]}"; do echo "- $b"; done
+            echo
+            echo "Skipped branches (${#skipped[@]}):"
+            for b in "${skipped[@]}"; do echo "- $b"; done
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ ${#conflicted[@]} -gt 0 ] || [ ${#failed[@]} -gt 0 ]; then
+            exit 1
+          fi

@@ -35,6 +35,10 @@ repository:
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Configuration for Sphinx
+sphinx:
+  config:
+    html_theme_options:
+      show_toc_level: 3
 
 
 
