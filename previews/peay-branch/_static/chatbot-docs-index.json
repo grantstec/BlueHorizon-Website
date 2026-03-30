@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T21:18:18.630Z",
+  "generatedAt": "2026-03-30T22:05:17.245Z",
   "version": 1,
   "sourceCount": 30,
   "chunkCount": 61,
@@ -754,7 +754,7 @@
       "title": "Communications System",
       "heading": "Communications System",
       "anchor": "communications-system",
-      "text": "Details about the Communications System.",
+      "text": "Details about the Communications System. Pain.",
       "sourceFile": "subteams/gse/Communications System.md",
       "pageUrl": "subteams/gse/Communications%20System.html",
       "resourcePriority": false,
