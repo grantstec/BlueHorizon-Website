@@ -1,0 +1,44 @@
+name: merge-main-into-branch
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_branch:
+        description: "Branch to update with latest main"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  merge-main-into-target:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ inputs.target_branch }}
+
+      - name: Configure git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge main into target branch
+        run: |
+          set -euo pipefail
+          git fetch origin main
+
+          target="${{ inputs.target_branch }}"
+          git checkout "$target"
+
+          if git merge --no-ff --no-edit origin/main; then
+            git push origin "$target"
+            echo "Successfully merged main into $target" >> "$GITHUB_STEP_SUMMARY"
+          else
+            git merge --abort || true
+            echo "Merge conflict while updating $target. Resolve manually." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi

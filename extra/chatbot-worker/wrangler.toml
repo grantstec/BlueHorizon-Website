@@ -1,0 +1,13 @@
+name = "bluehorizon-docs-chatbot"
+main = "worker.js"
+compatibility_date = "2026-03-28"
+
+[ai]
+binding = "AI"
+
+[vars]
+ALLOW_ORIGIN = "https://grantstec.github.io"
+SITE_BASE_URL = "https://grantstec.github.io/BlueHorizon-Website"
+DOCS_INDEX_URL = "https://grantstec.github.io/BlueHorizon-Website/_static/chatbot-docs-index.json"
+WORKERS_AI_MODEL = "@cf/meta/llama-3.1-8b-instruct"
+IMAGE_BASE_URL = "https://raw.githubusercontent.com/grantstec/BlueHorizon-Website/main/docs"
