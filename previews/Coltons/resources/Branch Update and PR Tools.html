@@ -63,7 +63,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'resources/Branch Update and PR Tools';</script>
     <script src="../_static/chatbot.js?v=59a875ef"></script>
-    <script src="../_static/branch-tools.js?v=f3ed8bdb"></script>
+    <script src="../_static/branch-tools.js?v=47ee3e8b"></script>
     <link rel="icon" href="../_static/BHlogosmall.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -197,7 +197,8 @@
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../subteams/Solids/MAIN%20Solids.html">Solids</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../subteams/structures/MAIN%20Structures.html">Structures</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../subteams/structures/Landing%20Legs.html">Fall 25, Spring 26 Semester: The Mk1 build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../subteams/structures/Landing%20Legs.html">Landing Legs</a></li>
+
 
 
 
@@ -395,6 +396,7 @@
     <a id="bh-pr-link" href="#" target="_blank" rel="noopener noreferrer" style="display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#0e4c99; color:#fff;">Open PR to main</a>
     <a id="bh-run-single-link" href="#" target="_blank" rel="noopener noreferrer" style="display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#ffffff; color:#1f2d45; border:1px solid #95a7ca;">Run update for one branch</a>
     <a id="bh-run-all-link" href="#" target="_blank" rel="noopener noreferrer" style="display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#ffffff; color:#1f2d45; border:1px solid #95a7ca;">Run update for all branches</a>
+    <a id="bh-deploy-all-previews-link" href="#" target="_blank" rel="noopener noreferrer" style="display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#ffffff; color:#1f2d45; border:1px solid #95a7ca;">Deploy all branch previews</a>
   </div>
 </div>
 <script type="module" src="../_static/branch-tools.js"></script>
@@ -405,6 +407,7 @@
 <li><p>Open PR to main: Opens GitHub compare page with your branch prefilled.</p></li>
 <li><p>Run update for one branch: Opens GitHub Actions workflow to merge main into a target branch.</p></li>
 <li><p>Run update for all branches: Opens GitHub Actions workflow that attempts to merge main into every non-main branch.</p></li>
+<li><p>Deploy all branch previews: Opens GitHub Actions workflow that dispatches preview rebuilds for every non-main branch.</p></li>
 </ul>
 </section>
 <section id="important-notes">
