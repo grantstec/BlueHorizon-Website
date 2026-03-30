@@ -16,6 +16,7 @@ Hi
 - [Duffy-Branch](https://grantstec.github.io/BlueHorizon-Website/previews/Duffy-Branch/) - branch: Duffy-Branch
 - [ethan-branch](https://grantstec.github.io/BlueHorizon-Website/previews/ethan-branch/) - branch: ethan-branch
 - [GavinEhrich](https://grantstec.github.io/BlueHorizon-Website/previews/GavinEhrich/) - branch: GavinEhrich
+- [Jack-Cook-branch](https://grantstec.github.io/BlueHorizon-Website/previews/Jack-Cook-branch/) - branch: Jack-Cook-branch
 - [JeremyS](https://grantstec.github.io/BlueHorizon-Website/previews/JeremyS/) - branch: JeremyS
 - [lucan-keyser-branch](https://grantstec.github.io/BlueHorizon-Website/previews/lucan-keyser-branch/) - branch: lucan-keyser-branch
 - [lucan-test-2](https://grantstec.github.io/BlueHorizon-Website/previews/lucan-test-2/) - branch: lucan-test-2
