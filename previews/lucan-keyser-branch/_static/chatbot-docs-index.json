@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T22:20:10.168Z",
+  "generatedAt": "2026-03-30T22:28:38.435Z",
   "version": 1,
   "sourceCount": 31,
   "chunkCount": 62,
@@ -831,7 +831,7 @@
       "title": "Lucan's Random Stuff",
       "heading": "Lucan's Random Stuff",
       "anchor": "lucans-random-stuff",
-      "text": "*yo what up*\n<iframe width=\"515\" height=\"330\" src=\"https://www.youtube.com/embed/N9w1lCZfaWI?autoplay=true\" allowfullscreen> </iframe>\n![[Capybara.png]]\n<iframe src=\"https://www.bing.com/ck/a?!&&p=efe0407f8056982bdeed77730f7938e56536b759dbeffe570a6a466655f5bca2JmltdHM9MTc3NDgyODgwMA&ptn=3&ver=2&hsh=4&fclid=3cdae51b-d134-6101-325b-f65ed0ed603e&psq=pico8+terraria&u=a1aHR0cHM6Ly93d3cubGV4YWxvZmZsZS5jb20vYmJzLz9waWQ9dGVycmFfMWNhcnQtMTA\"></iframe>\n<iframe src=\"https://obsidian.md/help/embed-web-pages\"></iframe>",
+      "text": "*yo what up*\n<iframe width=\"515\" height=\"330\" src=\"https://www.youtube.com/embed/N9w1lCZfaWI?autoplay=true\" allowfullscreen> </iframe>\n![[Capybara.png]]",
       "sourceFile": "subteams/sim_controls/Lucan's Random Stuff.md",
       "pageUrl": "subteams/sim_controls/Lucan's%20Random%20Stuff.html",
       "resourcePriority": false,
