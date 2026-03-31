@@ -1,0 +1,2 @@
+This will be documenting the solid tvc rocket being made by the 2029 Controls Frosh
+We are taking the materials from the previously made rocket by the 27er's and remaking the flight computer and control algorithm from scratch.
