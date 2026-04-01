@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T21:42:56.291Z",
+  "generatedAt": "2026-04-01T21:20:36.011Z",
   "version": 1,
   "sourceCount": 30,
   "chunkCount": 61,
@@ -269,8 +269,8 @@
       "images": [
         {
           "alt": "Reference image",
-          "path": "resources/pictures/githubedits.png",
-          "url": "resources/pictures/githubedits.png"
+          "path": "resources/pictures/githubeditshow.png",
+          "url": "resources/pictures/githubeditshow.png"
         }
       ]
     },

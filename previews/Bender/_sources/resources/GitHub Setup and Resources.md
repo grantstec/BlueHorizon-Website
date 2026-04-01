@@ -65,7 +65,7 @@ Once you have made edits to the webpage files through [Obsidian Setup and Websit
 
 You should see a screen like this in the GitHub Desktop showing the edits and additions you have made 
 
-![](pictures/githubedits.png)
+![](pictures/githubeditshow.png)
 ### Commit Message
 
 To commit, you must provide a summary in the box highlighted below, you can make it however long or short you like but a quick synopsis like **"added new engine design information"** would work well. There is no need to fill out the description box.
