@@ -33,13 +33,16 @@ parts:
           - file: subteams/structures/Landing Legs
           - file: subteams/structures/Structures Design
           - file: subteams/structures/Structures Testing
-  - caption: Resources
-    chapters:
-      - file: resources/AI Website Editing Assistant
-      - file: resources/Branch Update and PR Tools
-      - file: resources/GitHub Setup and Resources
-      - file: resources/Obsidian Setup and Website Editing
   - caption: Past Years
     chapters:
       - file: Past Years/MAIN 2023-2024 NASA USLI
       - file: Past Years/MAIN 2024-2025 Mojave Sphinx
+  - caption: Purchase Orders & Resources
+    chapters:
+      - file: Purchase Orders & Resources/Purchase Orders
+  - caption: Website Resources
+    chapters:
+      - file: Website Resources/AI Website Editing Assistant
+      - file: Website Resources/Branch Update and PR Tools
+      - file: Website Resources/GitHub Setup and Resources
+      - file: Website Resources/Obsidian Setup and Website Editing
