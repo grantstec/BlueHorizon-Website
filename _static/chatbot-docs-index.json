@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-01T21:34:55.020Z",
+  "generatedAt": "2026-04-01T21:45:19.017Z",
   "version": 1,
   "sourceCount": 32,
   "chunkCount": 61,
@@ -839,7 +839,7 @@
     },
     {
       "id": "subteams/structures/Landing Legs.md::0",
-      "title": "Fall 25, Spring 26 Semester: The Mk1 build",
+      "title": "Landing Legs",
       "heading": "Fall 25, Spring 26 Semester: The Mk1 build",
       "anchor": "fall-25-spring-26-semester-the-mk1-build",
       "text": "Skipping from a small, solid motor rocket that only goes up to a full build liquid that needs to land poses many challenges. Landing legs are needed to ensure the rocket \"lands\" and doesn't crash. The legs must hold the rocket upright on landing, whether the rocket is drifting or not, and absorb as much energy is possible to reduce the chance of damage.",
