@@ -1,4 +1,10 @@
 # Engine Design
+Below is an excel sheet using Half Cat Rocketry's liquid rocket calculator to determine our engine design.
+<iframe 
+  style="width: 100%; height: 500px; border: none;" 
+  scrolling="no" 
+  src="https://usafa0-my.sharepoint.com/:x:/g/personal/c28jeremy_sattley_afacademy_af_edu/IQClna7o-fA_SYb-GX5mQ3FuAZkhDpcP0582ciEEbGGuQhE?e=t3ERyC)&action=embedview&wdAllowInteractivity=True&wdHideHeaders=True&wdDownloadButton=True">
+</iframe>
 
 Use the button below to open the full interactive Onshape UI for the current engine design.
 

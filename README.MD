@@ -1,8 +1,7 @@
 ## BlueHorizon info page website
-Any pushes to main atuomatically update the website
+Any pushes to main automatically update the website
 
-## To learn how to edit go here[🌐 Website Editing How-To — BlueHorizon](https://grantstec.github.io/BlueHorizon-Website/resources/MAIN%20website%20editing.html)
-
+## To learn how to edit go here[🌐 Website Editing How-To — BlueHorizon](https://grantstec.github.io/BlueHorizon-Website)
 
 Hi
 
