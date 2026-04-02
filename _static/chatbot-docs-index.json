@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-01T21:45:19.017Z",
+  "generatedAt": "2026-04-02T21:18:57.487Z",
   "version": 1,
   "sourceCount": 32,
   "chunkCount": 61,
@@ -649,7 +649,7 @@
       "title": "Engine Design",
       "heading": "Engine Design",
       "anchor": "engine-design",
-      "text": "Use the button below to open the full interactive Onshape UI for the current engine design.\n<div style=\"margin: 16px 0;\">\n<a\nhref=\"https://cad.onshape.com/documents/c4100d7a65ab7b8325e57b4f/w/92c48d0b5771f42df048d320/e/f0e06c418079f98a451274e3?renderMode=0&uiState=69c84055c7513bb8d825e559\"\ntarget=\"_blank\"\nrel=\"noopener noreferrer\"\nstyle=\"display: inline-block; background: #0e4c99; color: #ffffff; text-decoration: none; padding: 12px 18px; border-radius: 8px; font-weight: 700;\"\n>\nOpen Engine CAD in Onshape\n</a>\n</div>",
+      "text": "Below is an excel sheet using Half Cat Rocketry's liquid rocket calculator to determine our engine design.\n<iframe\nstyle=\"width: 100%; height: 500px; border: none;\"\nscrolling=\"no\"\nsrc=\"https://usafa0-my.sharepoint.com/:x:/g/personal/c28jeremy_sattley_afacademy_af_edu/IQClna7o-fA_SYb-GX5mQ3FuAZkhDpcP0582ciEEbGGuQhE?e=t3ERyC)&action=embedview&wdAllowInteractivity=True&wdHideHeaders=True&wdDownloadButton=True\">\n</iframe>\nUse the button below to open the full interactive Onshape UI for the current engine design.\n<div style=\"margin: 16px 0;\">\n<a\nhref=\"https://cad.onshape.com/documents/c4100d7a65ab7b8325e57b4f/w/92c48d0b5771f42df048d320/e/f0e06c418079f98a451274e3?renderMode=0&uiState=69c84055c7513bb8d825e559\"\ntarget=\"_blank\"\nrel=\"noopener noreferrer\"\nstyle=\"display: inline-block; background: #0e4c99; color: #ffffff; text-decoration: none; padding: 12px 18px; border-radius: 8px; font-weight: 700;\"\n>\nOpen Engine CAD in Onshape\n</a>\n</div>",
       "sourceFile": "subteams/engine/Engine Design.md",
       "pageUrl": "subteams/engine/Engine%20Design.html",
       "resourcePriority": false,
