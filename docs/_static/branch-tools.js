@@ -19,6 +19,7 @@ function fillLinks(branch) {
   const prLink = byId('bh-pr-link');
   const runSingleLink = byId('bh-run-single-link');
   const runAllLink = byId('bh-run-all-link');
+  const deployAllPreviewsLink = byId('bh-deploy-all-previews-link');
   const branchValue = byId('bh-branch-value');
   const note = byId('bh-tool-note');
 
@@ -26,12 +27,16 @@ function fillLinks(branch) {
   const compareUrl = `https://github.com/${REPO_OWNER}/${REPO_NAME}/compare/main...${encoded}?expand=1`;
   const singleWorkflowUrl = `https://github.com/${REPO_OWNER}/${REPO_NAME}/actions/workflows/merge-main-into-branch.yml`;
   const allWorkflowUrl = `https://github.com/${REPO_OWNER}/${REPO_NAME}/actions/workflows/merge-main-into-all-branches.yml`;
+  const deployAllPreviewsWorkflowUrl = `https://github.com/${REPO_OWNER}/${REPO_NAME}/actions/workflows/deploy-all-branch-previews.yml`;
 
   prLink.href = compareUrl;
   prLink.textContent = clean ? `Open PR from ${clean} to main` : 'Open PR to main (set branch first)';
 
   runSingleLink.href = singleWorkflowUrl;
   runAllLink.href = allWorkflowUrl;
+  if (deployAllPreviewsLink) {
+    deployAllPreviewsLink.href = deployAllPreviewsWorkflowUrl;
+  }
 
   branchValue.textContent = clean || 'not detected';
 

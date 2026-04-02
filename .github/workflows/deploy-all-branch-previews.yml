@@ -1,0 +1,62 @@
+name: deploy-all-branch-previews
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  dispatch-preview-builds:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger preview rebuild for every non-main branch
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const defaultBranch = context.payload.repository.default_branch;
+            const workflowId = 'branch-preview.yml';
+
+            const branches = await github.paginate(github.rest.repos.listBranches, {
+              owner,
+              repo,
+              per_page: 100,
+            });
+
+            const targets = branches
+              .map((branch) => branch.name)
+              .filter((name) => name !== defaultBranch && name !== 'gh-pages')
+              .sort((a, b) => a.localeCompare(b));
+
+            if (targets.length === 0) {
+              core.info('No non-main branches found.');
+              core.summary
+                .addHeading('Deploy All Branch Previews')
+                .addRaw('No non-main branches found.')
+                .write();
+              return;
+            }
+
+            for (const branch of targets) {
+              await github.rest.actions.createWorkflowDispatch({
+                owner,
+                repo,
+                workflow_id: workflowId,
+                ref: defaultBranch,
+                inputs: {
+                  triggered_by_main_sync: 'true',
+                  target_branch: branch,
+                },
+              });
+              core.info(`Dispatched preview rebuild for ${branch}`);
+            }
+
+            core.summary
+              .addHeading('Deploy All Branch Previews')
+              .addRaw(`Dispatched ${targets.length} preview rebuilds.`)
+              .addList(targets)
+              .write();
