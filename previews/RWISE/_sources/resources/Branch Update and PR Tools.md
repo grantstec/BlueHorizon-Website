@@ -18,6 +18,7 @@ Use this page for quick GitHub actions while reviewing your preview website.
     <a id="bh-pr-link" href="#" target="_blank" rel="noopener noreferrer" style="display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#0e4c99; color:#fff;">Open PR to main</a>
     <a id="bh-run-single-link" href="#" target="_blank" rel="noopener noreferrer" style="display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#ffffff; color:#1f2d45; border:1px solid #95a7ca;">Run update for one branch</a>
     <a id="bh-run-all-link" href="#" target="_blank" rel="noopener noreferrer" style="display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#ffffff; color:#1f2d45; border:1px solid #95a7ca;">Run update for all branches</a>
+    <a id="bh-deploy-all-previews-link" href="#" target="_blank" rel="noopener noreferrer" style="display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; background:#ffffff; color:#1f2d45; border:1px solid #95a7ca;">Deploy all branch previews</a>
   </div>
 </div>
 
@@ -28,6 +29,7 @@ Use this page for quick GitHub actions while reviewing your preview website.
 - Open PR to main: Opens GitHub compare page with your branch prefilled.
 - Run update for one branch: Opens GitHub Actions workflow to merge main into a target branch.
 - Run update for all branches: Opens GitHub Actions workflow that attempts to merge main into every non-main branch.
+- Deploy all branch previews: Opens GitHub Actions workflow that dispatches preview rebuilds for every non-main branch.
 
 ## Important Notes
 
