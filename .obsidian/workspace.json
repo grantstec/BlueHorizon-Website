@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/resources/MAIN website editing.md",
+                "file": "docs/subteams/gse/DAQ System.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MAIN website editing"
+              "title": "DAQ System"
             }
           }
         ]
@@ -185,15 +185,33 @@
   },
   "active": "6fcabde9b2d24e65",
   "lastOpenFiles": [
-    "docs/pictures/payload.jpg",
-    "docs/pictures/BlueHorizonteampic.jpg",
+    "docs/subteams/gse/pictures/sensor_breakout_back_annotated_LC.png",
+    "docs/subteams/gse/pictures/DAQ System.png",
+    "docs/subteams/gse/pictures",
+    "desktop.ini",
+    "docs/subteams/gse/MAIN GSE.md",
+    "docs/subteams/structures/Landing Legs.md",
+    "docs/subteams/gse/DAQ System.md",
+    "docs/Past Years/MAIN 2023-2024 NASA USLI.md",
+    "docs/Past Years/MAIN 2024-2025 Mojave Sphinx.md",
+    "docs/resources/Obsidian Setup and Website Editing.md",
+    "docs/resources/GitHub Setup and Resources.md",
+    "docs/resources/Branch Update and PR Tools.md",
+    "docs/resources/AI Website Editing Assistant.md",
     "docs/pictures/BlueHorizons_ClubAccomplishments_Image.jpg",
+    "docs/pictures/BlueHorizonteampic.jpg",
+    "docs/subteams/gse/Trailer Test Stand.md",
+    "docs/team/MAIN schedule.md",
+    "docs/BHlogosmall.png",
+    "docs/BHlogolarge.png",
+    "docs/subteams/gse/Custom Steel Test Stand.md",
+    "docs/subteams/gse/Communications System.md",
+    "docs/pictures/payload.jpg",
     "docs/past_years/MAIN 2024-2025 Mojave Sphinx.md",
     "docs/past_years/MAIN 2023-2024 NASA USLI.md",
     "docs/resources/pictures/Open_Folder.png",
     "docs/resources/pictures/GitHubRepoBranches.png",
     "docs/resources/pictures/Commit.png",
-    "docs/resources/pictures/branch_selection.png",
-    "docs/resources/pictures/branch.png"
+    "docs/resources/pictures/branch_selection.png"
   ]
 }
