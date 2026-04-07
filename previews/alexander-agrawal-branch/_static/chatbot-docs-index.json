@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-01T22:22:14.865Z",
+  "generatedAt": "2026-04-07T12:18:09.098Z",
   "version": 1,
   "sourceCount": 30,
-  "chunkCount": 61,
+  "chunkCount": 101,
   "chunks": [
     {
       "id": "intro.md::0",
@@ -774,9 +774,475 @@
     {
       "id": "subteams/gse/DAQ System.md::0",
       "title": "DAQ System",
-      "heading": "DAQ System",
-      "anchor": "daq-system",
-      "text": "Details about the Data Acquisition (DAQ) System.",
+      "heading": "System Overview",
+      "anchor": "system-overview",
+      "text": "This sensor acquisition system is designed to collect, condition, and digitize data from multiple instrumentation sources used in propulsion and fluid system testing. The system supports a range of analog sensors, including load cells, pressure transducers, and position-related servo sensors, and provides structured pathways for both high-resolution data logging and real-time microcontroller access.",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::1",
+      "title": "DAQ System",
+      "heading": "Core Functionality",
+      "anchor": "core-functionality",
+      "text": "The system performs the following primary functions:\n- **Sensor Data Acquisition**\nAccepts analog inputs from:\n- Load cells (e.g., engine thrust measurement, propellant tank weight)\n- Pressure transducers (e.g., nitrous oxide and fuel system pressures)\n- Servo-based position sensors (e.g., tank fill valve position verification, engine gimbal axis position)\n- **Signal Routing and Digitization**\n- Routes analog sensor signals to a **DATAQ WINDAQ system** for visualization, recording, and storage (including SD card logging).\n- Simultaneously routes selected critical signals (load cells, fuel and NOx pressures, and servo positions) through an **ADS1115 ADC**, enabling digitization for embedded processing.\n- **Microcontroller Integration**\n- Provides access to digitized sensor data via an I²C interface to a Teensy microcontroller, enabling real-time monitoring, control logic, and downstream processing.\n- **Event Timing Capture**\n- Accepts digital input signals to log key event markers (e.g., valve actuation start times or other test events), allowing synchronization between sensor data and system actions.\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::2",
+      "title": "DAQ System",
+      "heading": "System Scope and Limitations",
+      "anchor": "system-scope-and-limitations",
+      "text": "This system is intended for data acquisition and monitoring purposes only. It is important to clearly define what the system does **not** do:\n- **No Closed-Loop Control**\nThe system does not directly control actuators, valves, or engines. It provides data for monitoring and analysis but does not execute control logic autonomously.\n- **No Sensor Calibration or Compensation**\nCalibration of load cells, pressure transducers, and servo sensors must be performed externally. The system assumes properly conditioned and calibrated input signals.\n- **No High-Level Data Processing or Interpretation**\nThe system does not perform advanced analytics, filtering, or decision-making beyond basic digitization and routing. Any such processing must be implemented on the connected microcontroller or external systems.",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::3",
+      "title": "DAQ System",
+      "heading": "Connecting It Up",
+      "anchor": "connecting-it-up",
+      "text": "One servo input should be connected to the base battery voltage for the servos to determine the servo's position.\nConnect the I2C data lines to the Teensy.",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": [
+        {
+          "alt": "Reference image",
+          "path": "subteams/gse/pictures/DAQ%20System.png",
+          "url": "subteams/gse/pictures/DAQ%2520System.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "subteams/gse/pictures/sensor_breakout_back_annotated_LC.png",
+          "url": "subteams/gse/pictures/sensor_breakout_back_annotated_LC.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "subteams/gse/pictures/DAQ%20System%20-%20Switch%20between%20sensors%20annotated%20PCB.png",
+          "url": "subteams/gse/pictures/DAQ%2520System%2520-%2520Switch%2520between%2520sensors%2520annotated%2520PCB.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "subteams/gse/pictures/DAQ%20System%20annotated%20PCB%20sensor%20input%20plugs.png",
+          "url": "subteams/gse/pictures/DAQ%2520System%2520annotated%2520PCB%2520sensor%2520input%2520plugs.png"
+        },
+        {
+          "alt": "Reference image",
+          "path": "subteams/gse/pictures/DAQ%20System-Annotated%20PCB%20I2C%20Data%20ports.png",
+          "url": "subteams/gse/pictures/DAQ%2520System-Annotated%2520PCB%2520I2C%2520Data%2520ports.png"
+        }
+      ]
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::4",
+      "title": "DAQ System",
+      "heading": "Data Flow Overview",
+      "anchor": "data-flow-overview",
+      "text": "This section describes how sensor signals propagate through the system, from physical measurement to digitization and logging. The system supports parallel data paths for both high-resolution logging (WINDAQ) and embedded processing via ADCs and a microcontroller.\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::5",
+      "title": "DAQ System",
+      "heading": "1. Load Cell Signal Flow",
+      "anchor": "1-load-cell-signal-flow",
+      "text": "The system includes two load cells used for propulsion testing:\n- **Engine Thrust Load Cell**\n- **NOx Tank Weight Load Cell**",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::6",
+      "title": "DAQ System",
+      "heading": "Signal Path",
+      "anchor": "signal-path",
+      "text": "1. **Sensor Output**\n- Each load cell produces a low-level differential signal proportional to force.\n2. **Signal Amplification**\n- Signals are routed into external load cell transmitters.\n- These transmitters amplify and condition the signal to a **0–10V analog output**.\n3. **WINDAQ Routing**\n- The amplified signals are routed directly to the **DATAQ WINDAQ system**:\n- Channel 1 (CH1): Engine thrust load cell\n- Channel 2 (CH2): NOx tank weight load cell\n4. **ADC Path (Parallel)**\n- The same signals are routed through voltage dividers to scale them from **0–10V down to 0–5V**.\n- These scaled signals are then fed into **ADC1** using the **ADS1115 ADC**.",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::7",
+      "title": "DAQ System",
+      "heading": "Summary",
+      "anchor": "summary",
+      "text": "- **WINDAQ path:** High-range analog logging (0–10V)\n- **ADC path:** Scaled digital measurement for embedded processing\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::8",
+      "title": "DAQ System",
+      "heading": "2. Pressure Transducer (PT) Signal Flow",
+      "anchor": "2-pressure-transducer-pt-signal-flow",
+      "text": "The system supports up to **six pressure transducers (PTs)**.",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::9",
+      "title": "DAQ System",
+      "heading": "Primary PTs",
+      "anchor": "primary-pts",
+      "text": "- Fuel Tank Pressure\n- NOx Tank Pressure",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::10",
+      "title": "DAQ System",
+      "heading": "Optional PTs",
+      "anchor": "optional-pts",
+      "text": "- Chamber Pressure\n- NOx Fill Tank Pressure\n- Additional auxiliary PTs (up to 6 total)",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::11",
+      "title": "DAQ System",
+      "heading": "Signal Characteristics",
+      "anchor": "signal-characteristics",
+      "text": "- Output range: **0–5V (max)**\n- No voltage scaling required for ADC input",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::12",
+      "title": "DAQ System",
+      "heading": "Signal Path",
+      "anchor": "signal-path",
+      "text": "1. **Sensor Output**\n- PTs produce analog voltage proportional to pressure (0–5V).\n2. **Toggle Switch Routing**\n- Each PT is routed through one of six toggle switches.\n- Each switch selects whether a PT or a servo signal is sent to a given WINDAQ channel.\n3. **WINDAQ Input**\n- Selected PT signals are routed to the **DATAQ WINDAQ system** via the toggle switch configuration.\n4. **ADC Path (Parallel)**\n- The two primary PTs (Fuel and NOx) are also routed directly (no scaling required) into **ADC1** on the **ADS1115 ADC**.\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::13",
+      "title": "DAQ System",
+      "heading": "3. Servo Position Signal Flow",
+      "anchor": "3-servo-position-signal-flow",
+      "text": "Servo signals are used to measure actuator positions in the system.",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::14",
+      "title": "DAQ System",
+      "heading": "Primary Servo Signals",
+      "anchor": "primary-servo-signals",
+      "text": "- Fuel Fill Valve Position\n- NOx Fill Valve Position\n- Engine Gimbal X-Axis Position\n- Engine Gimbal Y-Axis Position",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::15",
+      "title": "DAQ System",
+      "heading": "Additional Servo Inputs",
+      "anchor": "additional-servo-inputs",
+      "text": "- Up to 6 total servo channels supported\n- One channel should be reserved for:\n- **Servo Supply Voltage (Battery Reference)**",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::16",
+      "title": "DAQ System",
+      "heading": "Signal Characteristics",
+      "anchor": "signal-characteristics",
+      "text": "- Servo feedback voltage: up to **~8.4V**\n- Must be scaled before ADC input",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::17",
+      "title": "DAQ System",
+      "heading": "Signal Path",
+      "anchor": "signal-path",
+      "text": "1. **Sensor Output**\n- Servo position sensors output an analog voltage proportional to position.\n2. **Toggle Switch Routing (WINDAQ)**\n- Signals are routed through the 6 toggle switches.\n- Typically assigned:\n- Channels 3–6 → Primary servo signals\n3. **WINDAQ Input**\n- Selected servo signals are routed to the **DATAQ WINDAQ system**.\n4. **ADC Path (Parallel)**\n- Signals are passed through voltage dividers to scale from **~8.4V → 0–5V**.\n- Routed into ADCs as follows:\n- **ADC2:** Servo channels 1–4\n- **ADC3:** Servo channels 5–6\n5. **Reference Voltage Measurement**\n- One servo input channel is reserved for measuring the **servo supply voltage (battery)**.\n- This enables calculation of true servo position using:\n- Ratio of signal voltage to supply voltage\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::18",
+      "title": "DAQ System",
+      "heading": "4. ADC Architecture and I²C Data Flow",
+      "anchor": "4-adc-architecture-and-ic-data-flow",
+      "text": "The system uses three independent ADC modules based on the **ADS1115 ADC**.",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::19",
+      "title": "DAQ System",
+      "heading": "ADC Configuration",
+      "anchor": "adc-configuration",
+      "text": "- **ADC1**\n- Load cell signals (scaled 0–5V)\n- Primary PT signals (direct 0–5V)\n- **ADC2**\n- Servo signals 1–4 (scaled)\n- **ADC3**\n- Servo signals 5–6 (scaled)\n- Two auxiliary 0–5V analog inputs (expandable for PTs or other sensors)",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::20",
+      "title": "DAQ System",
+      "heading": "I²C Communication",
+      "anchor": "ic-communication",
+      "text": "- All three ADCs share a common I²C bus\n- Each ADC is assigned a unique address\n- Data is read by the Teensy microcontroller",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::21",
+      "title": "DAQ System",
+      "heading": "Data Flow",
+      "anchor": "data-flow",
+      "text": "1. Analog signals → ADC conversion\n2. Digital values transmitted over I²C\n3. Teensy reads and processes sensor data in real time\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::22",
+      "title": "DAQ System",
+      "heading": "5. WINDAQ vs ADC Data Paths (Key Concept)",
+      "anchor": "5-windaq-vs-adc-data-paths-key-concept",
+      "text": "A critical feature of this system is **parallel data paths**:",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::23",
+      "title": "DAQ System",
+      "heading": "WINDAQ Path",
+      "anchor": "windaq-path",
+      "text": "- Direct analog signals (0–10V or 0–5V)\n- Used for:\n- High-resolution logging\n- Visualization\n- Post-test analysis",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::24",
+      "title": "DAQ System",
+      "heading": "ADC + Teensy Path",
+      "anchor": "adc-teensy-path",
+      "text": "- Digitized signals via ADS1115\n- Used for:\n- Real-time monitoring\n- Control logic (external)\n- Event correlation\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::25",
+      "title": "DAQ System",
+      "heading": "6. Key Design Notes",
+      "anchor": "6-key-design-notes",
+      "text": "- Voltage dividers are used wherever signal levels exceed ADC limits (5V max).\n- Toggle switches provide flexible routing between PTs and servo signals into WINDAQ channels.\n- Load cell signals require amplification before entering the system.\n- Servo position accuracy depends on measuring both signal voltage and supply voltage.",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::26",
+      "title": "DAQ System",
+      "heading": "Digital Event Timing and GPIO Expansion",
+      "anchor": "digital-event-timing-and-gpio-expansion",
+      "text": "To enable precise time correlation between physical events and recorded sensor data, the system includes a digital signaling pathway from the Teensy microcontroller to the WINDAQ system. This allows key events—such as valve actuation or system state changes—to be logged alongside analog sensor data.\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::27",
+      "title": "DAQ System",
+      "heading": "Purpose",
+      "anchor": "purpose",
+      "text": "The digital event system is used to:\n- Mark the **start time of valve actuations** (e.g., fuel or NOx fill valves)\n- Record **notable test events** (e.g., ignition command, shutdown trigger)\n- Provide **synchronization markers** within the recorded dataset\nThese signals appear as digital channels in the **DATAQ WINDAQ system**, allowing them to be aligned with analog sensor measurements during analysis.\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::28",
+      "title": "DAQ System",
+      "heading": "System Architecture",
+      "anchor": "system-architecture",
+      "text": "Digital outputs are generated by the Teensy microcontroller and routed through an I²C-based GPIO expansion device:\n- GPIO Expander: **MCP23017T**\n- Communication Protocol: I²C\n- Function: Expands the number of available digital output pins beyond those natively available on the Teensy\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::29",
+      "title": "DAQ System",
+      "heading": "Signal Flow",
+      "anchor": "signal-flow",
+      "text": "1. **Event Trigger (Teensy)**\n- The Teensy sets a digital output HIGH or LOW in response to a programmed event (e.g., valve open command).\n2. **I²C Transmission**\n- The signal is sent over the I²C bus to the **MCP23017T**.\n3. **GPIO Output**\n- The GPIO expander drives the corresponding output pin.\n4. **WINDAQ Input**\n- The output signal is routed into a digital input channel on the **DATAQ WINDAQ system**.\n- The signal is recorded and timestamped alongside analog data and stored (e.g., on SD card).\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::30",
+      "title": "DAQ System",
+      "heading": "Channel Mapping",
+      "anchor": "channel-mapping",
+      "text": "The GPIO expander provides multiple digital outputs, but only a subset are routed to the WINDAQ system.",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::31",
+      "title": "DAQ System",
+      "heading": "Connected Outputs (Active Use)",
+      "anchor": "connected-outputs-active-use",
+      "text": "The following pins are connected to WINDAQ digital input channels:\n|GPIO Pin|WINDAQ Channel|\n|---|---|\n|GPA0|D1|\n|GPA1|D2|\n|GPA2|D3|\n|GPA3|D4|\n|GPA4|D5|\n|GPA5|D6|\n- These six channels represent the **primary digital event markers**.\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::32",
+      "title": "DAQ System",
+      "heading": "Additional Available Outputs (Not Pre-Wired)",
+      "anchor": "additional-available-outputs-not-pre-wired",
+      "text": "The GPIO expander provides additional pins that are not directly connected to WINDAQ but are exposed via solder pads on the PCB:\n- GPA6, GPA7\n- GPB0 – GPB7\nThese pins:\n- Are available for **future expansion or custom wiring**\n- Can be manually connected to additional systems if needed\n- Provide flexibility for extended instrumentation or debugging\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::33",
+      "title": "DAQ System",
+      "heading": "Key Design Notes",
+      "anchor": "key-design-notes",
+      "text": "- The GPIO expander supports up to **16 total digital I/O pins**, though only **6 are currently utilized** for WINDAQ integration.\n- All digital event signals are **binary (HIGH/LOW)** and intended for timing correlation, not analog measurement.\n- The system enables **precise synchronization** between:\n- Analog sensor data (load cells, PTs, servos)\n- Discrete system events (valve commands, triggers)",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::34",
+      "title": "DAQ System",
+      "heading": "More On ADS1115 (Analog-to-Digital Converter)",
+      "anchor": "more-on-ads1115-analog-to-digital-converter",
+      "text": "The **ADS1115** converts analog voltages (from the voltage dividers) into digital values that the Teensy reads over I²C.\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::35",
+      "title": "DAQ System",
+      "heading": "How Inputs Are Used",
+      "anchor": "how-inputs-are-used",
+      "text": "- The ADS1115 has **4 input pins (AIN0–AIN3)**\n- Although it supports differential measurements, this system uses **single-ended mode**\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::36",
+      "title": "DAQ System",
+      "heading": "I²C Addressing (Important)",
+      "anchor": "ic-addressing-important",
+      "text": "Each ADS1115 must have a unique address set by the **ADDR pin**.\n| ADDR Pin Connection | Address |     |\n| ------------------- | ------- | --- |\n| GND                 | 0x48    |     |\n| VIN                 | 0x49    |     |\n| SCL                 | 0x4A    |     |\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::37",
+      "title": "DAQ System",
+      "heading": "Input Voltage Limits (Critical)",
+      "anchor": "input-voltage-limits-critical",
+      "text": "- The ADC **cannot read voltages above its configured range**\n- Inputs must stay within the selected **full-scale range (FSR)**\n**Practical guidance:**\n- Your voltage dividers scale signals to **≤ 5V**\n- Set the ADC range to:\n- **±6.144V (safest)** or\n- **±4.096V (better resolution, but less headroom)**\n➡️ If unsure, use **±6.144V** to avoid clipping\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::38",
+      "title": "DAQ System",
+      "heading": "Channel Sampling Behavior",
+      "anchor": "channel-sampling-behavior",
+      "text": "- The ADS1115 reads **one channel at a time (multiplexed)**\n- When reading multiple inputs:\n- The ADC cycles through them sequentially\n➡️ Expect a small delay between channel readings\n➡️ Not all channels are sampled simultaneously\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::39",
+      "title": "DAQ System",
+      "heading": "Stability of Readings",
+      "anchor": "stability-of-readings",
+      "text": "- The ADC does **not internally pull inputs up or down**\n- Floating inputs will produce unstable values\n**This board already solves this by including:**\n- Voltage dividers\n- Pulldown resistors\n➡️ No additional work required unless modifying the design\n---",
+      "sourceFile": "subteams/gse/DAQ System.md",
+      "pageUrl": "subteams/gse/DAQ%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/gse/DAQ System.md::40",
+      "title": "DAQ System",
+      "heading": "What You May Need to Configure",
+      "anchor": "what-you-may-need-to-configure",
+      "text": "- **Gain / voltage range (FSR)**\n- **Which channel (AIN0–AIN3) you are reading**",
       "sourceFile": "subteams/gse/DAQ System.md",
       "pageUrl": "subteams/gse/DAQ%20System.html",
       "resourcePriority": false,
