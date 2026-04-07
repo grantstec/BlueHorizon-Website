@@ -341,7 +341,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -357,6 +359,72 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#system-overview">System Overview</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core-functionality">Core Functionality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-scope-and-limitations">System Scope and Limitations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-it-up">Connecting It Up</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-flow-overview">Data Flow Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-cell-signal-flow">1. Load Cell Signal Flow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-path">Signal Path</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pressure-transducer-pt-signal-flow">2. Pressure Transducer (PT) Signal Flow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primary-pts">Primary PTs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-pts">Optional PTs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-characteristics">Signal Characteristics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Signal Path</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#servo-position-signal-flow">3. Servo Position Signal Flow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primary-servo-signals">Primary Servo Signals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-servo-inputs">Additional Servo Inputs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Signal Characteristics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Signal Path</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adc-architecture-and-i2c-data-flow">4. ADC Architecture and I²C Data Flow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adc-configuration">ADC Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i2c-communication">I²C Communication</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-flow">Data Flow</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#windaq-vs-adc-data-paths-key-concept">5. WINDAQ vs ADC Data Paths (Key Concept)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windaq-path">WINDAQ Path</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adc-teensy-path">ADC + Teensy Path</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-design-notes">6. Key Design Notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-event-timing-and-gpio-expansion">Digital Event Timing and GPIO Expansion</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-architecture">System Architecture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-flow">Signal Flow</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#channel-mapping">Channel Mapping</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#connected-outputs-active-use">Connected Outputs (Active Use)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-available-outputs-not-pre-wired">Additional Available Outputs (Not Pre-Wired)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Key Design Notes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-on-ads1115-analog-to-digital-converter">More On ADS1115 (Analog-to-Digital Converter)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-inputs-are-used">How Inputs Are Used</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i2c-addressing-important">I²C Addressing (Important)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#input-voltage-limits-critical">Input Voltage Limits (Critical)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#channel-sampling-behavior">Channel Sampling Behavior</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stability-of-readings">Stability of Readings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-you-may-need-to-configure">What You May Need to Configure</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -368,7 +436,546 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="daq-system">
 <h1>DAQ System<a class="headerlink" href="#daq-system" title="Link to this heading">#</a></h1>
-<p>Details about the Data Acquisition (DAQ) System.</p>
+<section id="system-overview">
+<h2>System Overview<a class="headerlink" href="#system-overview" title="Link to this heading">#</a></h2>
+<p>This sensor acquisition system is designed to collect, condition, and digitize data from multiple instrumentation sources used in propulsion and fluid system testing. The system supports a range of analog sensors, including load cells, pressure transducers, and position-related servo sensors, and provides structured pathways for both high-resolution data logging and real-time microcontroller access.</p>
+<section id="core-functionality">
+<h3>Core Functionality<a class="headerlink" href="#core-functionality" title="Link to this heading">#</a></h3>
+<p>The system performs the following primary functions:</p>
+<ul class="simple">
+<li><p><strong>Sensor Data Acquisition</strong><br />
+Accepts analog inputs from:</p>
+<ul>
+<li><p>Load cells (e.g., engine thrust measurement, propellant tank weight)</p></li>
+<li><p>Pressure transducers (e.g., nitrous oxide and fuel system pressures)</p></li>
+<li><p>Servo-based position sensors (e.g., tank fill valve position verification, engine gimbal axis position)</p></li>
+</ul>
+</li>
+<li><p><strong>Signal Routing and Digitization</strong></p>
+<ul>
+<li><p>Routes analog sensor signals to a <strong>DATAQ WINDAQ system</strong> for visualization, recording, and storage (including SD card logging).</p></li>
+<li><p>Simultaneously routes selected critical signals (load cells, fuel and NOx pressures, and servo positions) through an <strong>ADS1115 ADC</strong>, enabling digitization for embedded processing.</p></li>
+</ul>
+</li>
+<li><p><strong>Microcontroller Integration</strong></p>
+<ul>
+<li><p>Provides access to digitized sensor data via an I²C interface to a Teensy microcontroller, enabling real-time monitoring, control logic, and downstream processing.</p></li>
+</ul>
+</li>
+<li><p><strong>Event Timing Capture</strong></p>
+<ul>
+<li><p>Accepts digital input signals to log key event markers (e.g., valve actuation start times or other test events), allowing synchronization between sensor data and system actions.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="system-scope-and-limitations">
+<h3>System Scope and Limitations<a class="headerlink" href="#system-scope-and-limitations" title="Link to this heading">#</a></h3>
+<p>This system is intended for data acquisition and monitoring purposes only. It is important to clearly define what the system does <strong>not</strong> do:</p>
+<ul class="simple">
+<li><p><strong>No Closed-Loop Control</strong><br />
+The system does not directly control actuators, valves, or engines. It provides data for monitoring and analysis but does not execute control logic autonomously.</p></li>
+<li><p><strong>No Sensor Calibration or Compensation</strong><br />
+Calibration of load cells, pressure transducers, and servo sensors must be performed externally. The system assumes properly conditioned and calibrated input signals.</p></li>
+<li><p><strong>No High-Level Data Processing or Interpretation</strong><br />
+The system does not perform advanced analytics, filtering, or decision-making beyond basic digitization and routing. Any such processing must be implemented on the connected microcontroller or external systems.</p></li>
+</ul>
+</section>
+</section>
+<section id="connecting-it-up">
+<h2>Connecting It Up<a class="headerlink" href="#connecting-it-up" title="Link to this heading">#</a></h2>
+<p><img alt="" src="subteams/gse/pictures/DAQ%20System.png" /></p>
+<p><img alt="" src="../../_images/sensor_breakout_back_annotated_LC.png" /></p>
+<p><img alt="" src="subteams/gse/pictures/DAQ%20System%20-%20Switch%20between%20sensors%20annotated%20PCB.png" /></p>
+<p><img alt="" src="subteams/gse/pictures/DAQ%20System%20annotated%20PCB%20sensor%20input%20plugs.png" /></p>
+<p>One servo input should be connected to the base battery voltage for the servos to determine the servo’s position.</p>
+<p><img alt="" src="subteams/gse/pictures/DAQ%20System-Annotated%20PCB%20I2C%20Data%20ports.png" /></p>
+<p>Connect the I2C data lines to the Teensy.</p>
+</section>
+<section id="data-flow-overview">
+<h2>Data Flow Overview<a class="headerlink" href="#data-flow-overview" title="Link to this heading">#</a></h2>
+<p>This section describes how sensor signals propagate through the system, from physical measurement to digitization and logging. The system supports parallel data paths for both high-resolution logging (WINDAQ) and embedded processing via ADCs and a microcontroller.</p>
+</section>
+<hr class="docutils" />
+<section id="load-cell-signal-flow">
+<h2>1. Load Cell Signal Flow<a class="headerlink" href="#load-cell-signal-flow" title="Link to this heading">#</a></h2>
+<p>The system includes two load cells used for propulsion testing:</p>
+<ul class="simple">
+<li><p><strong>Engine Thrust Load Cell</strong></p></li>
+<li><p><strong>NOx Tank Weight Load Cell</strong></p></li>
+</ul>
+<section id="signal-path">
+<h3>Signal Path<a class="headerlink" href="#signal-path" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Sensor Output</strong></p>
+<ul class="simple">
+<li><p>Each load cell produces a low-level differential signal proportional to force.</p></li>
+</ul>
+</li>
+<li><p><strong>Signal Amplification</strong></p>
+<ul class="simple">
+<li><p>Signals are routed into external load cell transmitters.</p></li>
+<li><p>These transmitters amplify and condition the signal to a <strong>0–10V analog output</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>WINDAQ Routing</strong></p>
+<ul class="simple">
+<li><p>The amplified signals are routed directly to the <strong>DATAQ WINDAQ system</strong>:</p>
+<ul>
+<li><p>Channel 1 (CH1): Engine thrust load cell</p></li>
+<li><p>Channel 2 (CH2): NOx tank weight load cell</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>ADC Path (Parallel)</strong></p>
+<ul class="simple">
+<li><p>The same signals are routed through voltage dividers to scale them from <strong>0–10V down to 0–5V</strong>.</p></li>
+<li><p>These scaled signals are then fed into <strong>ADC1</strong> using the <strong>ADS1115 ADC</strong>.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="summary">
+<h3>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>WINDAQ path:</strong> High-range analog logging (0–10V)</p></li>
+<li><p><strong>ADC path:</strong> Scaled digital measurement for embedded processing</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="pressure-transducer-pt-signal-flow">
+<h2>2. Pressure Transducer (PT) Signal Flow<a class="headerlink" href="#pressure-transducer-pt-signal-flow" title="Link to this heading">#</a></h2>
+<p>The system supports up to <strong>six pressure transducers (PTs)</strong>.</p>
+<section id="primary-pts">
+<h3>Primary PTs<a class="headerlink" href="#primary-pts" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Fuel Tank Pressure</p></li>
+<li><p>NOx Tank Pressure</p></li>
+</ul>
+</section>
+<section id="optional-pts">
+<h3>Optional PTs<a class="headerlink" href="#optional-pts" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Chamber Pressure</p></li>
+<li><p>NOx Fill Tank Pressure</p></li>
+<li><p>Additional auxiliary PTs (up to 6 total)</p></li>
+</ul>
+</section>
+<section id="signal-characteristics">
+<h3>Signal Characteristics<a class="headerlink" href="#signal-characteristics" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Output range: <strong>0–5V (max)</strong></p></li>
+<li><p>No voltage scaling required for ADC input</p></li>
+</ul>
+</section>
+<section id="id1">
+<h3>Signal Path<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Sensor Output</strong></p>
+<ul class="simple">
+<li><p>PTs produce analog voltage proportional to pressure (0–5V).</p></li>
+</ul>
+</li>
+<li><p><strong>Toggle Switch Routing</strong></p>
+<ul class="simple">
+<li><p>Each PT is routed through one of six toggle switches.</p></li>
+<li><p>Each switch selects whether a PT or a servo signal is sent to a given WINDAQ channel.</p></li>
+</ul>
+</li>
+<li><p><strong>WINDAQ Input</strong></p>
+<ul class="simple">
+<li><p>Selected PT signals are routed to the <strong>DATAQ WINDAQ system</strong> via the toggle switch configuration.</p></li>
+</ul>
+</li>
+<li><p><strong>ADC Path (Parallel)</strong></p>
+<ul class="simple">
+<li><p>The two primary PTs (Fuel and NOx) are also routed directly (no scaling required) into <strong>ADC1</strong> on the <strong>ADS1115 ADC</strong>.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="servo-position-signal-flow">
+<h2>3. Servo Position Signal Flow<a class="headerlink" href="#servo-position-signal-flow" title="Link to this heading">#</a></h2>
+<p>Servo signals are used to measure actuator positions in the system.</p>
+<section id="primary-servo-signals">
+<h3>Primary Servo Signals<a class="headerlink" href="#primary-servo-signals" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Fuel Fill Valve Position</p></li>
+<li><p>NOx Fill Valve Position</p></li>
+<li><p>Engine Gimbal X-Axis Position</p></li>
+<li><p>Engine Gimbal Y-Axis Position</p></li>
+</ul>
+</section>
+<section id="additional-servo-inputs">
+<h3>Additional Servo Inputs<a class="headerlink" href="#additional-servo-inputs" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Up to 6 total servo channels supported</p></li>
+<li><p>One channel should be reserved for:</p>
+<ul>
+<li><p><strong>Servo Supply Voltage (Battery Reference)</strong></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id2">
+<h3>Signal Characteristics<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Servo feedback voltage: up to <strong>~8.4V</strong></p></li>
+<li><p>Must be scaled before ADC input</p></li>
+</ul>
+</section>
+<section id="id3">
+<h3>Signal Path<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Sensor Output</strong></p>
+<ul class="simple">
+<li><p>Servo position sensors output an analog voltage proportional to position.</p></li>
+</ul>
+</li>
+<li><p><strong>Toggle Switch Routing (WINDAQ)</strong></p>
+<ul class="simple">
+<li><p>Signals are routed through the 6 toggle switches.</p></li>
+<li><p>Typically assigned:</p>
+<ul>
+<li><p>Channels 3–6 → Primary servo signals</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>WINDAQ Input</strong></p>
+<ul class="simple">
+<li><p>Selected servo signals are routed to the <strong>DATAQ WINDAQ system</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>ADC Path (Parallel)</strong></p>
+<ul class="simple">
+<li><p>Signals are passed through voltage dividers to scale from <strong>~8.4V → 0–5V</strong>.</p></li>
+<li><p>Routed into ADCs as follows:</p>
+<ul>
+<li><p><strong>ADC2:</strong> Servo channels 1–4</p></li>
+<li><p><strong>ADC3:</strong> Servo channels 5–6</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Reference Voltage Measurement</strong></p>
+<ul class="simple">
+<li><p>One servo input channel is reserved for measuring the <strong>servo supply voltage (battery)</strong>.</p></li>
+<li><p>This enables calculation of true servo position using:</p>
+<ul>
+<li><p>Ratio of signal voltage to supply voltage</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="adc-architecture-and-i2c-data-flow">
+<h2>4. ADC Architecture and I²C Data Flow<a class="headerlink" href="#adc-architecture-and-i2c-data-flow" title="Link to this heading">#</a></h2>
+<p>The system uses three independent ADC modules based on the <strong>ADS1115 ADC</strong>.</p>
+<section id="adc-configuration">
+<h3>ADC Configuration<a class="headerlink" href="#adc-configuration" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>ADC1</strong></p>
+<ul>
+<li><p>Load cell signals (scaled 0–5V)</p></li>
+<li><p>Primary PT signals (direct 0–5V)</p></li>
+</ul>
+</li>
+<li><p><strong>ADC2</strong></p>
+<ul>
+<li><p>Servo signals 1–4 (scaled)</p></li>
+</ul>
+</li>
+<li><p><strong>ADC3</strong></p>
+<ul>
+<li><p>Servo signals 5–6 (scaled)</p></li>
+<li><p>Two auxiliary 0–5V analog inputs (expandable for PTs or other sensors)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="i2c-communication">
+<h3>I²C Communication<a class="headerlink" href="#i2c-communication" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>All three ADCs share a common I²C bus</p></li>
+<li><p>Each ADC is assigned a unique address</p></li>
+<li><p>Data is read by the Teensy microcontroller</p></li>
+</ul>
+</section>
+<section id="data-flow">
+<h3>Data Flow<a class="headerlink" href="#data-flow" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Analog signals → ADC conversion</p></li>
+<li><p>Digital values transmitted over I²C</p></li>
+<li><p>Teensy reads and processes sensor data in real time</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="windaq-vs-adc-data-paths-key-concept">
+<h2>5. WINDAQ vs ADC Data Paths (Key Concept)<a class="headerlink" href="#windaq-vs-adc-data-paths-key-concept" title="Link to this heading">#</a></h2>
+<p>A critical feature of this system is <strong>parallel data paths</strong>:</p>
+<section id="windaq-path">
+<h3>WINDAQ Path<a class="headerlink" href="#windaq-path" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Direct analog signals (0–10V or 0–5V)</p></li>
+<li><p>Used for:</p>
+<ul>
+<li><p>High-resolution logging</p></li>
+<li><p>Visualization</p></li>
+<li><p>Post-test analysis</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="adc-teensy-path">
+<h3>ADC + Teensy Path<a class="headerlink" href="#adc-teensy-path" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Digitized signals via ADS1115</p></li>
+<li><p>Used for:</p>
+<ul>
+<li><p>Real-time monitoring</p></li>
+<li><p>Control logic (external)</p></li>
+<li><p>Event correlation</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="key-design-notes">
+<h2>6. Key Design Notes<a class="headerlink" href="#key-design-notes" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Voltage dividers are used wherever signal levels exceed ADC limits (5V max).</p></li>
+<li><p>Toggle switches provide flexible routing between PTs and servo signals into WINDAQ channels.</p></li>
+<li><p>Load cell signals require amplification before entering the system.</p></li>
+<li><p>Servo position accuracy depends on measuring both signal voltage and supply voltage.</p></li>
+</ul>
+</section>
+<section id="digital-event-timing-and-gpio-expansion">
+<h2>Digital Event Timing and GPIO Expansion<a class="headerlink" href="#digital-event-timing-and-gpio-expansion" title="Link to this heading">#</a></h2>
+<p>To enable precise time correlation between physical events and recorded sensor data, the system includes a digital signaling pathway from the Teensy microcontroller to the WINDAQ system. This allows key events—such as valve actuation or system state changes—to be logged alongside analog sensor data.</p>
+<hr class="docutils" />
+<section id="purpose">
+<h3>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h3>
+<p>The digital event system is used to:</p>
+<ul class="simple">
+<li><p>Mark the <strong>start time of valve actuations</strong> (e.g., fuel or NOx fill valves)</p></li>
+<li><p>Record <strong>notable test events</strong> (e.g., ignition command, shutdown trigger)</p></li>
+<li><p>Provide <strong>synchronization markers</strong> within the recorded dataset</p></li>
+</ul>
+<p>These signals appear as digital channels in the <strong>DATAQ WINDAQ system</strong>, allowing them to be aligned with analog sensor measurements during analysis.</p>
+</section>
+<hr class="docutils" />
+<section id="system-architecture">
+<h3>System Architecture<a class="headerlink" href="#system-architecture" title="Link to this heading">#</a></h3>
+<p>Digital outputs are generated by the Teensy microcontroller and routed through an I²C-based GPIO expansion device:</p>
+<ul class="simple">
+<li><p>GPIO Expander: <strong>MCP23017T</strong></p></li>
+<li><p>Communication Protocol: I²C</p></li>
+<li><p>Function: Expands the number of available digital output pins beyond those natively available on the Teensy</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="signal-flow">
+<h3>Signal Flow<a class="headerlink" href="#signal-flow" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Event Trigger (Teensy)</strong></p>
+<ul class="simple">
+<li><p>The Teensy sets a digital output HIGH or LOW in response to a programmed event (e.g., valve open command).</p></li>
+</ul>
+</li>
+<li><p><strong>I²C Transmission</strong></p>
+<ul class="simple">
+<li><p>The signal is sent over the I²C bus to the <strong>MCP23017T</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>GPIO Output</strong></p>
+<ul class="simple">
+<li><p>The GPIO expander drives the corresponding output pin.</p></li>
+</ul>
+</li>
+<li><p><strong>WINDAQ Input</strong></p>
+<ul class="simple">
+<li><p>The output signal is routed into a digital input channel on the <strong>DATAQ WINDAQ system</strong>.</p></li>
+<li><p>The signal is recorded and timestamped alongside analog data and stored (e.g., on SD card).</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="channel-mapping">
+<h3>Channel Mapping<a class="headerlink" href="#channel-mapping" title="Link to this heading">#</a></h3>
+<p>The GPIO expander provides multiple digital outputs, but only a subset are routed to the WINDAQ system.</p>
+<section id="connected-outputs-active-use">
+<h4>Connected Outputs (Active Use)<a class="headerlink" href="#connected-outputs-active-use" title="Link to this heading">#</a></h4>
+<p>The following pins are connected to WINDAQ digital input channels:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>GPIO Pin</p></th>
+<th class="head"><p>WINDAQ Channel</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GPA0</p></td>
+<td><p>D1</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPA1</p></td>
+<td><p>D2</p></td>
+</tr>
+<tr class="row-even"><td><p>GPA2</p></td>
+<td><p>D3</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPA3</p></td>
+<td><p>D4</p></td>
+</tr>
+<tr class="row-even"><td><p>GPA4</p></td>
+<td><p>D5</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPA5</p></td>
+<td><p>D6</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>These six channels represent the <strong>primary digital event markers</strong>.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="additional-available-outputs-not-pre-wired">
+<h4>Additional Available Outputs (Not Pre-Wired)<a class="headerlink" href="#additional-available-outputs-not-pre-wired" title="Link to this heading">#</a></h4>
+<p>The GPIO expander provides additional pins that are not directly connected to WINDAQ but are exposed via solder pads on the PCB:</p>
+<ul class="simple">
+<li><p>GPA6, GPA7</p></li>
+<li><p>GPB0 – GPB7</p></li>
+</ul>
+<p>These pins:</p>
+<ul class="simple">
+<li><p>Are available for <strong>future expansion or custom wiring</strong></p></li>
+<li><p>Can be manually connected to additional systems if needed</p></li>
+<li><p>Provide flexibility for extended instrumentation or debugging</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id4">
+<h3>Key Design Notes<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The GPIO expander supports up to <strong>16 total digital I/O pins</strong>, though only <strong>6 are currently utilized</strong> for WINDAQ integration.</p></li>
+<li><p>All digital event signals are <strong>binary (HIGH/LOW)</strong> and intended for timing correlation, not analog measurement.</p></li>
+<li><p>The system enables <strong>precise synchronization</strong> between:</p>
+<ul>
+<li><p>Analog sensor data (load cells, PTs, servos)</p></li>
+<li><p>Discrete system events (valve commands, triggers)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="more-on-ads1115-analog-to-digital-converter">
+<h2>More On ADS1115 (Analog-to-Digital Converter)<a class="headerlink" href="#more-on-ads1115-analog-to-digital-converter" title="Link to this heading">#</a></h2>
+<p>The <strong>ADS1115</strong> converts analog voltages (from the voltage dividers) into digital values that the Teensy reads over I²C.</p>
+<hr class="docutils" />
+<section id="how-inputs-are-used">
+<h3>How Inputs Are Used<a class="headerlink" href="#how-inputs-are-used" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The ADS1115 has <strong>4 input pins (AIN0–AIN3)</strong></p></li>
+<li><p>Although it supports differential measurements, this system uses <strong>single-ended mode</strong></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="i2c-addressing-important">
+<h3>I²C Addressing (Important)<a class="headerlink" href="#i2c-addressing-important" title="Link to this heading">#</a></h3>
+<p>Each ADS1115 must have a unique address set by the <strong>ADDR pin</strong>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>ADDR Pin Connection</p></th>
+<th class="head"><p>Address</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GND</p></td>
+<td><p>0x48</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>VIN</p></td>
+<td><p>0x49</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>SCL</p></td>
+<td><p>0x4A</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="input-voltage-limits-critical">
+<h3>Input Voltage Limits (Critical)<a class="headerlink" href="#input-voltage-limits-critical" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The ADC <strong>cannot read voltages above its configured range</strong></p></li>
+<li><p>Inputs must stay within the selected <strong>full-scale range (FSR)</strong></p></li>
+</ul>
+<p><strong>Practical guidance:</strong></p>
+<ul class="simple">
+<li><p>Your voltage dividers scale signals to <strong>≤ 5V</strong></p></li>
+<li><p>Set the ADC range to:</p>
+<ul>
+<li><p><strong>±6.144V (safest)</strong> or</p></li>
+<li><p><strong>±4.096V (better resolution, but less headroom)</strong></p></li>
+</ul>
+</li>
+</ul>
+<p>➡️ If unsure, use <strong>±6.144V</strong> to avoid clipping</p>
+</section>
+<hr class="docutils" />
+<section id="channel-sampling-behavior">
+<h3>Channel Sampling Behavior<a class="headerlink" href="#channel-sampling-behavior" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The ADS1115 reads <strong>one channel at a time (multiplexed)</strong></p></li>
+<li><p>When reading multiple inputs:</p>
+<ul>
+<li><p>The ADC cycles through them sequentially</p></li>
+</ul>
+</li>
+</ul>
+<p>➡️ Expect a small delay between channel readings<br />
+➡️ Not all channels are sampled simultaneously</p>
+</section>
+<hr class="docutils" />
+<section id="stability-of-readings">
+<h3>Stability of Readings<a class="headerlink" href="#stability-of-readings" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The ADC does <strong>not internally pull inputs up or down</strong></p></li>
+<li><p>Floating inputs will produce unstable values</p></li>
+</ul>
+<p><strong>This board already solves this by including:</strong></p>
+<ul class="simple">
+<li><p>Voltage dividers</p></li>
+<li><p>Pulldown resistors</p></li>
+</ul>
+<p>➡️ No additional work required unless modifying the design</p>
+</section>
+<hr class="docutils" />
+<section id="what-you-may-need-to-configure">
+<h3>What You May Need to Configure<a class="headerlink" href="#what-you-may-need-to-configure" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Gain / voltage range (FSR)</strong></p></li>
+<li><p><strong>Which channel (AIN0–AIN3) you are reading</strong></p></li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -425,6 +1032,81 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#system-overview">System Overview</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core-functionality">Core Functionality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-scope-and-limitations">System Scope and Limitations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-it-up">Connecting It Up</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-flow-overview">Data Flow Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-cell-signal-flow">1. Load Cell Signal Flow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-path">Signal Path</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pressure-transducer-pt-signal-flow">2. Pressure Transducer (PT) Signal Flow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primary-pts">Primary PTs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-pts">Optional PTs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-characteristics">Signal Characteristics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Signal Path</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#servo-position-signal-flow">3. Servo Position Signal Flow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primary-servo-signals">Primary Servo Signals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-servo-inputs">Additional Servo Inputs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Signal Characteristics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Signal Path</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adc-architecture-and-i2c-data-flow">4. ADC Architecture and I²C Data Flow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adc-configuration">ADC Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i2c-communication">I²C Communication</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-flow">Data Flow</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#windaq-vs-adc-data-paths-key-concept">5. WINDAQ vs ADC Data Paths (Key Concept)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windaq-path">WINDAQ Path</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adc-teensy-path">ADC + Teensy Path</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-design-notes">6. Key Design Notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-event-timing-and-gpio-expansion">Digital Event Timing and GPIO Expansion</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-architecture">System Architecture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-flow">Signal Flow</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#channel-mapping">Channel Mapping</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#connected-outputs-active-use">Connected Outputs (Active Use)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-available-outputs-not-pre-wired">Additional Available Outputs (Not Pre-Wired)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Key Design Notes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-on-ads1115-analog-to-digital-converter">More On ADS1115 (Analog-to-Digital Converter)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-inputs-are-used">How Inputs Are Used</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i2c-addressing-important">I²C Addressing (Important)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#input-voltage-limits-critical">Input Voltage Limits (Critical)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#channel-sampling-behavior">Channel Sampling Behavior</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stability-of-readings">Stability of Readings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-you-may-need-to-configure">What You May Need to Configure</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
