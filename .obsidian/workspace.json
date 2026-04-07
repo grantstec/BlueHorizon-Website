@@ -185,6 +185,9 @@
   },
   "active": "6fcabde9b2d24e65",
   "lastOpenFiles": [
+    "docs/subteams/gse/pictures/DAQ System-Annotated PCB I2C Data ports.png",
+    "docs/subteams/gse/pictures/DAQ System annotated PCB sensor input plugs.png",
+    "docs/subteams/gse/pictures/DAQ System - Switch between sensors annotated PCB.png",
     "docs/subteams/gse/pictures/sensor_breakout_back_annotated_LC.png",
     "docs/subteams/gse/pictures/DAQ System.png",
     "docs/subteams/gse/pictures",
@@ -209,9 +212,6 @@
     "docs/pictures/payload.jpg",
     "docs/past_years/MAIN 2024-2025 Mojave Sphinx.md",
     "docs/past_years/MAIN 2023-2024 NASA USLI.md",
-    "docs/resources/pictures/Open_Folder.png",
-    "docs/resources/pictures/GitHubRepoBranches.png",
-    "docs/resources/pictures/Commit.png",
-    "docs/resources/pictures/branch_selection.png"
+    "docs/resources/pictures/Open_Folder.png"
   ]
 }
