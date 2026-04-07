@@ -1,3 +1,3 @@
 # Control Algorithm
 
-Controls is hard!
+Details about the Control Algorithm.
