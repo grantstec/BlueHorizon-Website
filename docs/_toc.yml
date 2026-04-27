@@ -1,9 +1,6 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Team Information
-    chapters:
-      - file: team/MAIN schedule
   - caption: Subteams
     chapters:
       - file: subteams/engine/MAIN Engine
@@ -41,6 +38,9 @@ parts:
   - caption: Purchase Orders & Resources
     chapters:
       - file: Purchase Orders & Resources/Purchase Orders
+  - caption: Team
+    chapters:
+      - file: Team/MAIN Org Chart
   - caption: Website Resources
     chapters:
       - file: Website Resources/AI Website Editing Assistant
