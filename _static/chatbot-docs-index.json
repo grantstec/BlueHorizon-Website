@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-04-07T22:21:40.120Z",
+  "generatedAt": "2026-04-27T03:06:19.291Z",
   "version": 1,
   "sourceCount": 32,
-  "chunkCount": 101,
+  "chunkCount": 102,
   "chunks": [
     {
       "id": "Purchase Orders & Resources/Purchase Orders.md::0",
       "title": "Purchase Orders",
-      "heading": "LIVE as of 3-17-26",
-      "anchor": "live-as-of-3-17-26",
-      "text": "[LIVE as of 3-17-26 Purchase Order.xlsx](https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQChU6KI1gylTZ5nCRb58Zp3AX_NNbpDnV99aZYtSoyXbXk?e=MXBNuV)",
+      "heading": "LIVE as of 4-26-26",
+      "anchor": "live-as-of-4-26-26",
+      "text": "[LIVE as of 4-26-26 Purchase Order.xlsx](https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQA_CVkdjxreQJr8e9dCVc35Ac7225yAeGK_9O33wEbjFQk?e=NToXec&isSPOFile=1&xsdata=MDV8MDJ8fGQyYjg2ODc5MjNiYjQxZjM2ZTJiMDhkZWEzZGIwOTlifDdhYjgwYTA2ZjAyOTQ1YzA4NGQxN2RhZDE5Y2UzYzYxfDB8MHw2MzkxMjgzNTgyODc1NDE2MDN8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T21FME9UZGxOVGhtWlRRMFl6UTJOV1ZoWWpSa01qYzJNR0kxTWpWaFpqbGhRSFJvY21WaFpDNTJNaTl0WlhOellXZGxjeTh4TnpjM01qTTRPVFV4TkRJNHwwZTg0OGZjYWMxYTQ0N2NmZTg3NjA4ZGVhM2RiMDk5YXxkY2Y4YWEzZTVkMDU0NjRmOGE1MzZjZDNkODMyN2QyNg%3D%3D&sdata=RGZUdGtaeWFIcVoxc0VLS0UxOVIrdnBRd0VEU2NpYkgvV1VqelZ0Sm00dz0%3D&ovuser=7ab80a06-f029-45c0-84d1-7dad19ce3c61%2CC27Grant.Stec%40afacademy.af.edu)",
       "sourceFile": "Purchase Orders & Resources/Purchase Orders.md",
       "pageUrl": "Purchase%20Orders%20%26%20Resources/Purchase%20Orders.html",
       "resourcePriority": false,
@@ -18,9 +18,9 @@
     {
       "id": "Purchase Orders & Resources/Purchase Orders.md::1",
       "title": "Purchase Orders",
-      "heading": "3-9-26 Order",
-      "anchor": "3-9-26-order",
-      "text": "AS OF 4-1-26\n1. [x] **DELIVERED** all Grainger items\n1. [x] Power Supplies **Delivered**\n2. [x] **DELIVERED** all McMaster Carr\n1. [x] O ring pick set **Delivered**\n2. [x] Metal Pick Set **Delivered**\n3. [x] Threaded Rods 1/4\" 1-20 **Delivered**\n4. [x] Skate Wheel **Delivered**\n5. [x] Vinyl Plastic Snap-in Square Plug **Delivered**\n6. [x] Hexagonal stock **Delivered**\n7. [x] Steel sheet **Delivered**\n8. [x] Steel Tie down ring **Delivered**\n9. [x] Pins **Delivered**\n10. [x] Paint for Metal (Dark Gray Gloss) **Delivered**\n11. [x] M3x8mm **Delivered**\n12. [x] M3x6mm **Delivered**\n13. [x] 1080p camera **Delivered**\n3. [x] **DELIVERED** Uline\n1. [x] 5 gal IPA **Delivered**\n4. [x] **DELIVERED** Airgas\n1. [x] JAN month Invoice NOX Tank Rental **Delivered**\n5. [ ] **PAID** all Amazon items\n1. [x] Pelican Case **Delivered**\n2. [x] Monitor **Delivered**\n3. [ ] MiniPC *Ordered/Not Delivered*\n4. [x] 240 Watt USBC Cables **Delivered**\n5. [x] 90 Degrees USB C **Delivered**\n6. [x] 90 Degrees Ethernet **Delivered**\n7. [ ] keyboard +mouse *Ordered/Not Delivered*\n8. [x] Nanostation WIFI Antenna **Delivered**\n9. [x] Tripod **Delivered**\n6. [ ] **HOLD** on DIGI Key items\n1. [ ] Non-zero TAX (Needs to be zero)\n7. [ ] **HOLD** on Apogee items for pickup name\n1. [ ]  Submitted Grant Stec for Pickup name as of 4-1-26, waiting on order\n8. [ ] **HOLD** on Amain Hobbies\n1. [ ] ***Items need to be re-added to cart***\n2. [ ] Issues with credit card\n[3-9-26 Purchase Order Final.xlsx](https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQBB3v-70vfETLrQYOilVgN0ATpAZVI7Lv2bD2YEU-itcT8?e=vVcw8r)",
+      "heading": "3-17-26 Order",
+      "anchor": "3-17-26-order",
+      "text": "[3-17-26 Purchase Order](https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQChU6KI1gylTZ5nCRb58Zp3AebokvqRek8oEASGZcfvNm8?e=3tj5YA)\nAS OF 4-26-26\n1. [x] **DELIVERED** all McMaster Carr\n2. [x] **DELIVERED** Airgas\n3. [x] **DELIVERED** Amazon items\n4. [ ] **NOT ORDERED**  DIGI Key items\n1. [ ] Waiting on card refill",
       "sourceFile": "Purchase Orders & Resources/Purchase Orders.md",
       "pageUrl": "Purchase%20Orders%20%26%20Resources/Purchase%20Orders.html",
       "resourcePriority": false,
@@ -28,6 +28,17 @@
     },
     {
       "id": "Purchase Orders & Resources/Purchase Orders.md::2",
+      "title": "Purchase Orders",
+      "heading": "3-9-26 Order",
+      "anchor": "3-9-26-order",
+      "text": "[3-9-26 Purchase Order Final.xlsx](https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQBB3v-70vfETLrQYOilVgN0ATpAZVI7Lv2bD2YEU-itcT8?e=vVcw8r)\nAS OF 4-26-26\n1. [x] **DELIVERED** all Grainger items\n2. [x] **DELIVERED** all McMaster Carr\n3. [x] **DELIVERED** Uline\n4. [x] **DELIVERED** Airgas\n5. [x] **DELIVERED** Amazon items\n6. [x] **DELIVERED**  DIGI Key items\n7. [x] **DELIVERED**  Apogee items for pickup name\n8. [x] **DELIVERED** on Amain Hobbies",
+      "sourceFile": "Purchase Orders & Resources/Purchase Orders.md",
+      "pageUrl": "Purchase%20Orders%20%26%20Resources/Purchase%20Orders.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "Purchase Orders & Resources/Purchase Orders.md::3",
       "title": "Purchase Orders",
       "heading": "Large DEC/JAN & FEB Order (Only items delivered this past fall 2025 and spring 2026)",
       "anchor": "large-decjan-feb-order-only-items-delivered-this-past-fall-2025-and-spring-2026",
