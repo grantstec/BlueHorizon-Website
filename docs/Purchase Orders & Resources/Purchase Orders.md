@@ -1,55 +1,38 @@
 
 # Purchase Orders
 
-## LIVE as of 3-17-26
+## LIVE as of 4-26-26
 
-[LIVE as of 3-17-26 Purchase Order.xlsx](https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQChU6KI1gylTZ5nCRb58Zp3AX_NNbpDnV99aZYtSoyXbXk?e=MXBNuV)
+[LIVE as of 4-26-26 Purchase Order.xlsx](https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQA_CVkdjxreQJr8e9dCVc35Ac7225yAeGK_9O33wEbjFQk?e=NToXec&isSPOFile=1&xsdata=MDV8MDJ8fGQyYjg2ODc5MjNiYjQxZjM2ZTJiMDhkZWEzZGIwOTlifDdhYjgwYTA2ZjAyOTQ1YzA4NGQxN2RhZDE5Y2UzYzYxfDB8MHw2MzkxMjgzNTgyODc1NDE2MDN8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T21FME9UZGxOVGhtWlRRMFl6UTJOV1ZoWWpSa01qYzJNR0kxTWpWaFpqbGhRSFJvY21WaFpDNTJNaTl0WlhOellXZGxjeTh4TnpjM01qTTRPVFV4TkRJNHwwZTg0OGZjYWMxYTQ0N2NmZTg3NjA4ZGVhM2RiMDk5YXxkY2Y4YWEzZTVkMDU0NjRmOGE1MzZjZDNkODMyN2QyNg%3D%3D&sdata=RGZUdGtaeWFIcVoxc0VLS0UxOVIrdnBRd0VEU2NpYkgvV1VqelZ0Sm00dz0%3D&ovuser=7ab80a06-f029-45c0-84d1-7dad19ce3c61%2CC27Grant.Stec%40afacademy.af.edu)
 
 ## Approved and In Process of Order Completion
 
+### 3-17-26 Order
+
+[3-17-26 Purchase Order](https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQChU6KI1gylTZ5nCRb58Zp3AebokvqRek8oEASGZcfvNm8?e=3tj5YA)
+
+AS OF 4-26-26
+
+1. [x] **DELIVERED** all McMaster Carr
+2. [x] **DELIVERED** Airgas
+3. [x] **DELIVERED** Amazon items
+4. [ ] **NOT ORDERED**  DIGI Key items
+	1. [ ] Waiting on card refill
+
 ### 3-9-26 Order
 
-AS OF 4-1-26 
+[3-9-26 Purchase Order Final.xlsx](https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQBB3v-70vfETLrQYOilVgN0ATpAZVI7Lv2bD2YEU-itcT8?e=vVcw8r)
+
+AS OF 4-26-26 
 
 1. [x] **DELIVERED** all Grainger items 
-	1. [x] Power Supplies **Delivered**
 2. [x] **DELIVERED** all McMaster Carr
-	1. [x] O ring pick set **Delivered**
-	2. [x] Metal Pick Set **Delivered**
-	3. [x] Threaded Rods 1/4" 1-20 **Delivered**
-	4. [x] Skate Wheel **Delivered**
-	5. [x] Vinyl Plastic Snap-in Square Plug **Delivered**
-	6. [x] Hexagonal stock **Delivered**
-	7. [x] Steel sheet **Delivered**
-	8. [x] Steel Tie down ring **Delivered**
-	9. [x] Pins **Delivered**
-	10. [x] Paint for Metal (Dark Gray Gloss) **Delivered**
-	11. [x] M3x8mm **Delivered**
-	12. [x] M3x6mm **Delivered**
-	13. [x] 1080p camera **Delivered**
 3. [x] **DELIVERED** Uline
-	1. [x] 5 gal IPA **Delivered**
 4. [x] **DELIVERED** Airgas
-	1. [x] JAN month Invoice NOX Tank Rental **Delivered**
-5. [ ] **PAID** all Amazon items
-	1. [x] Pelican Case **Delivered**
-	2. [x] Monitor **Delivered**
-	3. [ ] MiniPC *Ordered/Not Delivered*
-	4. [x] 240 Watt USBC Cables **Delivered**
-	5. [x] 90 Degrees USB C **Delivered**
-	6. [x] 90 Degrees Ethernet **Delivered**
-	7. [ ] keyboard +mouse *Ordered/Not Delivered*
-	8. [x] Nanostation WIFI Antenna **Delivered**
-	9. [x] Tripod **Delivered**
-6. [ ] **HOLD** on DIGI Key items
-	1. [ ] Non-zero TAX (Needs to be zero)
-7. [ ] **HOLD** on Apogee items for pickup name
-	1. [ ]  Submitted Grant Stec for Pickup name as of 4-1-26, waiting on order
-8. [ ] **HOLD** on Amain Hobbies 
-	1. [ ] ***Items need to be re-added to cart***
-	2. [ ] Issues with credit card
-
-[3-9-26 Purchase Order Final.xlsx](https://usafa0-my.sharepoint.com/:x:/g/personal/c27grant_stec_afacademy_af_edu/IQBB3v-70vfETLrQYOilVgN0ATpAZVI7Lv2bD2YEU-itcT8?e=vVcw8r)
+5. [x] **DELIVERED** Amazon items
+6. [x] **DELIVERED**  DIGI Key items
+7. [x] **DELIVERED**  Apogee items for pickup name
+8. [x] **DELIVERED** on Amain Hobbies 
 
 
 ## Completed Orders
