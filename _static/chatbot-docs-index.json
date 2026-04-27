@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T03:06:19.291Z",
+  "generatedAt": "2026-04-27T03:33:55.806Z",
   "version": 1,
   "sourceCount": 32,
   "chunkCount": 102,
@@ -45,6 +45,17 @@
       "text": "[10_22_2025 S1 Final Purchase Order.xlsx](https://usafa0.sharepoint.com/:x:/s/BurningBlueRocketry/IQAzVe5D5jblTZMiKhVueP2AAXO9YBvohXbOexMoVWWuLdA?e=g4XRQP)",
       "sourceFile": "Purchase Orders & Resources/Purchase Orders.md",
       "pageUrl": "Purchase%20Orders%20%26%20Resources/Purchase%20Orders.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "Team/MAIN Org Chart.md::0",
+      "title": "Org Chart",
+      "heading": "Org Chart",
+      "anchor": "org-chart",
+      "text": "This outlines each of our members, their class year, and subteam and project.\n| Cadet                  | Subteam              | Project                      |\n| ---------------------- | -------------------- | ---------------------------- |\n| C2C Grant Stec         | CIC                  |                              |\n| C3C Connor Beardsley   | Engine Lead          | Gimbal and Servo Ball Valves |\n| C3C Jeremy Sattley     | Engine               | Engine                       |\n| C4C Shobhit Joshi      | Engine               | Engine                       |\n| C4C Micah Lane         | Engine               | ASI                          |\n| C3C Robert Wise        | Structures Lead      | Landing Legs and Test Stand  |\n| C3C Jacob Peay         | Structures           | Test Stand and Trailer       |\n| C2C Colton Vetter-Ryan | Structures           | Landing Legs                 |\n| C4C Breandan Duffy     | Structures           | Foldable Nosecone            |\n| C4C Nicholas Bender    | Structures           | Trailer and Test Stand       |\n| C4C Aidan Pardoe       | GSE Lead             | GSE                          |\n| C4C Alexander Agrawal  | GSE                  | GSE and Flight Computer      |\n| C4C Brooke Stec        | GSE                  | GSE                          |\n| C4C Zachary Rich       | Flight Computer Lead | Flight Computer              |\n| C2C Nathan Aldridge    | Controls/Sim Lead    | Controls/Sim                 |\n| C2C Lucan Keyser       | Controls/Sim         | Controls/Sim                 |\n| C4C Sean Dezell        | Controls/Sim         | Controls/Sim                 |\n| C4C Eli Tai            | Controls/Sim         | Controls/Sim                 |\n| C4C Ethan Lai          | Controls/Sim         | Controls/Sim                 |",
+      "sourceFile": "Team/MAIN Org Chart.md",
+      "pageUrl": "Team/MAIN%20Org%20Chart.html",
       "resourcePriority": false,
       "images": []
     },
@@ -1355,17 +1366,6 @@
       "text": "Details about the Structures Testing.",
       "sourceFile": "subteams/structures/Structures Testing.md",
       "pageUrl": "subteams/structures/Structures%20Testing.html",
-      "resourcePriority": false,
-      "images": []
-    },
-    {
-      "id": "team/MAIN schedule.md::0",
-      "title": "📆 Team Schedule",
-      "heading": "📆 Team Schedule",
-      "anchor": "team-schedule",
-      "text": "This timeline outlines our key milestones and events to keep us on track for the FAR-OUT competition. 🚀\n| Date                  | 📝 Event/Task Description                                      |\n| --------------------- | -------------------------------------------------------------- |\n| ~~**Jan 20th**~~      | ~~All parts have been dry-fitted~~                             |\n| ~~**Jan 20th**~~      | ~~List of questions for half-cat rocketry~~                    |\n| **Jan 24th-26th**     | Liquid Rocket Symposium. ✈️                                    |\n| **Feb 24th**          | FAR Update 2 Due: 90% complete rocket.                         |\n| **Mar 15th**          | FAR Update 3 Due: 100% complete rocket + integration complete. |\n| **Apr 5th-8th**       | Tentative Test Fire. 🔥                                        |",
-      "sourceFile": "team/MAIN schedule.md",
-      "pageUrl": "team/MAIN%20schedule.html",
       "resourcePriority": false,
       "images": []
     }
