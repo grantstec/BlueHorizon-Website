@@ -1,0 +1,231 @@
+{
+  "main": {
+    "id": "366eaf9dd0602809",
+    "type": "split",
+    "children": [
+      {
+        "id": "22af1ed20469135a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e6f28c2757c0a25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/team/MAIN schedule.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MAIN schedule"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "73e6eaf1d18fd991",
+    "type": "split",
+    "children": [
+      {
+        "id": "6868c418b6410e0a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "35f365c10f71c0f1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "eb7733c43b1591fb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e668cd884bcce636",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ea0426e6ec189097",
+    "type": "split",
+    "children": [
+      {
+        "id": "d4b63e6b7720d73f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a8241886ab2ce9e5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/team/MAIN schedule.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for MAIN schedule"
+            }
+          },
+          {
+            "id": "54d8470893db8d80",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/team/MAIN schedule.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from MAIN schedule"
+            }
+          },
+          {
+            "id": "c9ce4a6227cc5d48",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "de35f19a5fc2bbbf",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "4ec8f3f93aa071a7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/team/MAIN schedule.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of MAIN schedule"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "6e6f28c2757c0a25",
+  "lastOpenFiles": [
+    "docs/team/my new page.md",
+    "docs/team/MAIN schedule.md",
+    "docs/subteams/flight_computer/Flight Computer Software.md",
+    "docs/subteams/flight_computer/Flight Computer Schematic Design.md",
+    "docs/subteams/flight_computer/Flight Computer PCB Design.md",
+    "docs/subteams/gse/Trailer Test Stand.md",
+    "docs/subteams/gse/MAIN GSE.md",
+    "docs/subteams/gse/DAQ System.md",
+    "docs/subteams/gse/Custom Steel Test Stand.md",
+    "docs/subteams/gse/Communications System.md",
+    "docs/subteams/flight_computer/MAIN Flight Computer.md",
+    "docs/subteams/flight_computer/Flight Computer Testing.md",
+    "docs/subteams/engine/pictures/Capybara.png",
+    "docs/subteams/engine/Engine Gimbal Design.md",
+    "docs/subteams/engine/Engine Testing.md",
+    "docs/subteams/engine/MAIN Engine.md",
+    "docs/resources/pictures/updatefrommain.png",
+    "docs/resources/pictures/trustauthorsobsidianopening.png",
+    "docs/resources/pictures/snippingtool.png",
+    "docs/resources/pictures/shareshareexcel.png",
+    "docs/resources/pictures/samplepagesetup.png",
+    "docs/resources/pictures/pasteimagerenamesearch.png",
+    "docs/resources/pictures/obsidianopenfolder.png",
+    "docs/resources/pictures/newfolderuntitled.png",
+    "docs/resources/pictures/newfolder.png",
+    "docs/resources/pictures",
+    "docs/resources/Obsidian Setup and Website Editing.md",
+    "docs/resources/GitHub Setup and Resources.md",
+    "docs/resources/Branch Update and PR Tools.md",
+    "docs/resources/AI Website Editing Assistant.md",
+    "docs/resources",
+    "docs/subteams/structures/Nose Cone.md",
+    "docs/subteams/gse/pictures",
+    "docs/Website Resources/pictures",
+    "docs/Website Resources/Obsidian Setup and Website Editing.md",
+    "docs/Website Resources/GitHub Setup and Resources.md",
+    "docs/Website Resources/Branch Update and PR Tools.md",
+    "docs/Website Resources/AI Website Editing Assistant.md",
+    "docs/Website Resources",
+    "docs/team/MAIN Org Chart.md",
+    "docs/Purchase Orders & Resources/Purchase Orders.md",
+    "docs/Purchase Orders & Resources"
+  ]
+}
