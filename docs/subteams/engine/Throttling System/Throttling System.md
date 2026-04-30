@@ -16,6 +16,7 @@
 # Documentation
 # Design Log
 
-| Date       | RE               | Technical Description of Change                      | Purpose of Change                           | Justification                    |
-| ---------- | ---------------- | ---------------------------------------------------- | ------------------------------------------- | -------------------------------- |
-| 2026-04-30 | Connor Beardsley | Created manifold turning joint of valve to servo arm | Control surface connecting servo with valve | [[Throttling System 2026-04-30]] |
+| Date       | RE               | Technical Description of Change                      | Purpose of Change                                              | Justification                    |
+| ---------- | ---------------- | ---------------------------------------------------- | -------------------------------------------------------------- | -------------------------------- |
+| 2026-04-30 | Connor Beardsley | Created clip part connecting valve servo bodies      | Fixes servo body and valve body position and rotation together | Allows only servo arm to rotate  |
+| 2026-04-29 | Connor Beardsley | Created manifold turning joint of valve to servo arm | Control surface connecting servo with valve                    | [[Throttling System 2026-04-29]] |

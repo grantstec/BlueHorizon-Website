@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/subteams/engine/Throttling System/Throttling System 2026-04-30.md",
+                "file": "docs/subteams/engine/Throttling System/Throttling System 2026-04-29.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Throttling System 2026-04-30"
+              "title": "Throttling System 2026-04-29"
             }
           }
         ],
@@ -212,12 +212,12 @@
   },
   "active": "16c9c59f3f2d0ddd",
   "lastOpenFiles": [
-    "docs/subteams/engine/Throttling System/Throttling System 2026-04-30.md",
+    "docs/subteams/engine/Engine Design.md",
+    "docs/subteams/engine/Throttling System/Throttling System 2026-04-29.md",
     "docs/subteams/engine/Throttling System/Throttling System.md",
     "docs/subteams/engine/Throttling System",
     "docs/subteams/engine/MAIN Engine.md",
     "docs/subteams/engine/Engine Testing.md",
-    "docs/subteams/engine/Engine Design.md",
     "docs/subteams/engine/Engine Gimbal Design.md",
     "docs/subteams/engine/pictures/Capybara.png",
     "docs/subteams/flight_computer/MAIN Flight Computer.md",
