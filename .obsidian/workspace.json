@@ -11,14 +11,10 @@
             "id": "6e6f28c2757c0a25",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/team/MAIN schedule.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "MAIN schedule"
+              "title": "New tab"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/team/MAIN schedule.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for MAIN schedule"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/team/MAIN schedule.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from MAIN schedule"
+              "title": "Outgoing links"
             }
           },
           {
@@ -183,24 +177,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "6e6f28c2757c0a25",
+  "active": "35f365c10f71c0f1",
   "lastOpenFiles": [
     "docs/team/my new page.md",
     "docs/team/MAIN schedule.md",
-    "docs/subteams/flight_computer/Flight Computer Software.md",
-    "docs/subteams/flight_computer/Flight Computer Schematic Design.md",
-    "docs/subteams/flight_computer/Flight Computer PCB Design.md",
-    "docs/subteams/gse/Trailer Test Stand.md",
-    "docs/subteams/gse/MAIN GSE.md",
-    "docs/subteams/gse/DAQ System.md",
-    "docs/subteams/gse/Custom Steel Test Stand.md",
-    "docs/subteams/gse/Communications System.md",
-    "docs/subteams/flight_computer/MAIN Flight Computer.md",
-    "docs/subteams/flight_computer/Flight Computer Testing.md",
-    "docs/subteams/engine/pictures/Capybara.png",
-    "docs/subteams/engine/Engine Gimbal Design.md",
-    "docs/subteams/engine/Engine Testing.md",
-    "docs/subteams/engine/MAIN Engine.md",
     "docs/resources/pictures/updatefrommain.png",
     "docs/resources/pictures/trustauthorsobsidianopening.png",
     "docs/resources/pictures/snippingtool.png",
@@ -210,6 +190,7 @@
     "docs/resources/pictures/obsidianopenfolder.png",
     "docs/resources/pictures/newfolderuntitled.png",
     "docs/resources/pictures/newfolder.png",
+    "docs/resources/pictures/newfilename.png",
     "docs/resources/pictures",
     "docs/resources/Obsidian Setup and Website Editing.md",
     "docs/resources/GitHub Setup and Resources.md",
@@ -226,6 +207,18 @@
     "docs/Website Resources",
     "docs/team/MAIN Org Chart.md",
     "docs/Purchase Orders & Resources/Purchase Orders.md",
-    "docs/Purchase Orders & Resources"
+    "docs/Purchase Orders & Resources",
+    "docs/subteams/flight_computer/Flight Computer Software.md",
+    "docs/subteams/flight_computer/Flight Computer Schematic Design.md",
+    "docs/subteams/flight_computer/Flight Computer PCB Design.md",
+    "docs/subteams/gse/Trailer Test Stand.md",
+    "docs/subteams/gse/MAIN GSE.md",
+    "docs/subteams/gse/DAQ System.md",
+    "docs/subteams/gse/Custom Steel Test Stand.md",
+    "docs/subteams/gse/Communications System.md",
+    "docs/subteams/flight_computer/MAIN Flight Computer.md",
+    "docs/subteams/flight_computer/Flight Computer Testing.md",
+    "docs/subteams/engine/Engine Gimbal Design.md",
+    "docs/subteams/engine/Engine Testing.md"
   ]
 }
