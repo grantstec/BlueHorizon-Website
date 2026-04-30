@@ -1,41 +1,70 @@
 {
   "main": {
-    "id": "a493ab55c3f82e3d",
+    "id": "366eaf9dd0602809",
     "type": "split",
     "children": [
       {
-        "id": "7486a279173b9b7f",
+        "id": "22af1ed20469135a",
         "type": "tabs",
         "children": [
           {
-            "id": "6fcabde9b2d24e65",
+            "id": "6e6f28c2757c0a25",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/subteams/gse/DAQ System.md",
+                "file": "docs/subteams/engine/Engine Design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DAQ System"
+              "title": "Engine Design"
+            }
+          },
+          {
+            "id": "16c9c59f3f2d0ddd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/subteams/engine/Throttling System/Throttling System.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Throttling System"
+            }
+          },
+          {
+            "id": "571a31682c0bc94f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/subteams/engine/Throttling System/Throttling System 2026-04-30.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Throttling System 2026-04-30"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "1efec14db619fe3c",
+    "id": "73e6eaf1d18fd991",
     "type": "split",
     "children": [
       {
-        "id": "dbb9ced8f3a48641",
+        "id": "6868c418b6410e0a",
         "type": "tabs",
         "children": [
           {
-            "id": "5cff991f9b94e182",
+            "id": "35f365c10f71c0f1",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +77,7 @@
             }
           },
           {
-            "id": "30f74a362739e5ca",
+            "id": "eb7733c43b1591fb",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +94,7 @@
             }
           },
           {
-            "id": "dd803904ec46c031",
+            "id": "e668cd884bcce636",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,20 +110,19 @@
     "width": 300
   },
   "right": {
-    "id": "f4ae21259f433bc3",
+    "id": "ea0426e6ec189097",
     "type": "split",
     "children": [
       {
-        "id": "01939d184e9959b3",
+        "id": "d4b63e6b7720d73f",
         "type": "tabs",
         "children": [
           {
-            "id": "3f1e9fb6d6011dfc",
+            "id": "a8241886ab2ce9e5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/resources/MAIN website editing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +132,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for MAIN website editing"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "cf728067892eeabf",
+            "id": "54d8470893db8d80",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/resources/MAIN website editing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from MAIN website editing"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "b6dac1ead1247025",
+            "id": "c9ce4a6227cc5d48",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +164,7 @@
             }
           },
           {
-            "id": "852797211bd264fe",
+            "id": "de35f19a5fc2bbbf",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -151,18 +178,18 @@
             }
           },
           {
-            "id": "b954b2ff5dced96b",
+            "id": "4ec8f3f93aa071a7",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/resources/MAIN website editing.md",
+                "file": "docs/team/MAIN schedule.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of MAIN website editing"
+              "title": "Outline of MAIN schedule"
             }
           }
         ]
@@ -183,35 +210,49 @@
       "bases:Create new base": false
     }
   },
-  "active": "6fcabde9b2d24e65",
+  "active": "16c9c59f3f2d0ddd",
   "lastOpenFiles": [
+    "docs/subteams/engine/Throttling System/Throttling System 2026-04-30.md",
+    "docs/subteams/engine/Throttling System/Throttling System.md",
+    "docs/subteams/engine/Throttling System",
+    "docs/subteams/engine/MAIN Engine.md",
+    "docs/subteams/engine/Engine Testing.md",
+    "docs/subteams/engine/Engine Design.md",
+    "docs/subteams/engine/Engine Gimbal Design.md",
+    "docs/subteams/engine/pictures/Capybara.png",
+    "docs/subteams/flight_computer/MAIN Flight Computer.md",
+    "docs/subteams/flight_computer/Flight Computer Testing.md",
+    "docs/subteams/flight_computer/Flight Computer Software.md",
+    "docs/subteams/flight_computer/Flight Computer Schematic Design.md",
+    "docs/subteams/flight_computer/Flight Computer PCB Design.md",
+    "docs/team/MAIN Org Chart.md",
+    "docs/subteams/structures/Nose Cone.md",
+    "docs/subteams/gse/pictures/sensor_breakout_back_annotated_LC.png",
+    "docs/subteams/gse/pictures/DAQ System.png",
     "docs/subteams/gse/pictures/DAQ System-Annotated PCB I2C Data ports.png",
     "docs/subteams/gse/pictures/DAQ System annotated PCB sensor input plugs.png",
     "docs/subteams/gse/pictures/DAQ System - Switch between sensors annotated PCB.png",
-    "docs/subteams/gse/pictures/sensor_breakout_back_annotated_LC.png",
-    "docs/subteams/gse/pictures/DAQ System.png",
     "docs/subteams/gse/pictures",
-    "desktop.ini",
-    "docs/subteams/gse/MAIN GSE.md",
-    "docs/subteams/structures/Landing Legs.md",
-    "docs/subteams/gse/DAQ System.md",
-    "docs/Past Years/MAIN 2023-2024 NASA USLI.md",
-    "docs/Past Years/MAIN 2024-2025 Mojave Sphinx.md",
+    "docs/Website Resources/pictures/updatefrommain.png",
+    "docs/Website Resources/pictures/trustauthorsobsidianopening.png",
+    "docs/Website Resources/pictures/snippingtool.png",
+    "docs/Website Resources/pictures/shareshareexcel.png",
+    "docs/Website Resources/pictures",
+    "docs/Website Resources/Obsidian Setup and Website Editing.md",
+    "docs/Website Resources/GitHub Setup and Resources.md",
+    "docs/Website Resources/Branch Update and PR Tools.md",
+    "docs/Website Resources/AI Website Editing Assistant.md",
+    "docs/Website Resources",
+    "docs/Purchase Orders & Resources/Purchase Orders.md",
+    "docs/Purchase Orders & Resources",
+    "docs/team/my new page.md",
+    "docs/team/MAIN schedule.md",
+    "docs/resources/pictures",
     "docs/resources/Obsidian Setup and Website Editing.md",
     "docs/resources/GitHub Setup and Resources.md",
     "docs/resources/Branch Update and PR Tools.md",
     "docs/resources/AI Website Editing Assistant.md",
-    "docs/pictures/BlueHorizons_ClubAccomplishments_Image.jpg",
-    "docs/pictures/BlueHorizonteampic.jpg",
-    "docs/subteams/gse/Trailer Test Stand.md",
-    "docs/team/MAIN schedule.md",
-    "docs/BHlogosmall.png",
-    "docs/BHlogolarge.png",
-    "docs/subteams/gse/Custom Steel Test Stand.md",
-    "docs/subteams/gse/Communications System.md",
-    "docs/pictures/payload.jpg",
-    "docs/past_years/MAIN 2024-2025 Mojave Sphinx.md",
-    "docs/past_years/MAIN 2023-2024 NASA USLI.md",
-    "docs/resources/pictures/Open_Folder.png"
+    "docs/resources",
+    "docs/subteams/gse/Trailer Test Stand.md"
   ]
 }
