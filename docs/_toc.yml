@@ -9,7 +9,7 @@ parts:
           - file: subteams/engine/Engine Gimbal Design
           - file: subteams/engine/Engine Testing
           - file: subteams/engine/Throttling System/Throttling System
-          - file: subteams/engine/Throttling System/Throttling System 2026-04-30
+          - file: subteams/engine/Throttling System/Throttling System 2026-04-29
       - file: subteams/flight_computer/MAIN Flight Computer
         sections:
           - file: subteams/flight_computer/Flight Computer PCB Design
