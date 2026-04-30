@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-30T14:37:55.621Z",
+  "generatedAt": "2026-04-30T22:47:11.022Z",
   "version": 1,
-  "sourceCount": 34,
-  "chunkCount": 107,
+  "sourceCount": 37,
+  "chunkCount": 118,
   "chunks": [
     {
       "id": "Purchase Orders & Resources/Purchase Orders.md::0",
@@ -678,17 +678,6 @@
       "images": []
     },
     {
-      "id": "subteams/engine/Engine Gimbal Design.md::0",
-      "title": "Engine Gimbal Design 1",
-      "heading": "Engine Gimbal Design 1",
-      "anchor": "engine-gimbal-design-1",
-      "text": "connor makes some edits for sample pull request",
-      "sourceFile": "subteams/engine/Engine Gimbal Design.md",
-      "pageUrl": "subteams/engine/Engine%20Gimbal%20Design.html",
-      "resourcePriority": false,
-      "images": []
-    },
-    {
       "id": "subteams/engine/Engine Testing.md::0",
       "title": "Engine Testing",
       "heading": "Engine Testing",
@@ -754,7 +743,7 @@
       "title": "Responsible Engineers",
       "heading": "Deliverables",
       "anchor": "deliverables",
-      "text": "- CAD of throttling system\n- Servos\n- Valves\n- Interface between servos and valves\n- Mass flow data as a function of tank pressure and valve angle",
+      "text": "- CAD of throttling system\n- Servos\n- Valves\n- Interface between servos and valves\n- Physical parts\n- Mass flow data as a function of tank pressure and valve angle",
       "sourceFile": "subteams/engine/Throttling System/Throttling System.md",
       "pageUrl": "subteams/engine/Throttling%20System/Throttling%20System.html",
       "resourcePriority": false,
@@ -766,6 +755,17 @@
       "heading": "Design Log",
       "anchor": "design-log",
       "text": "| Date       | RE               | Technical Description of Change                      | Purpose of Change                                              | Justification                    |\n| ---------- | ---------------- | ---------------------------------------------------- | -------------------------------------------------------------- | -------------------------------- |\n| 2026-04-30 | Connor Beardsley | Created clip part connecting valve servo bodies      | Fixes servo body and valve body position and rotation together | Allows only servo arm to rotate  |\n| 2026-04-29 | Connor Beardsley | Created manifold turning joint of valve to servo arm | Control surface connecting servo with valve                    | [[Throttling System 2026-04-29]] |",
+      "sourceFile": "subteams/engine/Throttling System/Throttling System.md",
+      "pageUrl": "subteams/engine/Throttling%20System/Throttling%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/engine/Throttling System/Throttling System.md::3",
+      "title": "Responsible Engineers",
+      "heading": "Media",
+      "anchor": "media",
+      "text": "<iframe src=\"https://cad.onshape.com/documents/af04d02dea7f43f6aa76a4f7/w/32799b31c4700c05026637a9/e/fc80d24b25db67c442bcd38e?renderMode=0&uiState=69f369efeee45f4171afc708\" height=\"600\" width=\"100%\"></iframe>",
       "sourceFile": "subteams/engine/Throttling System/Throttling System.md",
       "pageUrl": "subteams/engine/Throttling%20System/Throttling%20System.html",
       "resourcePriority": false,
@@ -1421,6 +1421,127 @@
       "text": "Details about the Structures Testing.",
       "sourceFile": "subteams/structures/Structures Testing.md",
       "pageUrl": "subteams/structures/Structures%20Testing.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-04-23.md::0",
+      "title": "Engine",
+      "heading": "Engine",
+      "anchor": "engine",
+      "text": "- Dining out on the calendar\n- $17K funding available for purchase order\n- Up for grabs, talk with Jeremey\n- Obsidian: establishing system",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-04-23.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-23.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-04-23.md::1",
+      "title": "Engine",
+      "heading": "Engine",
+      "anchor": "engine",
+      "text": "- [[../../subteams/engine/Augmented Spark Igniter|ASI]] is being fabricated\n- [[../../subteams/engine/Gimbal|Gimbal]]: reverse kinematics is a ratio at small angles",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-04-23.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-23.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-04-23.md::2",
+      "title": "Engine",
+      "heading": "Structures",
+      "anchor": "structures",
+      "text": "- Almost done with work\n- Considering building a separate stand? Col Harris want us to build another stand for solid motors",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-04-23.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-23.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-04-23.md::3",
+      "title": "Engine",
+      "heading": "GSE",
+      "anchor": "gse",
+      "text": "- Col Harris requesting stand, intermittently we can use the trailer as a testing platform\n- Hydraulic system needs to be fixed\n- The stand was actually supposed to just be temporary\n- Jacob is new GSE lead\n- Will get trailer registered at DMV",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-04-23.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-23.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-04-23.md::4",
+      "title": "Engine",
+      "heading": "Controls",
+      "anchor": "controls",
+      "text": "- Freshmen are working with Col Harris on space shot project\n- Want more tests\n- \"Once we say the engine is done, it's done\"\n- Once engine testing to meet engine requirements is complete, controls will take over testing for throttling and gimbal testing",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-04-23.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-23.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-04-23.md::5",
+      "title": "Engine",
+      "heading": "Avionics",
+      "anchor": "avionics",
+      "text": "- Communication\n- Will be in contact with engine more",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-04-23.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-23.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-04-30.md::0",
+      "title": "Engine",
+      "heading": "Engine",
+      "anchor": "engine",
+      "text": "Previous meeting: [Meeting Notes 2026-04-23](Meeting%20Notes%202026-04-23.md)",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-04-30.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-30.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-04-30.md::1",
+      "title": "Engine",
+      "heading": "Engine",
+      "anchor": "engine",
+      "text": "- Not ready for next test:\n- PT cable needs to be resoldered",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-04-30.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-30.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-04-30.md::2",
+      "title": "Engine",
+      "heading": "Structures",
+      "anchor": "structures",
+      "text": "- Awaiting oxygen tank from AvGas for laser cutter",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-04-30.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-30.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-04-30.md::3",
+      "title": "Engine",
+      "heading": "Ground",
+      "anchor": "ground",
+      "text": "- Trailer has working lights and brakes now!\n- Jack allegedly knows how to \"feel\" if the trailer is broken\n>[!important]\n>Sgt. Challman needs 48 hours notice for us to use the astro truck\n- We OFFICIALLY deciding to use trailer for solids, NOT making a new test stand\n- Jacob will also look into moving liquid testing back to trailer so that we can get used to it\n- Reiterate: the liquid test stand was intended to ONLY be an interim solution\n- Still awaiting hydraulics to be fixed",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-04-30.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-30.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-04-30.md::4",
+      "title": "Engine",
+      "heading": "Controls",
+      "anchor": "controls",
+      "text": "- Awaiting data\n- \"Once we say the engine is done, it's done\"",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-04-30.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-30.html",
       "resourcePriority": false,
       "images": []
     }

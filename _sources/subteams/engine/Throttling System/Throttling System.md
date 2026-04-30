@@ -11,6 +11,7 @@
 	- Servos
 	- Valves
 	- Interface between servos and valves
+- Physical parts
 - Mass flow data as a function of tank pressure and valve angle
 # Timeline
 # Documentation
@@ -20,3 +21,6 @@
 | ---------- | ---------------- | ---------------------------------------------------- | -------------------------------------------------------------- | -------------------------------- |
 | 2026-04-30 | Connor Beardsley | Created clip part connecting valve servo bodies      | Fixes servo body and valve body position and rotation together | Allows only servo arm to rotate  |
 | 2026-04-29 | Connor Beardsley | Created manifold turning joint of valve to servo arm | Control surface connecting servo with valve                    | [[Throttling System 2026-04-29]] |
+
+# Media
+<iframe src="https://cad.onshape.com/documents/af04d02dea7f43f6aa76a4f7/w/32799b31c4700c05026637a9/e/fc80d24b25db67c442bcd38e?renderMode=0&uiState=69f369efeee45f4171afc708" height="600" width="100%"></iframe>
