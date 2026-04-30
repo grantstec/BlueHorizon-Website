@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-27T03:33:55.806Z",
+  "generatedAt": "2026-04-30T06:23:01.354Z",
   "version": 1,
-  "sourceCount": 32,
-  "chunkCount": 102,
+  "sourceCount": 34,
+  "chunkCount": 107,
   "chunks": [
     {
       "id": "Purchase Orders & Resources/Purchase Orders.md::0",
@@ -715,6 +715,61 @@
           "url": "subteams/engine/pictures/Capybara.png"
         }
       ]
+    },
+    {
+      "id": "subteams/engine/Throttling System/Throttling System 2026-04-30.md::0",
+      "title": "Technical Description of Change",
+      "heading": "Technical Description of Change",
+      "anchor": "technical-description-of-change",
+      "text": "Manifold between valve turning joint and servo arm created. It is a 3D printed PLA part that wraps around the connection points on the valve and servo arm. The hole in this manifold that wraps around the valve portion is intentionally low tolerance for the justification below.",
+      "sourceFile": "subteams/engine/Throttling System/Throttling System 2026-04-30.md",
+      "pageUrl": "subteams/engine/Throttling%20System/Throttling%20System%202026-04-30.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/engine/Throttling System/Throttling System 2026-04-30.md::1",
+      "title": "Technical Description of Change",
+      "heading": "Justification",
+      "anchor": "justification",
+      "text": "Factory-produced arm on valve has some give when twisted. During vehicle flight, the servos will be actuated back and forth, and thus even though the servo arms will be controlled precisely, the actual output of valve opening will not reflect the actual angle of the servo arm. The intention is to remove the factory-produced metal arm from the valve and replace it with the part described above.",
+      "sourceFile": "subteams/engine/Throttling System/Throttling System 2026-04-30.md",
+      "pageUrl": "subteams/engine/Throttling%20System/Throttling%20System%202026-04-30.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/engine/Throttling System/Throttling System.md::0",
+      "title": "Responsible Engineers",
+      "heading": "Requirements",
+      "anchor": "requirements",
+      "text": "- Servo controllable throttling system\n- Throttling range of 40-100%\n- 1 hub for containing both fuel and oxidizer valves (prevents torques)\n- 2 servos\n- As compact as possible",
+      "sourceFile": "subteams/engine/Throttling System/Throttling System.md",
+      "pageUrl": "subteams/engine/Throttling%20System/Throttling%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/engine/Throttling System/Throttling System.md::1",
+      "title": "Responsible Engineers",
+      "heading": "Deliverables",
+      "anchor": "deliverables",
+      "text": "- CAD of throttling system\n- Servos\n- Valves\n- Interface between servos and valves\n- Mass flow data as a function of tank pressure and valve angle",
+      "sourceFile": "subteams/engine/Throttling System/Throttling System.md",
+      "pageUrl": "subteams/engine/Throttling%20System/Throttling%20System.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/engine/Throttling System/Throttling System.md::2",
+      "title": "Responsible Engineers",
+      "heading": "Design Log",
+      "anchor": "design-log",
+      "text": "| Date       | RE               | Technical Description of Change                      | Purpose of Change                           | Justification                    |\n| ---------- | ---------------- | ---------------------------------------------------- | ------------------------------------------- | -------------------------------- |\n| 2026-04-30 | Connor Beardsley | Created manifold turning joint of valve to servo arm | Control surface connecting servo with valve | [[Throttling System 2026-04-30]] |",
+      "sourceFile": "subteams/engine/Throttling System/Throttling System.md",
+      "pageUrl": "subteams/engine/Throttling%20System/Throttling%20System.html",
+      "resourcePriority": false,
+      "images": []
     },
     {
       "id": "subteams/flight_computer/Flight Computer PCB Design.md::0",
