@@ -27,12 +27,54 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/subteams/engine/Throttling System/Throttling System.md",
+                "file": "docs/team/meeting notes/Meeting Notes 2026-04-23.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Throttling System"
+              "title": "Meeting Notes 2026-04-23"
+            }
+          },
+          {
+            "id": "4b71e2ae7bfe9c8f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/team/meeting notes/Meeting Notes 2026-04-23.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Meeting Notes 2026-04-23"
+            }
+          },
+          {
+            "id": "1710542b2bce5fd8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/team/meeting notes/Meeting Notes 2026-04-23.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Meeting Notes 2026-04-23"
+            }
+          },
+          {
+            "id": "801e4817e9dd49c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/team/meeting notes/Meeting Notes 2026-04-30.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Meeting Notes 2026-04-30"
             }
           },
           {
@@ -50,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -107,7 +149,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 353.5
   },
   "right": {
     "id": "ea0426e6ec189097",
@@ -210,22 +252,26 @@
       "bases:Create new base": false
     }
   },
-  "active": "16c9c59f3f2d0ddd",
+  "active": "35f365c10f71c0f1",
   "lastOpenFiles": [
-    "docs/subteams/engine/Engine Design.md",
+    "docs/team/meeting notes/Meeting Notes 2026-04-23.md",
+    "docs/team/meeting notes/Meeting Notes 2026-04-30.md",
     "docs/subteams/engine/Throttling System/Throttling System 2026-04-29.md",
+    "docs/subteams/engine/Gimbal.md",
+    "docs/subteams/engine/Engine Testing.md",
+    "docs/subteams/engine/Engine Design.md",
+    "docs/subteams/engine/Augmented Spark Igniter.md",
+    "docs/subteams/engine/Engine Gimbal Design.md",
+    "docs/team/MAIN Org Chart.md",
     "docs/subteams/engine/Throttling System/Throttling System.md",
     "docs/subteams/engine/Throttling System",
     "docs/subteams/engine/MAIN Engine.md",
-    "docs/subteams/engine/Engine Testing.md",
-    "docs/subteams/engine/Engine Gimbal Design.md",
     "docs/subteams/engine/pictures/Capybara.png",
     "docs/subteams/flight_computer/MAIN Flight Computer.md",
     "docs/subteams/flight_computer/Flight Computer Testing.md",
     "docs/subteams/flight_computer/Flight Computer Software.md",
     "docs/subteams/flight_computer/Flight Computer Schematic Design.md",
     "docs/subteams/flight_computer/Flight Computer PCB Design.md",
-    "docs/team/MAIN Org Chart.md",
     "docs/subteams/structures/Nose Cone.md",
     "docs/subteams/gse/pictures/sensor_breakout_back_annotated_LC.png",
     "docs/subteams/gse/pictures/DAQ System.png",
@@ -250,9 +296,6 @@
     "docs/resources/pictures",
     "docs/resources/Obsidian Setup and Website Editing.md",
     "docs/resources/GitHub Setup and Resources.md",
-    "docs/resources/Branch Update and PR Tools.md",
-    "docs/resources/AI Website Editing Assistant.md",
-    "docs/resources",
-    "docs/subteams/gse/Trailer Test Stand.md"
+    "docs/resources"
   ]
 }
