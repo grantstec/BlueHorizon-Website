@@ -1,3 +1,4 @@
+Next meeting: [Meeting Notes 2026-04-30](Meeting%20Notes%202026-04-30.md)
 
 - Dining out on the calendar
 - $17K funding available for purchase order

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-05-05T15:51:26.126Z",
+  "generatedAt": "2026-05-07T23:00:35.380Z",
   "version": 1,
-  "sourceCount": 37,
-  "chunkCount": 118,
+  "sourceCount": 40,
+  "chunkCount": 124,
   "chunks": [
     {
       "id": "Purchase Orders & Resources/Purchase Orders.md::0",
@@ -722,13 +722,13 @@
       "images": []
     },
     {
-      "id": "subteams/engine/Engine Testing.md::0",
-      "title": "Engine Testing",
-      "heading": "Engine Testing",
-      "anchor": "engine-testing",
-      "text": "Details about the Engine Testing.",
-      "sourceFile": "subteams/engine/Engine Testing.md",
-      "pageUrl": "subteams/engine/Engine%20Testing.html",
+      "id": "subteams/engine/Engine Gimbal Design.md::0",
+      "title": "Engine Gimbal Design 1",
+      "heading": "Engine Gimbal Design 1",
+      "anchor": "engine-gimbal-design-1",
+      "text": "connor makes some edits for sample pull request",
+      "sourceFile": "subteams/engine/Engine Gimbal Design.md",
+      "pageUrl": "subteams/engine/Engine%20Gimbal%20Design.html",
       "resourcePriority": false,
       "images": []
     },
@@ -748,6 +748,28 @@
           "url": "subteams/engine/pictures/Capybara.png"
         }
       ]
+    },
+    {
+      "id": "subteams/engine/Testing/Engine Test 2026-04-12.md::0",
+      "title": "Summary",
+      "heading": "Summary",
+      "anchor": "summary",
+      "text": "Most successful hot fire so far. Achieved 80 lbs maximum thrust and an average of 69 lbs. Ablative liner burned completely through.",
+      "sourceFile": "subteams/engine/Testing/Engine Test 2026-04-12.md",
+      "pageUrl": "subteams/engine/Testing/Engine%20Test%202026-04-12.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "subteams/engine/Testing/Engine Testing Tracker.md::0",
+      "title": "History",
+      "heading": "History",
+      "anchor": "history",
+      "text": "| Date       | Type    | Documentation              |\n| ---------- | ------- | -------------------------- |\n| 2026-05-06 | Hotfire | [[Engine Test 2026-05-06]] |\n| 2026-05-04 | Hotfire | [[Engine Test 2026-05-04]] |\n| 2026-04-12 | Hotfire | [[Engine Test 2026-04-12]] |",
+      "sourceFile": "subteams/engine/Testing/Engine Testing Tracker.md",
+      "pageUrl": "subteams/engine/Testing/Engine%20Testing%20Tracker.html",
+      "resourcePriority": false,
+      "images": []
     },
     {
       "id": "subteams/engine/Throttling System/Throttling System 2026-04-29.md::0",
@@ -1429,7 +1451,7 @@
       "title": "Engine",
       "heading": "Engine",
       "anchor": "engine",
-      "text": "- Dining out on the calendar\n- $17K funding available for purchase order\n- Up for grabs, talk with Jeremey\n- Obsidian: establishing system",
+      "text": "Next meeting: [Meeting Notes 2026-04-30](Meeting%20Notes%202026-04-30.md)\n- Dining out on the calendar\n- $17K funding available for purchase order\n- Up for grabs, talk with Jeremey\n- Obsidian: establishing system",
       "sourceFile": "team/meeting notes/Meeting Notes 2026-04-23.md",
       "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-23.html",
       "resourcePriority": false,
@@ -1495,7 +1517,7 @@
       "title": "Engine",
       "heading": "Engine",
       "anchor": "engine",
-      "text": "Previous meeting: [Meeting Notes 2026-04-23](Meeting%20Notes%202026-04-23.md)",
+      "text": "Previous meeting: [Meeting Notes 2026-04-23](Meeting%20Notes%202026-04-23.md)\nNext meeting: [[Meeting Notes 2026-05-07]]",
       "sourceFile": "team/meeting notes/Meeting Notes 2026-04-30.md",
       "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-30.html",
       "resourcePriority": false,
@@ -1542,6 +1564,50 @@
       "text": "- Awaiting data\n- \"Once we say the engine is done, it's done\"",
       "sourceFile": "team/meeting notes/Meeting Notes 2026-04-30.md",
       "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-30.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-05-07.md::0",
+      "title": "Main Updates",
+      "heading": "Main Updates",
+      "anchor": "main-updates",
+      "text": "Previous meeting: [Meeting Notes 2026-04-30](Meeting%20Notes%202026-04-30.md)",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-05-07.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-05-07.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-05-07.md::1",
+      "title": "Main Updates",
+      "heading": "Main Updates",
+      "anchor": "main-updates",
+      "text": "- 2 successful hotfires in the past week\n- [Engine Test 2026-05-06](Engine%20Test%202026-05-06)\n- [Engine Test 2026-05-04](Engine%20Test%202026-05-04)\n- New dean is **very** enthusiastic about what we're doing\n- Could help us with finding resources\n- Loves the interdisciplinary engineering we do\n- \"This clubs is the image of what he wants to see at USAFA\"\n- Wants to have a meeting with team\n- Potential requests to bring up at meeting with dean:\n- Could we get an \"airmanship-like\" status where we get excused from some military-like training?\n- Blue Horizon launch site on base?\n- Can we implement a cadet training pipeline for machining? If cadets can teach other cadets how to fly a glider, why can't we teach other cadets how to use a manual mill?",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-05-07.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-05-07.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-05-07.md::2",
+      "title": "Main Updates",
+      "heading": "Engine",
+      "anchor": "engine",
+      "text": "- \"Showerhead\" design of injector: **BAD**\n- The mixing of propellents happens on the walls\n- Bad atomization\n- Potential solution is an annulus injector\n- Attempts to turn the propellents into a fine mist with the same mass flow rate\n- For solids:\n- From chem department: if we get a 499 with the chem department for solids research, they can fund us",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-05-07.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-05-07.html",
+      "resourcePriority": false,
+      "images": []
+    },
+    {
+      "id": "team/meeting notes/Meeting Notes 2026-05-07.md::3",
+      "title": "Main Updates",
+      "heading": "Looking Forward",
+      "anchor": "looking-forward",
+      "text": "- Potentially consider a progress chart?\n- Should we have a 10-minute briefing for the whole team at the beginning of the week on Mondays to quickly go over what has happened and what will be happening so everybody, at least on the surface level, is aware of what is going on?\n- Standby for summer project slideshow from Grant Stec",
+      "sourceFile": "team/meeting notes/Meeting Notes 2026-05-07.md",
+      "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-05-07.html",
       "resourcePriority": false,
       "images": []
     }
