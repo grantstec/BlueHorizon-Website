@@ -5,14 +5,17 @@ parts:
     chapters:
       - file: team/meeting notes/Meeting Notes 2026-04-23
       - file: team/meeting notes/Meeting Notes 2026-04-30
+      - file: team/meeting notes/Meeting Notes 2026-05-07
   - caption: Subteams
     chapters:
       - file: subteams/engine/MAIN Engine
         sections:
           - file: subteams/engine/Augmented Spark Igniter
           - file: subteams/engine/Engine Design
-          - file: subteams/engine/Engine Testing
+          - file: subteams/engine/Engine Gimbal Design
           - file: subteams/engine/Gimbal
+          - file: subteams/engine/Testing/Engine Test 2026-04-12
+          - file: subteams/engine/Testing/Engine Testing Tracker
           - file: subteams/engine/Throttling System/Throttling System 2026-04-29
       - file: subteams/flight_computer/MAIN Flight Computer
         sections:
