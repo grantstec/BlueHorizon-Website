@@ -134,4 +134,3 @@ Ensure the base is main and you are comparing with your branch, this should be a
 Add a title and then scroll down and click **"Create Pull Request"**
 
 ![](pictures/Pullrequestonline.png)
-
