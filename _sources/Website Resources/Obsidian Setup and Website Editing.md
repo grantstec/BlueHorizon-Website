@@ -222,4 +222,3 @@ You can find easy to copy emojis [here](https://getemoji.com/)
 ### Tables
 Table generator [here](https://www.tablesgenerator.com/markdown_tables).
 
-
