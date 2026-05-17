@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "extra/chatbot-worker/README.md",
+                "file": "docs/Team/meeting notes/Meeting Notes 2026-04-23.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Meeting Notes 2026-04-23"
             }
           }
         ]
@@ -187,18 +187,21 @@
   "lastOpenFiles": [
     "desktop-app/dist/BlueHorizonDesktop.exe",
     "desktop-app/dist",
+    "desktop-app/page_ops.py.tmp.32340.1778984546182",
+    "docs/Team/meeting notes/Meeting Notes 2026-05-07.md",
+    "docs/Team/meeting notes/Meeting Notes 2026-04-30.md",
+    "docs/Team/meeting notes/Meeting Notes 2026-04-23.md",
+    "extra/chatbot-worker/README.md",
+    "desktop-app.zip",
     "desktop-app/icon.ico",
     "desktop-app/autostart.py",
-    "desktop-app.zip",
     "desktop-app/build/BlueHorizon/EXE-00.toc",
     "desktop-app/build/BlueHorizon/PKG-00.toc",
     "desktop-app/build/BlueHorizon/BlueHorizonDesktop.pkg",
     "desktop-app/build/BlueHorizon/PYZ-00.toc",
     "desktop-app/build/BlueHorizon/PYZ-00.pyz",
-    "desktop-app/build/BlueHorizon/localpycs/pyimod04_pywin32.pyc",
     "desktop-app/README.md",
     "pictures/041126_Rocket_Test_Data_Plot_(Zoom_on_Thrust) (1).svg",
-    "docs/Team/meeting notes/Meeting Notes 2026-05-07.md",
     "docs/Subteams/engine/pictures/Capybara.png",
     "docs/Subteams/engine/Testing/pictures/041126_Rocket_Test_Data_Plot_(Zoom_on_Thrust) (1).svg",
     "docs/Subteams/engine/Testing/pictures/041126_Rocket_Test_Data_Plot (1).svg",
@@ -210,8 +213,6 @@
     "docs/Subteams/engine/MAIN Engine.md",
     "docs/Subteams/engine/Throttling System/Throttling System 2026-04-29.md",
     "docs/Subteams/gse/DAQ System.md",
-    "docs/Team/meeting notes/Meeting Notes 2026-04-30.md",
-    "docs/Team/meeting notes/Meeting Notes 2026-04-23.md",
     "docs/Subteams/engine/Gimbal.md",
     "docs/Subteams/gse/Communications System.md",
     "docs/Subteams/engine/Engine Design.md",
@@ -229,7 +230,6 @@
     "docs/Past Years/MAIN 2023-2024 NASA USLI.md",
     "docs/Past Years/MAIN 2024-2025 Mojave Sphinx.md",
     "docs/resources/Obsidian Setup and Website Editing.md",
-    "docs/resources/GitHub Setup and Resources.md",
     "docs/pictures/BlueHorizons_ClubAccomplishments_Image.jpg"
   ]
 }

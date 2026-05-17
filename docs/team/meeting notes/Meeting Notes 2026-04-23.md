@@ -1,3 +1,5 @@
+# Meeting Notes 2026-04-23
+
 Next meeting: [Meeting Notes 2026-04-30](Meeting%20Notes%202026-04-30.md)
 
 - Dining out on the calendar
@@ -5,27 +7,27 @@ Next meeting: [Meeting Notes 2026-04-30](Meeting%20Notes%202026-04-30.md)
 	- Up for grabs, talk with Jeremey
 - Obsidian: establishing system
 
-# Engine
+## Engine
 - [[../../subteams/engine/Augmented Spark Igniter|ASI]] is being fabricated
 - [[../../subteams/engine/Gimbal|Gimbal]]: reverse kinematics is a ratio at small angles
 
-# Structures
+## Structures
 - Almost done with work
 - Considering building a separate stand? Col Harris want us to build another stand for solid motors
 
-# GSE
+## GSE
 - Col Harris requesting stand, intermittently we can use the trailer as a testing platform
 - Hydraulic system needs to be fixed
 	- The stand was actually supposed to just be temporary
 - Jacob is new GSE lead
 	- Will get trailer registered at DMV
 
-# Controls
+## Controls
 - Freshmen are working with Col Harris on space shot project
 - Want more tests
 - "Once we say the engine is done, it's done"
 - Once engine testing to meet engine requirements is complete, controls will take over testing for throttling and gimbal testing
 
-# Avionics
+## Avionics
 - Communication
 - Will be in contact with engine more

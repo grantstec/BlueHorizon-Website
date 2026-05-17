@@ -135,4 +135,3 @@ Add a title and then scroll down and click **"Create Pull Request"**
 
 ![](pictures/Pullrequestonline.png)
 
-

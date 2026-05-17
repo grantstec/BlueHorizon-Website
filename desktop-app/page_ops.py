@@ -64,6 +64,7 @@ class FixReport:
     merged_captions: List[str] = field(default_factory=list)
     deduplicated_files: List[str] = field(default_factory=list)
     case_corrected: List[Tuple[str, str]] = field(default_factory=list)
+    titles_fixed: List[str] = field(default_factory=list)
     notes: List[str] = field(default_factory=list)
 
     @property
@@ -72,6 +73,7 @@ class FixReport:
             self.merged_captions
             or self.deduplicated_files
             or self.case_corrected
+            or self.titles_fixed
             or self.notes
         )
 
@@ -90,6 +92,10 @@ class FixReport:
         if self.case_corrected:
             lines.append(
                 f"Corrected casing on {len(self.case_corrected)} path(s)"
+            )
+        if self.titles_fixed:
+            lines.append(
+                f"Fixed sidebar titles on {len(self.titles_fixed)} page(s)"
             )
         for note in self.notes:
             lines.append(note)
@@ -492,6 +498,99 @@ def _resolve_case_for_file(repo_path: str, file_ref: str) -> str:
     return "/".join(fixed_parts)
 
 
+_H1_RE = re.compile(r"^(#)(\s+)(.+?)\s*$")
+
+
+def _normalize_page_title(md_path: str, expected_title: str) -> bool:
+    """Make sure `md_path` opens with `# {expected_title}` so that Jupyter Book
+    uses the right sidebar label. If the file already does, no-op.
+
+    Rules, in order:
+      1. If the file's first non-blank line is `# {expected_title}` (case-insensitive
+         match on the title text) — do nothing.
+      2. Otherwise: prepend `# {expected_title}\n\n` to the file.
+      3. Any other `# ...` H1s found later in the file get demoted to `## ...` so
+         they don't compete to be the page title.
+
+    Returns True if the file was changed.
+    """
+    if not os.path.exists(md_path):
+        return False
+
+    with open(md_path, "r", encoding="utf-8") as f:
+        text = f.read()
+    original = text
+    lines = text.splitlines()
+
+    # Find the first non-blank line (skipping leading whitespace / front-matter)
+    first_idx = 0
+    while first_idx < len(lines) and lines[first_idx].strip() == "":
+        first_idx += 1
+
+    # Skip past YAML front matter if present
+    if first_idx < len(lines) and lines[first_idx].strip() == "---":
+        for j in range(first_idx + 1, len(lines)):
+            if lines[j].strip() == "---":
+                first_idx = j + 1
+                break
+        while first_idx < len(lines) and lines[first_idx].strip() == "":
+            first_idx += 1
+
+    has_correct_title = False
+    if first_idx < len(lines):
+        m = _H1_RE.match(lines[first_idx])
+        if m and m.group(3).strip().lower() == expected_title.lower():
+            has_correct_title = True
+
+    # Demote any other H1s (anywhere except where we'd put the new title)
+    demoted_any = False
+    for i in range(len(lines)):
+        if i == first_idx and has_correct_title:
+            continue
+        m = _H1_RE.match(lines[i])
+        if m:
+            # Promote the # to ## (only demote if it's a single-# heading, not part of code etc)
+            lines[i] = "##" + m.group(2) + m.group(3)
+            demoted_any = True
+
+    if not has_correct_title:
+        # Prepend the correct title at the very top, with a blank line after
+        new_top = [f"# {expected_title}", ""]
+        # Preserve any leading blank lines the user had as a soft separator
+        lines = new_top + lines
+
+    new_text = "\n".join(lines)
+    # Preserve a trailing newline if the original had one
+    if original.endswith("\n") and not new_text.endswith("\n"):
+        new_text += "\n"
+
+    if new_text == original:
+        return False
+
+    with open(md_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(new_text)
+    return True
+
+
+def _md_path_for_chapter(repo_path: str, file_ref: str) -> str:
+    """Locate the .md (or .ipynb) on disk for a TOC file: reference."""
+    rel = file_ref.replace("\\", "/")
+    for ext in (".md", ".ipynb"):
+        full = os.path.join(_docs_dir(repo_path), rel + ext)
+        if os.path.exists(full):
+            return full
+    return ""
+
+
+def _expected_title_for(file_ref: str) -> str:
+    """Sidebar title we want for a chapter file reference. Strips the
+    'MAIN ' prefix convention this repo uses."""
+    name = os.path.basename(file_ref.replace("\\", "/"))
+    if name.startswith("MAIN "):
+        name = name[5:]
+    return name
+
+
 def fix_toc_structure(repo_path: str) -> FixReport:
     """Merge duplicate captions, deduplicate file entries, and normalise case.
 
@@ -555,8 +654,24 @@ def fix_toc_structure(repo_path: str) -> FixReport:
 
     toc.parts = merged
 
-    # Only write if anything actually changed
-    if not report.is_empty:
+    # --- Step 3: normalize sidebar titles for every page in the TOC. This is
+    # what prevents Jupyter Book from picking an unrelated `# Engine` heading
+    # inside a meeting note as that note's sidebar label.
+    def _walk_titles(chapter: Chapter) -> None:
+        md = _md_path_for_chapter(repo_path, chapter.file)
+        if md:
+            expected = _expected_title_for(chapter.file)
+            if _normalize_page_title(md, expected):
+                report.titles_fixed.append(chapter.file)
+        for sec in chapter.sections:
+            _walk_titles(sec)
+
+    for part in toc.parts:
+        for chap in part.chapters:
+            _walk_titles(chap)
+
+    # Only write the TOC if anything in it actually changed
+    if report.merged_captions or report.deduplicated_files or report.case_corrected:
         write_toc(repo_path, toc)
 
     return report
