@@ -11,14 +11,12 @@
             "id": "6fcabde9b2d24e65",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "docs/Team/meeting notes/Meeting Notes 2026-04-23.md",
-                "mode": "source",
-                "source": false
+                "file": "docs/Subteams/engine/Testing/pictures/041126_Rocket_Test_Data_Plot (1).svg"
               },
-              "icon": "lucide-file",
-              "title": "Meeting Notes 2026-04-23"
+              "icon": "lucide-image",
+              "title": "041126_Rocket_Test_Data_Plot (1)"
             }
           }
         ]
@@ -185,21 +183,22 @@
   },
   "active": "5cff991f9b94e182",
   "lastOpenFiles": [
+    "desktop-app/cleanup-git.bat",
+    "desktop-app/cleanup-git.bat.tmp.38868.1778986227917",
     "desktop-app/dist/BlueHorizonDesktop.exe",
     "desktop-app/dist",
+    "desktop-app/main.py.tmp.14568.1778985677764",
+    "docs/_toc.yml.tmp.14568.1778985612790",
+    "docs/Subteams/engine/Throttling System/MAIN Throttling System.md",
+    "docs/Team/meeting notes/Meeting Notes 2026-04-23.md",
+    "desktop-app.zip",
     "desktop-app/page_ops.py.tmp.32340.1778984546182",
     "docs/Team/meeting notes/Meeting Notes 2026-05-07.md",
     "docs/Team/meeting notes/Meeting Notes 2026-04-30.md",
-    "docs/Team/meeting notes/Meeting Notes 2026-04-23.md",
     "extra/chatbot-worker/README.md",
-    "desktop-app.zip",
     "desktop-app/icon.ico",
     "desktop-app/autostart.py",
     "desktop-app/build/BlueHorizon/EXE-00.toc",
-    "desktop-app/build/BlueHorizon/PKG-00.toc",
-    "desktop-app/build/BlueHorizon/BlueHorizonDesktop.pkg",
-    "desktop-app/build/BlueHorizon/PYZ-00.toc",
-    "desktop-app/build/BlueHorizon/PYZ-00.pyz",
     "desktop-app/README.md",
     "pictures/041126_Rocket_Test_Data_Plot_(Zoom_on_Thrust) (1).svg",
     "docs/Subteams/engine/pictures/Capybara.png",
@@ -208,7 +207,6 @@
     "docs/Subteams/engine/Testing/Engine Test 2026-04-12.md",
     "docs/Subteams/engine/Testing/Engine Testing Tracker.md",
     "docs/Subteams/engine/Engine Gimbal Design.md",
-    "docs/Subteams/engine/Throttling System/MAIN Throttling System.md",
     "docs/Subteams/engine/Augmented Spark Igniter.md",
     "docs/Subteams/engine/MAIN Engine.md",
     "docs/Subteams/engine/Throttling System/Throttling System 2026-04-29.md",
