@@ -1,0 +1,40 @@
+# Line-ending normalization. Without this, Windows checkouts produce CRLF
+# files and every git operation prints "LF will be replaced by CRLF" warnings
+# for half the repo. Setting `text=auto eol=lf` tells git: store everything
+# as LF in the index (what GitHub & Linux CI expect) and let the working-
+# tree have whatever line endings the OS prefers.
+
+* text=auto eol=lf
+
+# Explicit settings for the file types this repo actually has — these win
+# over the wildcard above and make intent obvious.
+*.md     text eol=lf
+*.py     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.json   text eol=lf
+*.js     text eol=lf
+*.css    text eol=lf
+*.html   text eol=lf
+*.txt    text eol=lf
+*.bib    text eol=lf
+*.toml   text eol=lf
+
+# Windows batch + PowerShell scripts must keep CRLF or Windows won't run them
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+*.ps1    text eol=crlf
+
+# Binaries — never touch line endings
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.exe    binary
+*.dll    binary
+*.pdf    binary
+*.xlsx   binary
+*.xls    binary
+*.zip    binary
+*.svg    binary
