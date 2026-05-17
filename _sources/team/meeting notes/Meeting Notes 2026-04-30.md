@@ -1,14 +1,16 @@
+# Meeting Notes 2026-04-30
+
 Previous meeting: [Meeting Notes 2026-04-23](Meeting%20Notes%202026-04-23.md)
 Next meeting: [[Meeting Notes 2026-05-07]]
 
-# Engine
+## Engine
 - Not ready for next test:
 	- PT cable needs to be resoldered
 
-# Structures
+## Structures
 - Awaiting oxygen tank from AvGas for laser cutter
 
-# Ground
+## Ground
 - Trailer has working lights and brakes now!
 	- Jack allegedly knows how to "feel" if the trailer is broken
 >[!important]
@@ -18,6 +20,6 @@ Next meeting: [[Meeting Notes 2026-05-07]]
 	- Reiterate: the liquid test stand was intended to ONLY be an interim solution
 - Still awaiting hydraulics to be fixed
 
-# Controls
+## Controls
 - Awaiting data
 - "Once we say the engine is done, it's done"

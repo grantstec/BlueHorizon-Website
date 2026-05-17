@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-17T02:17:12.453Z",
+  "generatedAt": "2026-05-17T02:30:08.772Z",
   "version": 1,
   "sourceCount": 40,
   "chunkCount": 124,
@@ -50,7 +50,7 @@
     },
     {
       "id": "Subteams/engine/Throttling System/MAIN Throttling System.md::0",
-      "title": "Responsible Engineers",
+      "title": "Throttling System",
       "heading": "Requirements",
       "anchor": "requirements",
       "text": "- Servo controllable throttling system\n- Throttling range of 40-100%\n- 1 hub for containing both fuel and oxidizer valves (prevents torques)\n- 2 servos\n- As compact as possible",
@@ -61,7 +61,7 @@
     },
     {
       "id": "Subteams/engine/Throttling System/MAIN Throttling System.md::1",
-      "title": "Responsible Engineers",
+      "title": "Throttling System",
       "heading": "Deliverables",
       "anchor": "deliverables",
       "text": "- CAD of throttling system\n- Servos\n- Valves\n- Interface between servos and valves\n- Physical parts\n- Mass flow data as a function of tank pressure and valve angle",
@@ -72,7 +72,7 @@
     },
     {
       "id": "Subteams/engine/Throttling System/MAIN Throttling System.md::2",
-      "title": "Responsible Engineers",
+      "title": "Throttling System",
       "heading": "Design Log",
       "anchor": "design-log",
       "text": "| Date       | RE               | Technical Description of Change                      | Purpose of Change                                              | Justification                    |\n| ---------- | ---------------- | ---------------------------------------------------- | -------------------------------------------------------------- | -------------------------------- |\n| 2026-04-30 | Connor Beardsley | Created clip part connecting valve servo bodies      | Fixes servo body and valve body position and rotation together | Allows only servo arm to rotate  |\n| 2026-04-29 | Connor Beardsley | Created manifold turning joint of valve to servo arm | Control surface connecting servo with valve                    | [[Throttling System 2026-04-29]] |",
@@ -83,7 +83,7 @@
     },
     {
       "id": "Subteams/engine/Throttling System/MAIN Throttling System.md::3",
-      "title": "Responsible Engineers",
+      "title": "Throttling System",
       "heading": "Media",
       "anchor": "media",
       "text": "<iframe src=\"https://cad.onshape.com/documents/af04d02dea7f43f6aa76a4f7/w/32799b31c4700c05026637a9/e/fc80d24b25db67c442bcd38e?renderMode=0&uiState=69f369efeee45f4171afc708\" height=\"600\" width=\"100%\"></iframe>",
@@ -723,7 +723,7 @@
     },
     {
       "id": "subteams/engine/Engine Gimbal Design.md::0",
-      "title": "Engine Gimbal Design 1",
+      "title": "Engine Gimbal Design",
       "heading": "Engine Gimbal Design 1",
       "anchor": "engine-gimbal-design-1",
       "text": "connor makes some edits for sample pull request",
@@ -751,7 +751,7 @@
     },
     {
       "id": "subteams/engine/Testing/Engine Test 2026-04-12.md::0",
-      "title": "Summary",
+      "title": "Engine Test 2026-04-12",
       "heading": "Summary",
       "anchor": "summary",
       "text": "Most successful hot fire so far. Achieved 80 lbs maximum thrust and an average of 69 lbs. Ablative liner burned completely through.",
@@ -762,7 +762,7 @@
     },
     {
       "id": "subteams/engine/Testing/Engine Testing Tracker.md::0",
-      "title": "History",
+      "title": "Engine Testing Tracker",
       "heading": "History",
       "anchor": "history",
       "text": "| Date       | Type    | Documentation              |\n| ---------- | ------- | -------------------------- |\n| 2026-05-06 | Hotfire | [[Engine Test 2026-05-06]] |\n| 2026-05-04 | Hotfire | [[Engine Test 2026-05-04]] |\n| 2026-04-12 | Hotfire | [[Engine Test 2026-04-12]] |",
@@ -773,7 +773,7 @@
     },
     {
       "id": "subteams/engine/Throttling System/Throttling System 2026-04-29.md::0",
-      "title": "Technical Description of Change",
+      "title": "Throttling System 2026-04-29",
       "heading": "Technical Description of Change",
       "anchor": "technical-description-of-change",
       "text": "Manifold between valve turning joint and servo arm created. It is a 3D printed PLA part that wraps around the connection points on the valve and servo arm. The hole in this manifold that wraps around the valve portion is intentionally low tolerance for the justification below.",
@@ -784,7 +784,7 @@
     },
     {
       "id": "subteams/engine/Throttling System/Throttling System 2026-04-29.md::1",
-      "title": "Technical Description of Change",
+      "title": "Throttling System 2026-04-29",
       "heading": "Justification",
       "anchor": "justification",
       "text": "Factory-produced arm on valve has some give when twisted. During vehicle flight, the servos will be actuated back and forth, and thus even though the servo arms will be controlled precisely, the actual output of valve opening will not reflect the actual angle of the servo arm. The intention is to remove the factory-produced metal arm from the valve and replace it with the part described above.",
@@ -1448,9 +1448,9 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-04-23.md::0",
-      "title": "Engine",
-      "heading": "Engine",
-      "anchor": "engine",
+      "title": "Meeting Notes 2026-04-23",
+      "heading": "Meeting Notes 2026-04-23",
+      "anchor": "meeting-notes-2026-04-23",
       "text": "Next meeting: [Meeting Notes 2026-04-30](Meeting%20Notes%202026-04-30.md)\n- Dining out on the calendar\n- $17K funding available for purchase order\n- Up for grabs, talk with Jeremey\n- Obsidian: establishing system",
       "sourceFile": "team/meeting notes/Meeting Notes 2026-04-23.md",
       "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-23.html",
@@ -1459,7 +1459,7 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-04-23.md::1",
-      "title": "Engine",
+      "title": "Meeting Notes 2026-04-23",
       "heading": "Engine",
       "anchor": "engine",
       "text": "- [[../../subteams/engine/Augmented Spark Igniter|ASI]] is being fabricated\n- [[../../subteams/engine/Gimbal|Gimbal]]: reverse kinematics is a ratio at small angles",
@@ -1470,7 +1470,7 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-04-23.md::2",
-      "title": "Engine",
+      "title": "Meeting Notes 2026-04-23",
       "heading": "Structures",
       "anchor": "structures",
       "text": "- Almost done with work\n- Considering building a separate stand? Col Harris want us to build another stand for solid motors",
@@ -1481,7 +1481,7 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-04-23.md::3",
-      "title": "Engine",
+      "title": "Meeting Notes 2026-04-23",
       "heading": "GSE",
       "anchor": "gse",
       "text": "- Col Harris requesting stand, intermittently we can use the trailer as a testing platform\n- Hydraulic system needs to be fixed\n- The stand was actually supposed to just be temporary\n- Jacob is new GSE lead\n- Will get trailer registered at DMV",
@@ -1492,7 +1492,7 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-04-23.md::4",
-      "title": "Engine",
+      "title": "Meeting Notes 2026-04-23",
       "heading": "Controls",
       "anchor": "controls",
       "text": "- Freshmen are working with Col Harris on space shot project\n- Want more tests\n- \"Once we say the engine is done, it's done\"\n- Once engine testing to meet engine requirements is complete, controls will take over testing for throttling and gimbal testing",
@@ -1503,7 +1503,7 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-04-23.md::5",
-      "title": "Engine",
+      "title": "Meeting Notes 2026-04-23",
       "heading": "Avionics",
       "anchor": "avionics",
       "text": "- Communication\n- Will be in contact with engine more",
@@ -1514,9 +1514,9 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-04-30.md::0",
-      "title": "Engine",
-      "heading": "Engine",
-      "anchor": "engine",
+      "title": "Meeting Notes 2026-04-30",
+      "heading": "Meeting Notes 2026-04-30",
+      "anchor": "meeting-notes-2026-04-30",
       "text": "Previous meeting: [Meeting Notes 2026-04-23](Meeting%20Notes%202026-04-23.md)\nNext meeting: [[Meeting Notes 2026-05-07]]",
       "sourceFile": "team/meeting notes/Meeting Notes 2026-04-30.md",
       "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-04-30.html",
@@ -1525,7 +1525,7 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-04-30.md::1",
-      "title": "Engine",
+      "title": "Meeting Notes 2026-04-30",
       "heading": "Engine",
       "anchor": "engine",
       "text": "- Not ready for next test:\n- PT cable needs to be resoldered",
@@ -1536,7 +1536,7 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-04-30.md::2",
-      "title": "Engine",
+      "title": "Meeting Notes 2026-04-30",
       "heading": "Structures",
       "anchor": "structures",
       "text": "- Awaiting oxygen tank from AvGas for laser cutter",
@@ -1547,7 +1547,7 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-04-30.md::3",
-      "title": "Engine",
+      "title": "Meeting Notes 2026-04-30",
       "heading": "Ground",
       "anchor": "ground",
       "text": "- Trailer has working lights and brakes now!\n- Jack allegedly knows how to \"feel\" if the trailer is broken\n>[!important]\n>Sgt. Challman needs 48 hours notice for us to use the astro truck\n- We OFFICIALLY deciding to use trailer for solids, NOT making a new test stand\n- Jacob will also look into moving liquid testing back to trailer so that we can get used to it\n- Reiterate: the liquid test stand was intended to ONLY be an interim solution\n- Still awaiting hydraulics to be fixed",
@@ -1558,7 +1558,7 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-04-30.md::4",
-      "title": "Engine",
+      "title": "Meeting Notes 2026-04-30",
       "heading": "Controls",
       "anchor": "controls",
       "text": "- Awaiting data\n- \"Once we say the engine is done, it's done\"",
@@ -1569,9 +1569,9 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-05-07.md::0",
-      "title": "Main Updates",
-      "heading": "Main Updates",
-      "anchor": "main-updates",
+      "title": "Meeting Notes 2026-05-07",
+      "heading": "Meeting Notes 2026-05-07",
+      "anchor": "meeting-notes-2026-05-07",
       "text": "Previous meeting: [Meeting Notes 2026-04-30](Meeting%20Notes%202026-04-30.md)",
       "sourceFile": "team/meeting notes/Meeting Notes 2026-05-07.md",
       "pageUrl": "team/meeting%20notes/Meeting%20Notes%202026-05-07.html",
@@ -1580,7 +1580,7 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-05-07.md::1",
-      "title": "Main Updates",
+      "title": "Meeting Notes 2026-05-07",
       "heading": "Main Updates",
       "anchor": "main-updates",
       "text": "- 2 successful hotfires in the past week\n- [Engine Test 2026-05-06](Engine%20Test%202026-05-06)\n- [Engine Test 2026-05-04](Engine%20Test%202026-05-04)\n- New dean is **very** enthusiastic about what we're doing\n- Could help us with finding resources\n- Loves the interdisciplinary engineering we do\n- \"This clubs is the image of what he wants to see at USAFA\"\n- Wants to have a meeting with team\n- Potential requests to bring up at meeting with dean:\n- Could we get an \"airmanship-like\" status where we get excused from some military-like training?\n- Blue Horizon launch site on base?\n- Can we implement a cadet training pipeline for machining? If cadets can teach other cadets how to fly a glider, why can't we teach other cadets how to use a manual mill?",
@@ -1591,7 +1591,7 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-05-07.md::2",
-      "title": "Main Updates",
+      "title": "Meeting Notes 2026-05-07",
       "heading": "Engine",
       "anchor": "engine",
       "text": "- \"Showerhead\" design of injector: **BAD**\n- The mixing of propellents happens on the walls\n- Bad atomization\n- Potential solution is an annulus injector\n- Attempts to turn the propellents into a fine mist with the same mass flow rate\n- For solids:\n- From chem department: if we get a 499 with the chem department for solids research, they can fund us",
@@ -1602,7 +1602,7 @@
     },
     {
       "id": "team/meeting notes/Meeting Notes 2026-05-07.md::3",
-      "title": "Main Updates",
+      "title": "Meeting Notes 2026-05-07",
       "heading": "Looking Forward",
       "anchor": "looking-forward",
       "text": "- Potentially consider a progress chart?\n- Should we have a 10-minute briefing for the whole team at the beginning of the week on Mondays to quickly go over what has happened and what will be happening so everybody, at least on the surface level, is aware of what is going on?\n- Standby for summer project slideshow from Grant Stec",

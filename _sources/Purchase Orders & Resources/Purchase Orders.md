@@ -40,4 +40,3 @@ AS OF 4-26-26
 ### Large DEC/JAN & FEB Order (Only items delivered this past fall 2025 and spring 2026)
 
 [10_22_2025 S1 Final Purchase Order.xlsx](https://usafa0.sharepoint.com/:x:/s/BurningBlueRocketry/IQAzVe5D5jblTZMiKhVueP2AAXO9YBvohXbOexMoVWWuLdA?e=g4XRQP)
-
