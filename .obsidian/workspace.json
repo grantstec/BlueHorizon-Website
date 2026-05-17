@@ -1,80 +1,41 @@
 {
   "main": {
-    "id": "366eaf9dd0602809",
+    "id": "a493ab55c3f82e3d",
     "type": "split",
     "children": [
       {
-        "id": "65f95373996f7742",
+        "id": "7486a279173b9b7f",
         "type": "tabs",
         "children": [
           {
-            "id": "d4926b7c6de4685c",
+            "id": "6fcabde9b2d24e65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/team/meeting notes/Meeting Notes 2026-05-07.md",
+                "file": "extra/chatbot-worker/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Meeting Notes 2026-05-07"
-            }
-          },
-          {
-            "id": "5b8bdfcd16b69731",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/subteams/engine/Testing/Engine Testing Tracker.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Engine Testing Tracker"
-            }
-          },
-          {
-            "id": "2e60f5d035e13c84",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/subteams/engine/Throttling System/MAIN Throttling System.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MAIN Throttling System"
-            }
-          },
-          {
-            "id": "5dbc33b90966dd43",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "README"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "73e6eaf1d18fd991",
+    "id": "1efec14db619fe3c",
     "type": "split",
     "children": [
       {
-        "id": "6868c418b6410e0a",
+        "id": "dbb9ced8f3a48641",
         "type": "tabs",
         "children": [
           {
-            "id": "35f365c10f71c0f1",
+            "id": "5cff991f9b94e182",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -87,7 +48,7 @@
             }
           },
           {
-            "id": "eb7733c43b1591fb",
+            "id": "30f74a362739e5ca",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -104,7 +65,7 @@
             }
           },
           {
-            "id": "e668cd884bcce636",
+            "id": "dd803904ec46c031",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -117,22 +78,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5
+    "width": 300
   },
   "right": {
-    "id": "ea0426e6ec189097",
+    "id": "f4ae21259f433bc3",
     "type": "split",
     "children": [
       {
-        "id": "d4b63e6b7720d73f",
+        "id": "01939d184e9959b3",
         "type": "tabs",
         "children": [
           {
-            "id": "a8241886ab2ce9e5",
+            "id": "3f1e9fb6d6011dfc",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/resources/MAIN website editing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,24 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for MAIN website editing"
             }
           },
           {
-            "id": "54d8470893db8d80",
+            "id": "cf728067892eeabf",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/resources/MAIN website editing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from MAIN website editing"
             }
           },
           {
-            "id": "c9ce4a6227cc5d48",
+            "id": "b6dac1ead1247025",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -174,7 +137,7 @@
             }
           },
           {
-            "id": "de35f19a5fc2bbbf",
+            "id": "852797211bd264fe",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -188,18 +151,18 @@
             }
           },
           {
-            "id": "4ec8f3f93aa071a7",
+            "id": "b954b2ff5dced96b",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/team/MAIN schedule.md",
+                "file": "docs/resources/MAIN website editing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of MAIN schedule"
+              "title": "Outline of MAIN website editing"
             }
           }
         ]
@@ -220,53 +183,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "5dbc33b90966dd43",
+  "active": "5cff991f9b94e182",
   "lastOpenFiles": [
-    "docs/subteams/engine/Throttling System/MAIN Throttling System.md",
-    "docs/subteams/engine/Testing/Engine Testing Tracker.md",
-    "docs/team/meeting notes/Meeting Notes 2026-05-07.md",
-    "docs/subteams/engine/Testing/Engine Test 2026-04-12.md",
-    "docs/subteams/engine/Throttling System/Throttling System 2026-04-29.md",
-    "docs/team/meeting notes/Meeting Notes 2026-04-23.md",
-    "docs/team/meeting notes/Meeting Notes 2026-04-30.md",
-    "docs/subteams/engine/Testing/pictures/041126_Rocket_Test_Data_Plot_(Zoom_on_Thrust) (1).svg",
-    "docs/subteams/engine/Testing/pictures/041126_Rocket_Test_Data_Plot (1).svg",
-    "Untitled.base",
-    "docs/subteams/engine/Engine Gimbal Design.md",
+    "desktop-app/build/BlueHorizon/EXE-00.toc",
+    "desktop-app/build/BlueHorizon/PKG-00.toc",
+    "desktop-app/build/BlueHorizon/BlueHorizonDesktop.pkg",
+    "desktop-app/build/BlueHorizon/PYZ-00.toc",
+    "desktop-app/build/BlueHorizon/PYZ-00.pyz",
+    "desktop-app/build/BlueHorizon/localpycs/pyimod04_pywin32.pyc",
+    "desktop-app/build/BlueHorizon/localpycs/struct.pyc",
+    "desktop-app/build/BlueHorizon/localpycs/pyimod02_importers.pyc",
+    "desktop-app/build/BlueHorizon/localpycs/pyimod03_ctypes.pyc",
+    "desktop-app/build/BlueHorizon/localpycs/pyimod01_archive.pyc",
+    "desktop-app/build/BlueHorizon/localpycs",
+    "desktop-app/README.md",
     "pictures/041126_Rocket_Test_Data_Plot_(Zoom_on_Thrust) (1).svg",
-    "docs/subteams/engine/pictures/Capybara.png",
-    "docs/subteams/engine/Testing/pictures/041126_Rocket_Test_Data (1).csv",
-    "docs/subteams/engine/Testing/pictures",
-    "docs/subteams/engine/Testing",
-    "pictures/041126_Rocket_Test_Data (1) 1.csv",
-    "pictures/041126_Rocket_Test_Data (1).csv",
-    "pictures",
-    "docs/subteams/engine/Engine Design.md",
-    "docs/subteams/engine/Gimbal.md",
-    "docs/subteams/engine/Throttling System/Throttling System.md",
-    "docs/subteams/engine/Augmented Spark Igniter.md",
-    "docs/subteams/engine/MAIN Engine.md",
-    "docs/team/MAIN Org Chart.md",
-    "docs/subteams/engine/Throttling System",
-    "docs/subteams/flight_computer/MAIN Flight Computer.md",
-    "docs/subteams/flight_computer/Flight Computer Testing.md",
-    "docs/subteams/flight_computer/Flight Computer Software.md",
-    "docs/subteams/flight_computer/Flight Computer Schematic Design.md",
-    "docs/subteams/flight_computer/Flight Computer PCB Design.md",
-    "docs/subteams/structures/Nose Cone.md",
-    "docs/subteams/gse/pictures/sensor_breakout_back_annotated_LC.png",
-    "docs/subteams/gse/pictures/DAQ System.png",
+    "docs/Team/meeting notes/Meeting Notes 2026-05-07.md",
+    "docs/Subteams/engine/pictures/Capybara.png",
+    "docs/Subteams/engine/Testing/pictures/041126_Rocket_Test_Data_Plot_(Zoom_on_Thrust) (1).svg",
+    "docs/Subteams/engine/Testing/pictures/041126_Rocket_Test_Data_Plot (1).svg",
+    "docs/Subteams/engine/Testing/Engine Test 2026-04-12.md",
+    "docs/Subteams/engine/Testing/Engine Testing Tracker.md",
+    "docs/Subteams/engine/Engine Gimbal Design.md",
+    "docs/Subteams/engine/Throttling System/MAIN Throttling System.md",
+    "docs/Subteams/engine/Augmented Spark Igniter.md",
+    "docs/Subteams/engine/MAIN Engine.md",
+    "docs/Subteams/engine/Throttling System/Throttling System 2026-04-29.md",
+    "docs/Subteams/gse/DAQ System.md",
+    "docs/Team/meeting notes/Meeting Notes 2026-04-30.md",
+    "docs/Team/meeting notes/Meeting Notes 2026-04-23.md",
+    "docs/Subteams/engine/Gimbal.md",
+    "docs/Subteams/gse/Communications System.md",
+    "docs/Subteams/engine/Engine Design.md",
+    "docs/Team/MAIN Org Chart.md",
+    "docs/intro.md",
+    "docs/Purchase Orders & Resources/Purchase Orders.md",
     "docs/subteams/gse/pictures/DAQ System-Annotated PCB I2C Data ports.png",
     "docs/subteams/gse/pictures/DAQ System annotated PCB sensor input plugs.png",
     "docs/subteams/gse/pictures/DAQ System - Switch between sensors annotated PCB.png",
-    "docs/subteams/gse/pictures",
-    "docs/Website Resources/pictures/updatefrommain.png",
-    "docs/Website Resources/pictures",
-    "docs/Website Resources/Obsidian Setup and Website Editing.md",
-    "docs/Website Resources/GitHub Setup and Resources.md",
-    "docs/Website Resources/Branch Update and PR Tools.md",
-    "docs/Website Resources/AI Website Editing Assistant.md",
-    "docs/Purchase Orders & Resources/Purchase Orders.md",
-    "docs/team/my new page.md"
+    "docs/subteams/gse/pictures/sensor_breakout_back_annotated_LC.png",
+    "docs/subteams/gse/pictures/DAQ System.png",
+    "docs/subteams/gse/MAIN GSE.md",
+    "docs/subteams/structures/Landing Legs.md",
+    "docs/subteams/gse/DAQ System.md",
+    "docs/Past Years/MAIN 2023-2024 NASA USLI.md",
+    "docs/Past Years/MAIN 2024-2025 Mojave Sphinx.md",
+    "docs/resources/Obsidian Setup and Website Editing.md",
+    "docs/resources/GitHub Setup and Resources.md",
+    "docs/pictures/BlueHorizons_ClubAccomplishments_Image.jpg"
   ]
 }

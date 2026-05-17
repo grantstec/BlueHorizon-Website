@@ -1,45 +1,47 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Team Information
+  - caption: Team
     chapters:
-      - file: team/meeting notes/Meeting Notes 2026-04-23
-      - file: team/meeting notes/Meeting Notes 2026-04-30
-      - file: team/meeting notes/Meeting Notes 2026-05-07
+      - file: Team/meeting notes/Meeting Notes 2026-04-23
+      - file: Team/meeting notes/Meeting Notes 2026-04-30
+      - file: Team/meeting notes/Meeting Notes 2026-05-07
+      - file: Team/MAIN Org Chart
   - caption: Subteams
     chapters:
-      - file: subteams/engine/MAIN Engine
+      - file: Subteams/engine/MAIN Engine
         sections:
-          - file: subteams/engine/Augmented Spark Igniter
-          - file: subteams/engine/Engine Design
-          - file: subteams/engine/Engine Gimbal Design
-          - file: subteams/engine/Gimbal
-          - file: subteams/engine/Testing/Engine Test 2026-04-12
-          - file: subteams/engine/Testing/Engine Testing Tracker
-          - file: subteams/engine/Throttling System/Throttling System 2026-04-29
-      - file: subteams/flight_computer/MAIN Flight Computer
+          - file: Subteams/engine/Augmented Spark Igniter
+          - file: Subteams/engine/Engine Design
+          - file: Subteams/engine/Engine Gimbal Design
+          - file: Subteams/engine/Gimbal
+          - file: Subteams/engine/Testing/Engine Test 2026-04-12
+          - file: Subteams/engine/Testing/Engine Testing Tracker
+          - file: Subteams/engine/Throttling System/Throttling System 2026-04-29
+      - file: Subteams/flight_computer/MAIN Flight Computer
         sections:
-          - file: subteams/flight_computer/Flight Computer PCB Design
-          - file: subteams/flight_computer/Flight Computer Schematic Design
-          - file: subteams/flight_computer/Flight Computer Software
-          - file: subteams/flight_computer/Flight Computer Testing
-      - file: subteams/gse/MAIN GSE
+          - file: Subteams/flight_computer/Flight Computer PCB Design
+          - file: Subteams/flight_computer/Flight Computer Schematic Design
+          - file: Subteams/flight_computer/Flight Computer Software
+          - file: Subteams/flight_computer/Flight Computer Testing
+      - file: Subteams/gse/MAIN GSE
         sections:
-          - file: subteams/gse/Communications System
-          - file: subteams/gse/Custom Steel Test Stand
-          - file: subteams/gse/DAQ System
-          - file: subteams/gse/Trailer Test Stand
-      - file: subteams/sim_controls/MAIN Simulation and Controls
+          - file: Subteams/gse/Communications System
+          - file: Subteams/gse/Custom Steel Test Stand
+          - file: Subteams/gse/DAQ System
+          - file: Subteams/gse/Trailer Test Stand
+      - file: Subteams/sim_controls/MAIN Simulation and Controls
         sections:
-          - file: subteams/sim_controls/Control Algorithm
-          - file: subteams/sim_controls/SIMULINK Simulation
-      - file: subteams/Solids/MAIN Solids
-      - file: subteams/structures/MAIN Structures
+          - file: Subteams/sim_controls/Control Algorithm
+          - file: Subteams/sim_controls/SIMULINK Simulation
+      - file: Subteams/Solids/MAIN Solids
+      - file: Subteams/Structures/MAIN Structures
         sections:
-          - file: subteams/structures/Landing Legs
-          - file: subteams/structures/Nose Cone
-          - file: subteams/structures/Structures Design
-          - file: subteams/structures/Structures Testing
+          - file: Subteams/Structures/Landing Legs
+          - file: Subteams/Structures/Nose Cone
+          - file: Subteams/Structures/Structures Design
+          - file: Subteams/Structures/Structures Testing
+      - file: Subteams/engine/Throttling System/MAIN Throttling System
   - caption: Past Years
     chapters:
       - file: Past Years/MAIN 2023-2024 NASA USLI
@@ -47,12 +49,6 @@ parts:
   - caption: Purchase Orders & Resources
     chapters:
       - file: Purchase Orders & Resources/Purchase Orders
-  - caption: Subteams
-    chapters:
-      - file: Subteams/engine/Throttling System/MAIN Throttling System
-  - caption: Team
-    chapters:
-      - file: Team/MAIN Org Chart
   - caption: Website Resources
     chapters:
       - file: Website Resources/AI Website Editing Assistant
