@@ -35,7 +35,13 @@ in Obsidian. It:
 | ↪ New Sub Page | Same as above but nested under an existing page. The new file lives in the **same folder** as its parent so rendering is never broken by extra nesting. |
 | 🧹 Fix Structure | One-click cleanup of `_toc.yml`: merges duplicate captions, removes duplicate entries, fixes folder casing. Safe to run any time. |
 | ↻ Pull now | Manually pull the latest from GitHub right now (it also happens every 30s in the background). |
-| ⚙ Settings… | Change the repo folder, turn auto-pull on/off, change the pull interval. |
+| ⚙ Settings… | Change the repo folder, turn auto-pull on/off, change the pull interval, and toggle "Start automatically when Windows starts". |
+
+### Running on Windows startup
+
+Open **⚙ Settings…** and tick **"Start automatically when Windows starts (launches minimized)"**. The app will then launch into your taskbar every time you sign in to Windows and start auto-pulling immediately — you don't need to do anything for the latest content to show up in Obsidian. Untick the box anytime to turn it off.
+
+Under the hood this writes a single value to `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run`. It does NOT require admin rights and is removed cleanly when you toggle it off.
 
 The app shows a live status line:
 

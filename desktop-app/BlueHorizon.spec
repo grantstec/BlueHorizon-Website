@@ -8,7 +8,7 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('icon.ico', '.')],  # bundle the favicon for Tk window use at runtime
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -40,5 +40,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=None,
+    icon='icon.ico',
 )

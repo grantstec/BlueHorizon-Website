@@ -24,6 +24,7 @@ from datetime import datetime
 from tkinter import filedialog, messagebox, simpledialog, ttk
 from typing import Optional
 
+import autostart
 from commit_msg import generate_commit_message, preview_changes
 from config import Settings
 from git_ops import GitError, GitOps
@@ -39,6 +40,38 @@ from page_ops import (
 
 APP_TITLE = "BlueHorizon Desktop"
 APP_VERSION = "1.0.0"
+
+
+def _resource_path(relative: str) -> str:
+    """Return the absolute path to a bundled resource.
+
+    When running from source, files live next to main.py.
+    When frozen by PyInstaller, they're unpacked into sys._MEIPASS.
+    """
+    base = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base, relative)
+
+
+def _apply_window_icon(root: tk.Tk) -> None:
+    """Best-effort: apply icon.ico to the window. Silently no-ops if missing
+    or on a platform where iconbitmap can't load .ico (e.g. Linux), since the
+    app is otherwise fully functional without an icon."""
+    icon_path = _resource_path("icon.ico")
+    if not os.path.exists(icon_path):
+        return
+    try:
+        # iconbitmap is the right call on Windows for the title-bar + taskbar
+        root.iconbitmap(default=icon_path)
+    except tk.TclError:
+        # Non-Windows fallback: try a PNG via PhotoImage if .ico isn't supported
+        try:
+            png_path = _resource_path("icon.png")
+            if os.path.exists(png_path):
+                img = tk.PhotoImage(file=png_path)
+                root.iconphoto(True, img)
+                root._icon_ref = img  # type: ignore[attr-defined]
+        except tk.TclError:
+            pass
 
 
 # ---------------------------------------------------------------------------
@@ -124,6 +157,7 @@ class App:
         self.root.title(f"{APP_TITLE} — v{APP_VERSION}")
         self.root.geometry("720x540")
         self.root.minsize(620, 480)
+        _apply_window_icon(self.root)
 
         self.settings = Settings.load()
         self.git: Optional[GitOps] = None
@@ -509,7 +543,7 @@ class App:
         win.title("Settings")
         win.transient(self.root)
         win.grab_set()
-        win.geometry("420x240")
+        win.geometry("440x320")
 
         ttk.Label(win, text="Repo folder:").pack(anchor="w", padx=14, pady=(14, 4))
         path_var = tk.StringVar(value=self.settings.repo_path)
@@ -531,6 +565,22 @@ class App:
         secs_var = tk.IntVar(value=self.settings.auto_pull_seconds)
         ttk.Spinbox(win, from_=5, to=600, textvariable=secs_var, width=8).pack(anchor="w", padx=14)
 
+        # --- Run on Windows startup ---
+        startup_var = tk.BooleanVar(value=autostart.is_enabled())
+        startup_cb = ttk.Checkbutton(
+            win,
+            text="Start automatically when Windows starts (launches minimized)",
+            variable=startup_var,
+        )
+        startup_cb.pack(anchor="w", padx=14, pady=(14, 0))
+        if not autostart.is_supported():
+            startup_cb.configure(state="disabled")
+            ttk.Label(
+                win,
+                text="(Available only in the built .exe — not when running from source.)",
+                foreground="#888",
+            ).pack(anchor="w", padx=30)
+
         btns = ttk.Frame(win)
         btns.pack(side="bottom", fill="x", padx=14, pady=14)
         ttk.Button(btns, text="Cancel", command=win.destroy).pack(side="right")
@@ -542,6 +592,23 @@ class App:
             except (TypeError, ValueError):
                 self.settings.auto_pull_seconds = 30
             self.settings.save()
+
+            # Apply autostart toggle. Wrapped in try/except because registry
+            # writes can fail under locked-down corporate policy.
+            if autostart.is_supported():
+                try:
+                    if startup_var.get():
+                        autostart.enable()
+                        self._info("Run on startup: enabled")
+                    else:
+                        autostart.disable()
+                        self._info("Run on startup: disabled")
+                except OSError as e:
+                    messagebox.showerror(
+                        APP_TITLE,
+                        f"Could not update Windows startup setting:\n\n{e}",
+                    )
+
             self._bind_repo()
             win.destroy()
         ttk.Button(btns, text="Save", command=_save).pack(side="right", padx=(0, 8))
@@ -564,6 +631,13 @@ def main() -> None:
         finally:
             root.destroy()
     root.protocol("WM_DELETE_WINDOW", _on_close)
+
+    # If launched at Windows startup we open into the taskbar instead of
+    # popping a window in the user's face. They can click the taskbar icon
+    # whenever they want to interact.
+    if "--minimized" in sys.argv:
+        root.after(100, root.iconify)
+
     root.mainloop()
 
 
